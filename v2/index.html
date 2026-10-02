@@ -128,6 +128,8 @@ p{margin:0 0 1em;text-wrap:pretty}
 .jr h3{font:700 clamp(18px,1.6vw,22px)/1.3 "IBM Plex Sans",sans-serif;margin:0 0 8px;color:#fff}
 .jr h3 a{text-decoration:none}.jr h3 a::after{content:"";position:absolute;inset:0}
 .jr{position:relative}
+.jr>div{min-width:0}
+.jr h3,.d,.item h3,.reason h3,.person h3,.slide blockquote{overflow-wrap:break-word;hyphens:auto}
 .jr .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14.5px}
 .chip{font:700 12px/1 "IBM Plex Sans",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;border:1px solid var(--cyan);color:var(--cyan)}
 .jr .go{display:inline-flex;align-items:center;gap:10px;font:700 15px/1 "IBM Plex Sans",sans-serif;color:var(--cyan);white-space:nowrap}
@@ -224,10 +226,10 @@ form .btn{border:0}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
-</head>
+<style>.lt{display:inline-flex!important;align-items:center;gap:2px;padding:3px;border-radius:999px;background:rgba(120,120,140,.14);font:700 12.5px/1 system-ui,-apple-system,sans-serif;letter-spacing:.04em}.lt a{padding:8px 11px;border-radius:999px;text-decoration:none;color:inherit;opacity:.75}.lt a:hover{opacity:1}.lt a[aria-current]{background:#140c33;color:#fff;opacity:1}.util .lt{background:rgba(255,255,255,.12)}.util .lt a[aria-current]{background:#17b4cf;color:#120d2e}@media (max-width:1024px){.nav .lt{margin-left:auto;margin-right:10px}}@media (max-width:1100px){.hdr .lt+.btn+.burger,.hdr .burger{margin-left:10px}}</style></head>
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
-<div class="util"><div class="wrap"><div class="contacts"><a href="tel:+4917661513250">+49 176 61513250</a><a href="mailto:info@office54.de">info@office54.de</a><span>Irisweg 30, 26133 Oldenburg</span></div><div>🇩🇪 German</div></div></div>
+<div class="util"><div class="wrap"><div class="contacts"><a href="tel:+4917661513250">+49 176 61513250</a><a href="mailto:info@office54.de">info@office54.de</a><span>Irisweg 30, 26133 Oldenburg</span></div><div class="lang lt" role="group" aria-label="Sprache"><a href="/office54-preview/v2/" lang="de" hreflang="de" aria-current="true">DE</a><a href="/office54-preview/v2/en/" lang="en" hreflang="en">EN</a></div></div></div>
 <header class="hdr site-header"><div class="wrap">
   <a class="brand" href="https://www.office54.de/" aria-label="Office54 GmbH Startseite"><img src="../assets/logo.webp" width="300" height="242" alt="Office54 GmbH Logo"></a>
   <nav aria-label="Hauptmenü"><ul class="menu" id="menu">

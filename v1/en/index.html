@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<!--
+THESIS: Office54 as an established, trustworthy employer brand: the same page, structure and words, set with the calm precision of a serious German company instead of a stock template.
+OWN-WORLD: white and mist grounds, indigo #231459 as the one committed field (testimonial band, footer), cyan #17B4CF only for actions; Sora display, Manrope text; 28px media radii, indigo-tinted offset shadows; real people (CEO video, team on cyan) carry the page.
+STORY: a worker or an employer sees a real company in the first second, finds jobs or services in two clicks, trusts it through faces and client quotes, then applies or writes.
+FIRST VIEWPORT: white sticky header with the original logo; full-bleed CEO video under an indigo veil, left-aligned welcome line, two-line headline, two pill actions; soft wave into the about section.
+FORM: incumbent structure kept 1:1 (header, hero, about, team, services tabs, job search, why, testimonials, contact, footer); no concept seed, by client instruction "same concept, much better".
+-->
+<html lang="en">
+<head>
+<meta content="noindex, nofollow" name="robots"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Office54 GmbH: staffing agency for temporary work and direct placement in Oldenburg</title>
+<meta content="Office54 GmbH: staffing agency for recruitment, temporary work and direct placement. Jobs in Oldenburg, Wilhelmshaven and Leipzig, support in German, English, Russian, Ukrainian, Polish and Romanian." name="description"/>
+<link href="/office54-preview/v1/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Office54 GmbH" property="og:site_name"/>
+<meta content="Office54 GmbH: your partner for successful staffing services" property="og:title"/>
+<meta content="Recruitment, temporary work and direct placement. Multilingual support, accommodation and transport on request." property="og:description"/>
+<meta content="https://www.office54.de/" property="og:url"/>
+<meta content="/office54-preview/assets/hero-poster.jpg" property="og:image"/>
+<meta content="de_DE" property="og:locale"/>
+<meta content="#231459" name="theme-color"/>
+<link href="/office54-preview/assets/logo.webp" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Sora:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link as="image" href="/office54-preview/assets/hero-poster.jpg" rel="preload"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EmploymentAgency",
+      "@id": "https://www.office54.de/#organization",
+      "name": "Office54 GmbH",
+      "url": "https://www.office54.de/",
+      "logo": "https://www.office54.de/wp-content/uploads/2024/10/Logo_O54_base-1.png",
+      "image": "https://www.office54.de/wp-content/uploads/2024/10/Logo_O54_base-1.png",
+      "description": "Personaldienstleister für Personalbeschaffung, Zeitarbeit und Direktvermittlung mit Fokus auf osteuropäische Fachkräfte und Helfer.",
+      "foundingDate": "2021",
+      "founder": {"@type": "Person", "name": "Stefan Grabowski", "jobTitle": "Geschäftsführer"},
+      "telephone": "+49 176 61513250",
+      "email": "info@office54.de",
+      "vatID": "DE346553863",
+      "address": {"@type": "PostalAddress", "streetAddress": "Haselünner Str. 13", "postalCode": "49844", "addressLocality": "Bawinkel", "addressCountry": "DE"},
+      "department": {
+        "@type": "EmploymentAgency",
+        "name": "Office54 GmbH Oldenburg",
+        "telephone": "+49 176 61513250",
+        "address": {"@type": "PostalAddress", "streetAddress": "Irisweg 30", "postalCode": "26133", "addressLocality": "Oldenburg", "addressCountry": "DE"}
+      },
+      "areaServed": ["Oldenburg", "Wilhelmshaven", "Leipzig", "Deutschland"],
+      "knowsLanguage": ["de", "en", "ru", "uk", "pl", "ro"],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61563513421556",
+        "https://www.instagram.com/office54_germany"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.office54.de/#website",
+      "url": "https://www.office54.de/",
+      "name": "Office54 GmbH",
+      "inLanguage": "de-DE",
+      "publisher": {"@id": "https://www.office54.de/#organization"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --indigo:#231459; --indigo-deep:#150c3a; --indigo-soft:#3a2b7c;
+  --cyan:#17b4cf; --cyan-ink:#0b7f93; --cyan-wash:#e6f6f9;
+  --paper:#fff; --mist:#f3f6f8; --line:#e3e7ee;
+  --ink:#1a1440; --text:#4d4a66; --muted:#7c7896;
+  --r-xl:28px; --r-lg:22px; --r:16px;
+  --shadow:0 24px 50px -30px rgba(35,20,89,.42),0 4px 12px -6px rgba(35,20,89,.08);
+  --shadow-lift:0 34px 70px -34px rgba(35,20,89,.5),0 8px 18px -10px rgba(35,20,89,.12);
+  --wrap:1240px;
+  --sec:clamp(88px,9.5vw,140px);
+  --out:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.7;color:var(--text);background:var(--paper);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Sora,Manrope,sans-serif;color:var(--ink);margin:0;font-weight:600;letter-spacing:-.03em;text-wrap:balance}
+h2{font-size:clamp(32px,3.9vw,54px);line-height:1.08}
+h3{font-size:20px;line-height:1.32;letter-spacing:-.02em}
+p{margin:0 0 1em;text-wrap:pretty}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:clamp(18px,4vw,40px)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--indigo);color:#fff;padding:10px 16px;border-radius:10px;z-index:100}
+.skip:focus{left:12px}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:8px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 28px;border-radius:999px;font:700 16px/1 Manrope,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;white-space:nowrap;transition:background .3s var(--out),color .3s,border-color .3s,transform .5s var(--out),box-shadow .5s var(--out)}
+.btn svg{width:18px;height:18px;transition:transform .5s var(--out)}
+.btn:hover svg{transform:translateX(4px)}
+.btn:active{transform:translateY(1px)}
+.btn-cyan{background:var(--cyan);color:#fff}
+.btn-cyan:hover{background:#12a3bc;transform:translateY(-2px)}
+.btn-indigo{background:var(--indigo);color:#fff}
+.btn-indigo:hover{background:var(--indigo-soft);transform:translateY(-2px)}
+.btn-line{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-line:hover{background:#fff;color:var(--indigo);border-color:#fff}
+
+/* fade on enter */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .9s var(--out),transform 1s var(--out)}
+.js .rv.in{opacity:1;transform:none}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:#fff;transition:box-shadow .4s var(--out)}
+.site-header.scrolled{box-shadow:0 1px 0 var(--line),0 14px 30px -24px rgba(35,20,89,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
+.brand img{height:52px;width:auto}
+.menu{display:flex;align-items:center;gap:2px;list-style:none;margin:0;padding:0}
+.menu>li{position:relative}
+.menu a,.menu button{position:relative;display:block;font:600 15px/1 Manrope,sans-serif;color:var(--ink);text-decoration:none;padding:14px 14px;background:none;border:0;cursor:pointer;transition:color .25s}
+.menu>li>a::after,.menu>li>button::after{content:"";position:absolute;left:14px;right:14px;bottom:6px;height:2px;border-radius:2px;background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--out)}
+.menu>li>a:hover::after,.menu>li>button:hover::after,.menu a[aria-current=page]::after{transform:scaleX(1)}
+.menu a:hover,.menu button:hover{color:var(--indigo)}
+.caret{display:inline-block;width:8px;height:8px;margin-left:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-3px) rotate(45deg);transition:transform .4s var(--out)}
+.has-sub:hover .caret,.has-sub:focus-within .caret{transform:translateY(0) rotate(225deg)}
+.sub{position:absolute;left:0;top:100%;min-width:250px;list-style:none;margin:0;padding:10px;background:#fff;border-radius:18px;box-shadow:var(--shadow-lift);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .3s var(--out),transform .45s var(--out),visibility .3s}
+.sub a{padding:13px 14px;border-radius:12px;font-weight:600}
+.sub a:hover{background:var(--mist)}
+.has-sub:hover .sub,.has-sub:focus-within .sub{opacity:1;visibility:visible;transform:none}
+.lang{display:flex;align-items:center;gap:8px;font:700 14px/1 Manrope,sans-serif;color:var(--ink);padding:11px 14px;border-radius:999px;background:var(--mist)}
+.burger{display:none;width:48px;height:48px;border-radius:14px;border:0;background:var(--mist);cursor:pointer;position:relative}
+.burger span{position:absolute;left:14px;right:14px;height:2px;border-radius:2px;background:var(--ink);transition:transform .45s var(--out),top .45s var(--out),opacity .2s}
+.burger span:nth-child(1){top:17px}.burger span:nth-child(2){top:23px}.burger span:nth-child(3){top:29px}
+.open .burger span:nth-child(1){top:23px;transform:rotate(45deg)}
+.open .burger span:nth-child(2){opacity:0}
+.open .burger span:nth-child(3){top:23px;transform:rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;min-height:clamp(560px,calc(100svh - 84px),860px);display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate;background:var(--indigo-deep) url(/office54-preview/assets/hero-poster.jpg) 62% 40%/cover}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(21,12,58,.9) 0%,rgba(21,12,58,.74) 36%,rgba(21,12,58,.18) 70%,rgba(21,12,58,.05) 100%)}
+.hero .wrap{width:100%;padding-top:64px;padding-bottom:150px}
+.hero-copy{max-width:1100px}
+.hero .welcome{font:700 13px/1.5 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#7fdcec;margin:0 0 10px}
+.hero .motto{font:500 clamp(17px,1.6vw,21px)/1.5 Sora,sans-serif;letter-spacing:-.01em;color:rgba(255,255,255,.86);margin:0 0 26px}
+.hero h1{color:#fff;font-size:clamp(38px,5vw,74px);line-height:1.04;letter-spacing:-.035em;margin-bottom:40px}
+.hero h1 span{display:block}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:110px;z-index:0}
+.js .hero .a{opacity:0;transform:translateY(26px);animation:up 1.1s var(--out) forwards}
+.js .hero .a:nth-child(2){animation-delay:.08s}.js .hero .a:nth-child(3){animation-delay:.16s}.js .hero .a:nth-child(4){animation-delay:.26s}
+@keyframes up{to{opacity:1;transform:none}}
+
+/* sections */
+section{position:relative;scroll-margin-top:100px}
+.sec{padding-block:var(--sec)}
+.mist{background:var(--mist)}
+.head{max-width:780px;margin:0 0 clamp(40px,4.5vw,64px)}
+.head.center{margin-inline:auto;text-align:center}
+.head p{margin:22px 0 0;font-size:18px}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(44px,7vw,110px);align-items:center}
+.about-media{position:relative;padding:0 26px 26px 0}
+.about-media::before{content:"";position:absolute;right:0;bottom:0;width:62%;height:62%;border-radius:var(--r-xl);background:var(--cyan)}
+.about-media img{position:relative;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r-xl);box-shadow:var(--shadow)}
+.about h2{margin-bottom:30px}
+.about strong{color:var(--ink);font-weight:700}
+.about .btn{margin-top:18px}
+
+/* team */
+.team{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.member{background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .7s var(--out),box-shadow .7s var(--out)}
+.member:hover{transform:translateY(-6px);box-shadow:var(--shadow-lift)}
+.member .ph{background:var(--cyan);aspect-ratio:3/4;overflow:hidden}
+.member .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 10%;transition:transform 1.2s var(--out)}
+.member:hover .ph img{transform:scale(1.045)}
+.member .info{padding:22px 20px 24px;display:flex;flex-direction:column;flex:1}
+.member h3{font-size:18px}
+.member .role{font:700 13.5px/1.45 Manrope,sans-serif;color:var(--cyan-ink);margin:7px 0 12px}
+.member p{font-size:15px;line-height:1.6;margin:0}
+.rail-hint{display:none}
+
+/* services */
+.tabs{display:inline-flex;gap:4px;padding:6px;margin-top:30px;border-radius:999px;background:var(--mist)}
+.tab{font:700 15.5px/1 Manrope,sans-serif;padding:15px 26px;border-radius:999px;border:0;background:none;color:var(--text);cursor:pointer;transition:background .45s var(--out),color .3s,box-shadow .45s}
+.tab:hover{color:var(--indigo)}
+.tab[aria-selected=true]{background:var(--indigo);color:#fff;box-shadow:0 10px 22px -12px rgba(35,20,89,.8)}
+.panel[hidden]{display:none}
+.panel .intro{max-width:640px;margin:0 auto 46px;text-align:center;font-size:18px}
+.svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{padding:38px 34px 36px;border-radius:var(--r-lg);background:var(--mist);transition:background .5s var(--out),box-shadow .6s var(--out),transform .6s var(--out)}
+.svc:hover{background:#fff;box-shadow:var(--shadow-lift);transform:translateY(-4px)}
+.svc .ic{width:76px;height:76px;border-radius:22px;background:#fff;display:grid;place-items:center;margin-bottom:28px;box-shadow:0 12px 24px -16px rgba(35,20,89,.45)}
+.svc .ic img{width:48px;height:48px;object-fit:contain}
+.svc h3{margin-bottom:14px}
+.svc p{font-size:15.5px;margin:0}
+
+/* jobs */
+.filter{display:grid;grid-template-columns:repeat(3,1fr) auto;gap:10px;padding:10px;border-radius:22px;background:#fff;box-shadow:var(--shadow)}
+.filter select{appearance:none;font:600 15.5px/1 Manrope,sans-serif;color:var(--ink);padding:18px 46px 18px 20px;border-radius:14px;border:0;background:var(--mist) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23231459' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 20px center;cursor:pointer;transition:background-color .3s}
+.filter select:hover{background-color:#e9eef2}
+.filter .btn{border-radius:14px;min-height:0;padding:0 34px}
+.count{margin:30px 0 20px;font:700 14.5px/1 Manrope,sans-serif;color:var(--muted)}
+.jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.job{background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .7s var(--out),box-shadow .7s var(--out)}
+.job:hover{transform:translateY(-6px);box-shadow:var(--shadow-lift)}
+.job .thumb{position:relative;display:block;aspect-ratio:16/10;overflow:hidden;background:var(--cyan-wash)}
+.job .thumb img{width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--out)}
+.job:hover .thumb img{transform:scale(1.05)}
+.chips{position:absolute;left:16px;bottom:16px;display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:700 12.5px/1 Manrope,sans-serif;color:var(--indigo);background:#fff;padding:8px 12px;border-radius:999px;box-shadow:0 6px 14px -8px rgba(0,0,0,.45)}
+.job .body{padding:24px 26px 28px;display:flex;flex-direction:column;flex:1}
+.job h3{font-size:19px;line-height:1.36;margin-bottom:12px}
+.job h3 a{text-decoration:none;transition:color .25s}
+.job h3 a:hover{color:var(--cyan-ink)}
+.job .ex{font-size:15px;color:var(--muted);margin:0 0 22px}
+.more{margin-top:auto;display:inline-flex;align-items:center;gap:10px;font:800 15px/1 Manrope,sans-serif;color:var(--cyan-ink);text-decoration:none}
+.more svg{width:16px;height:16px;transition:transform .5s var(--out)}
+.job:hover .more svg{transform:translateX(4px)}
+.job.feature{grid-column:span 2;display:grid;grid-template-columns:1.12fr 1fr}
+.job.feature .thumb{aspect-ratio:auto;height:100%;min-height:320px}
+.job.feature .body{padding:40px;justify-content:center}
+.job.feature h3{font-size:clamp(22px,2.1vw,28px);line-height:1.25}
+.center-cta{display:flex;justify-content:center;margin-top:52px}
+
+/* why */
+.why{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.why-media{position:relative;display:grid;place-items:center;aspect-ratio:1}
+.why-media::before{content:"";position:absolute;inset:4%;border-radius:50%;background:var(--cyan-wash)}
+.why-media img{position:relative;width:82%}
+.acc{border-top:1px solid var(--line)}
+.acc details{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px 4px;cursor:pointer;font:600 clamp(19px,1.6vw,23px)/1.3 Sora,sans-serif;letter-spacing:-.02em;color:var(--ink);transition:color .25s}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary:hover{color:var(--indigo-soft)}
+.acc .pm{flex:0 0 44px;height:44px;border-radius:50%;background:var(--mist);position:relative;transition:background .4s var(--out),transform .5s var(--out)}
+.acc .pm::before,.acc .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;border-radius:2px;background:var(--indigo);transform:translate(-50%,-50%);transition:transform .5s var(--out),background .3s}
+.acc .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.acc details[open] .pm{background:var(--indigo);transform:rotate(180deg)}
+.acc details[open] .pm::before,.acc details[open] .pm::after{background:#fff}
+.acc details[open] .pm::after{transform:translate(-50%,-50%) rotate(0deg)}
+.acc .ans{padding:0 64px 30px 4px;font-size:16.5px}
+.acc .ans p{margin:0}
+
+/* testimonials */
+.tst{background:var(--indigo);color:rgba(255,255,255,.82);overflow:hidden;isolation:isolate;padding-bottom:calc(var(--sec) + 120px)}
+.tst h2{color:#fff}
+.ring{position:absolute;display:grid;place-items:center;border-radius:50%;border:2px solid rgba(255,255,255,.14);box-shadow:8px 8px 0 -2px rgba(255,255,255,.9);color:#fff;z-index:-1;pointer-events:none}
+.ring svg{width:44%;height:44%;opacity:.92}
+.r2 svg,.r5 svg{width:54%;height:54%}
+.ring svg circle[r='1.6']{fill:currentColor}
+.r1{width:104px;height:104px;left:5%;top:20%}.r2{width:58px;height:58px;left:11%;top:56%}.r3{width:72px;height:72px;right:9%;top:13%}.r4{width:96px;height:96px;right:4%;top:40%}.r5{width:52px;height:52px;right:12%;top:64%}
+@media (max-width:1279px){.ring{display:none}}
+.slider{max-width:900px;margin:0 auto;text-align:center}
+.slides{display:grid}
+.slide{grid-area:1/1;margin:0;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .7s var(--out),transform .9s var(--out),visibility .7s}
+.slide.on{opacity:1;visibility:visible;transform:none}
+.slide blockquote{margin:0 0 40px;font:400 clamp(21px,2.3vw,31px)/1.5 Sora,sans-serif;letter-spacing:-.02em;color:#fff}
+.slide figcaption{display:inline-flex;align-items:center;gap:16px;text-align:left}
+.slide figcaption img{width:84px;height:84px;object-fit:contain;background:#fff;border-radius:18px;padding:7px}
+.who{font:800 17px/1.3 Manrope,sans-serif;color:#fff}
+.what{font-size:14.5px;color:rgba(255,255,255,.66);margin-top:3px}
+.sl-nav{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:40px}
+.sl-btn{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:none;color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .3s,border-color .3s}
+.sl-btn:hover{background:#fff;color:var(--indigo);border-color:#fff}
+.sl-btn svg{width:18px;height:18px}
+.dots{display:flex;gap:8px}
+.dot{width:9px;height:9px;border-radius:999px;border:0;padding:0;background:rgba(255,255,255,.35);cursor:pointer;transition:transform .5s var(--out),background .3s}
+.dot.on{transform:scale(1.35);background:var(--cyan)}
+.tst-ctas{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:52px}
+
+/* contact */
+.contact-sec{margin-top:-120px;position:relative;z-index:2}
+.contact{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,5vw,72px);padding:clamp(28px,4.5vw,60px);background:#fff;border-radius:var(--r-xl);box-shadow:var(--shadow-lift)}
+.contact h2{font-size:clamp(30px,3vw,44px);margin-bottom:20px}
+.cinfo{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px}
+.cinfo li{display:flex;gap:16px;align-items:flex-start}
+.cinfo .ci{flex:0 0 52px;height:52px;border-radius:16px;display:grid;place-items:center}
+.cinfo .ci svg{width:22px;height:22px}
+.cinfo .t{font:800 15px/1.3 Manrope,sans-serif;color:var(--ink);margin:3px 0 4px}
+.cinfo a{text-decoration:none}
+.cinfo a:hover{color:var(--cyan-ink)}
+form.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+label{display:block;font:700 14px/1 Manrope,sans-serif;color:var(--ink);margin-bottom:10px}
+input,textarea{width:100%;font:500 16px/1.4 Manrope,sans-serif;color:var(--ink);padding:17px 18px;border:1px solid transparent;border-radius:14px;background:var(--mist);transition:border-color .3s,background .3s,box-shadow .3s}
+input::placeholder,textarea::placeholder{color:#8b88a4}
+input:hover,textarea:hover{background:#edf1f4}
+input:focus,textarea:focus{outline:none;border-color:var(--cyan);background:#fff;box-shadow:0 0 0 4px rgba(23,180,207,.16)}
+textarea{min-height:160px;resize:vertical}
+.full{grid-column:1/-1}
+
+/* footer */
+.site-footer{background:var(--indigo-deep);color:rgba(255,255,255,.7);padding:96px 0 34px;margin-top:var(--sec)}
+.fgrid{display:grid;grid-template-columns:4fr 2fr 2fr 3fr;gap:44px}
+.flogo{display:inline-flex;background:#fff;padding:10px 16px;border-radius:18px;margin-bottom:24px}
+.flogo img{height:58px;width:auto}
+.site-footer h3{font:800 13px/1 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#7fdcec;margin-bottom:22px}
+.site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.site-footer a{text-decoration:none;transition:color .25s}
+.site-footer a:hover{color:#fff}
+.fbottom{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:64px;padding-top:28px;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+.social{display:flex;gap:10px}
+.social a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.22);transition:background .3s,border-color .3s}
+.social a:hover{background:var(--cyan);border-color:var(--cyan)}
+.social svg{width:17px;height:17px;fill:#fff}
+
+/* responsive */
+@media (max-width:1180px){
+  .menu a,.menu button{padding:14px 10px;font-size:14.5px}
+  .menu>li>a::after,.menu>li>button::after{left:10px;right:10px}
+  .lang{display:none}
+  .team{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;padding:6px 4px 26px;margin:0 -4px;scrollbar-width:thin}
+  .member{flex:0 0 clamp(240px,30vw,280px);scroll-snap-align:start}
+  .rail-hint{display:block;height:4px}
+  .svcs{grid-template-columns:1fr;gap:14px}
+  .svc{display:grid;grid-template-columns:76px 1fr;column-gap:28px;align-items:start;padding:30px}
+  .svc .ic{grid-row:span 2;margin:0}
+  .svc h3{margin-bottom:8px}
+}
+@media (max-width:1024px){
+  .menu{display:none}
+  .burger{display:block}
+  .open .menu{display:flex;flex-direction:column;align-items:stretch;position:absolute;left:0;right:0;top:84px;background:#fff;padding:10px 18px 22px;box-shadow:0 30px 40px -30px rgba(35,20,89,.5)}
+  .open .menu a,.open .menu button{font-size:17px;padding:16px 4px}
+  .open .menu>li>a::after,.open .menu>li>button::after{display:none}
+  .open .sub{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;padding:0 0 0 14px}
+  .about,.why{grid-template-columns:1fr}
+  .about-media{max-width:560px}
+  .why-media{max-width:420px;width:100%;margin-inline:auto}
+  .jobs{grid-template-columns:1fr 1fr}
+  .job.feature{grid-column:1/-1}
+  .filter{grid-template-columns:1fr 1fr 1fr}
+  .filter .btn{grid-column:1/-1;min-height:56px}
+  .contact{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .nav{height:72px}
+  .brand img{height:44px}
+  .open .menu{top:72px}
+  .hero .wrap{padding-top:56px;padding-bottom:120px}
+  .hero h1{font-size:clamp(34px,9.6vw,44px);hyphens:auto;-webkit-hyphens:auto}
+  .hero .ctas .btn{flex:1 1 100%}
+  .wave{height:64px}
+  .about-media{padding:0 16px 16px 0}
+  .tabs{display:flex;width:100%}
+  .tab{flex:1;padding:15px 10px}
+  .svc{grid-template-columns:1fr;padding:28px 24px}
+  .svc .ic{grid-row:auto;margin-bottom:20px;width:68px;height:68px}
+  .jobs,.filter,form.grid{grid-template-columns:1fr}
+  .job.feature{display:flex}
+  .job.feature .thumb{aspect-ratio:16/10;height:auto;min-height:0}
+  .job.feature .body{padding:24px 26px 28px}
+  .job.feature h3{font-size:20px}
+  .acc .ans{padding-right:4px}
+  .slide figcaption img{width:68px;height:68px}
+  .fgrid{grid-template-columns:1fr}
+  .fbottom{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .js .rv,.js .hero .a{opacity:1;transform:none}
+  .hero video{display:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<style>.lt{display:inline-flex!important;align-items:center;gap:2px;padding:3px;border-radius:999px;background:rgba(120,120,140,.14);font:700 12.5px/1 system-ui,-apple-system,sans-serif;letter-spacing:.04em}.lt a{padding:8px 11px;border-radius:999px;text-decoration:none;color:inherit;opacity:.75}.lt a:hover{opacity:1}.lt a[aria-current]{background:#140c33;color:#fff;opacity:1}.util .lt{background:rgba(255,255,255,.12)}.util .lt a[aria-current]{background:#17b4cf;color:#120d2e}@media (max-width:1024px){.nav .lt{margin-left:auto;margin-right:10px}}@media (max-width:1100px){.hdr .lt+.btn+.burger,.hdr .burger{margin-left:10px}}</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap nav">
+<a aria-label="Office54 GmbH home" class="brand" href="/office54-preview/v1/en/"><img alt="Office54 GmbH logo" height="242" src="/office54-preview/assets/logo.webp" width="300"/></a>
+<nav aria-label="Main menu">
+<ul class="menu" id="menu">
+<li><a aria-current="page" href="/office54-preview/v1/en/">Home</a></li>
+<li class="has-sub"><button aria-haspopup="true" type="button">About us<span aria-hidden="true" class="caret"></span></button>
+<ul class="sub">
+<li><a href="/office54-preview/v1/en/company-history/">Company history</a></li>
+<li><a href="/office54-preview/v1/en/our-value/">Our company network</a></li>
+<li><a href="/office54-preview/v1/en/our-mission/">Our mission</a></li>
+</ul>
+</li>
+<li><a href="/office54-preview/v1/en/job-list/">Job list</a></li>
+<li><a href="/office54-preview/v1/en/losungen-fur-unternehmen/">Solutions for companies</a></li>
+<li><a href="/office54-preview/v1/en/contact-us/">Contact us</a></li>
+</ul>
+</nav>
+<div aria-label="Language" class="lang lt" role="group"><a href="/office54-preview/v1/" hreflang="de" lang="de">DE</a><a aria-current="true" href="/office54-preview/v1/en/" hreflang="en" lang="en">EN</a></div>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open menu" class="burger" type="button"><span></span><span></span><span></span></button>
+</div>
+</header>
+<main id="main">
+<section aria-label="Office54 GmbH" class="hero">
+<video aria-hidden="true" autoplay="" loop="" muted="" playsinline="" poster="/office54-preview/assets/hero-poster.jpg" preload="auto">
+<source src="/office54-preview/assets/hero.mp4" type="video/mp4"/>
+</video>
+<div class="wrap">
+<div class="hero-copy">
+<p class="welcome a">Welcome to Office54</p>
+<p class="motto a">Experience. Diversity. Reliability.</p>
+<h1 class="a"><span>Your partner for successful</span> <span>staffing services.</span></h1>
+<div class="ctas a">
+<a class="btn btn-cyan" href="/office54-preview/v1/en/job-list/">Apply now<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a>
+<a class="btn btn-line" href="/office54-preview/v1/en/losungen-fur-unternehmen/">Solutions for companies</a>
+</div>
+</div>
+</div>
+<svg aria-hidden="true" class="wave" preserveaspectratio="none" viewbox="0 0 1440 110"><path d="M0 70C210 104 420 112 720 84S1230 18 1440 52V110H0Z" fill="#fff"></path></svg>
+</section>
+<section class="sec" id="about" style="padding-top:calc(var(--sec) * .75)">
+<div class="wrap about">
+<div class="about-media rv"><img alt='Applicants waiting for a job interview in front of a wall reading "Jobs"' height="939" loading="lazy" src="/office54-preview/assets/about-jobs.webp" width="900"/></div>
+<div class="rv">
+<h2>Office54 connects people and companies worldwide</h2>
+<p>We are <strong>Office54 GmbH</strong>, an experienced staffing agency founded in 2021. Our founder brings more than 20 years of industry experience. Our goal is clear: we create added value through tailored solutions in <strong>recruitment</strong>, <strong>temporary staffing</strong> and <strong>direct placement</strong>.</p>
+<p><strong>What makes us unique?</strong> Our <strong>multicultural orientation</strong> and <strong>global reach</strong>. With a team that speaks <strong>Ukrainian</strong>, <strong>Russian</strong>, <strong>English</strong>, <strong>Romanian</strong>, <strong>Polish</strong> and <strong>German</strong>, we specifically cover the <strong>Eastern European market</strong> and recruit <strong>skilled and unskilled workers from all over the world</strong>. This multilingualism allows us to integrate <strong>international talent quickly and efficiently</strong>.</p>
+<p>Our strength lies in <strong>flexibly adapting</strong> to the needs of our <strong>clients</strong> and <strong>employees</strong>. We rely on <strong>satisfied partnerships</strong> because we know: <strong>our clients' success</strong> is also our <strong>success</strong>.</p>
+<a class="btn btn-indigo" href="/office54-preview/v1/en/about-us/">About us<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="team-h" class="sec mist">
+<div class="wrap">
+<div class="head rv"><h2 id="team-h">We make it possible</h2></div>
+<div class="team">
+<article class="member rv"><div class="ph"><img alt="Stefan Grabowski, Managing Director of Office54 GmbH" height="960" loading="lazy" src="/office54-preview/assets/team-stefan.webp" width="640"/></div><div class="info"><h3>Stefan Grabowski</h3><p class="role">Managing Director and visionary</p><p>Your partner for strategic decisions and sustainable solutions.</p></div></article>
+<article class="member rv"><div class="ph"><img alt="Alexandru Cseminschi, finance expert and HR dispatcher" height="960" loading="lazy" src="/office54-preview/assets/team-alexandru.webp" width="640"/></div><div class="info"><h3>Alexandru Cseminschi</h3><p class="role">Finance expert and HR dispatcher</p><p>Connects numbers with people, for successful workforce planning and a sound financial structure.</p></div></article>
+<article class="member rv"><div class="ph"><img alt="Mariia Chykida, HR dispatcher and recruiting expert" height="960" loading="lazy" src="/office54-preview/assets/team-mariia.webp" width="640"/></div><div class="info"><h3>Mariia Chykida</h3><p class="role">HR dispatcher and recruiting expert</p><p>Expert support in placing suitable talent and coordinating staff.</p></div></article>
+<article class="member rv"><div class="ph"><img alt="Sofja Vilne, expert for social media and time management" height="960" loading="lazy" src="/office54-preview/assets/team-sofja.webp" width="640"/></div><div class="info"><h3>Sofja Vilne</h3><p class="role">Expert for social media and time management</p><p>Your contact for innovative communication and efficient time tracking.</p></div></article>
+<article class="member rv"><div class="ph"><img alt="Maryna Krevsun, payroll specialist" height="960" loading="lazy" src="/office54-preview/assets/team-maryna.webp" width="640"/></div><div class="info"><h3>Maryna Krevsun</h3><p class="role">Payroll specialist</p><p>Makes sure everything runs on time and correctly, reliably and competently.</p></div></article>
+</div>
+<div aria-hidden="true" class="rail-hint"></div>
+</div>
+</section>
+<section aria-labelledby="svc-h" class="sec">
+<div class="wrap">
+<div class="head center rv">
+<h2 id="svc-h">Our services for applicants</h2>
+<div aria-label="Target group" class="tabs" role="tablist">
+<button aria-controls="p1" aria-selected="true" class="tab" id="t1" role="tab">For applicants</button>
+<button aria-controls="p2" aria-selected="false" class="tab" id="t2" role="tab" tabindex="-1">For companies</button>
+</div>
+</div>
+<div aria-labelledby="t1" class="panel" id="p1" role="tabpanel">
+<p class="intro">Office54 supports job seekers at every stage of their career. Our services include:</p>
+<div class="svcs">
+<article class="svc rv"><div class="ic"><img alt="" height="128" loading="lazy" src="/office54-preview/assets/ic-jobs.webp" width="128"/></div><h3>Diverse job opportunities: your entry into the German labour market</h3><p>Discover exciting jobs in various industries to start or develop your career in Germany. As a direct employer, we give you access to positions that perfectly match your skills.</p></article>
+<article class="svc rv"><div class="ic"><img alt="" height="128" loading="lazy" src="/office54-preview/assets/ic-uebernahme.webp" width="128"/></div><h3>Employment with takeover: your chance of a permanent position</h3><p>Show your potential and secure the chance to be taken on from a temporary position into a permanent one. Start a long-term career with us.</p></article>
+<article class="svc rv"><div class="ic"><img alt="" height="128" loading="lazy" src="/office54-preview/assets/ic-vermittlung.webp" width="128"/></div><h3>Direct placement: we find the job that suits you</h3><p>We connect you directly with employers who value your qualifications. We place you in positions that match your career goals.</p></article>
+</div>
+</div>
+<div aria-labelledby="t2" class="panel" hidden="" id="p2" role="tabpanel">
+<p class="intro">Office54 offers tailored staffing solutions that increase your company's productivity and efficiency. Our services for companies include:</p>
+<div class="svcs">
+<article class="svc"><div class="ic"><img alt="" height="128" loading="lazy" src="/office54-preview/assets/ic-personal.webp" width="128"/></div><h3>Qualified staff</h3><p>We offer access to a pool of reliable, qualified candidates who are carefully selected to meet your company's specific requirements.</p></article>
+<article class="svc"><div class="ic"><img alt="" height="128" loading="lazy" src="/office54-preview/assets/ic-flexibel.webp" width="128"/></div><h3>Flexible solutions</h3><p>From temporary to permanent placements, our staffing solutions adapt to your changing needs and offer flexibility in workforce management.</p></article>
+<article class="svc"><div class="ic"><img alt="" height="128" loading="lazy" src="/office54-preview/assets/ic-zeit.webp" width="128"/></div><h3>Time and cost efficiency</h3><p>Thanks to our optimized hiring process, companies save valuable time and significantly reduce costs. Our efficient processes let you focus fully on your core tasks.</p></article>
+</div>
+</div>
+</div>
+</section>
+<section aria-label="Job list" class="sec mist">
+<div class="wrap">
+<form action="https://www.office54.de/job-list/" aria-label="Job search" class="filter rv" method="get" role="search">
+<select aria-label="Kategorien"><option>Categories</option><option>Skilled trades</option><option>Warehouse</option><option>Food production</option><option>Mechanics &amp; assembly</option></select>
+<select aria-label="Art"><option>Type</option><option>Freelance</option><option>Full Time</option></select>
+<select aria-label="Standorte"><option>Locations</option><option>Leipzig</option><option>Oldenburg</option><option>Wilhelmshaven</option></select>
+<button class="btn btn-indigo" type="submit">Search</button>
+</form>
+<p class="count">5 results</p>
+<div class="jobs">
+<article class="job feature rv"><a aria-hidden="true" class="thumb" href="https://www.office54.de/job/wordpress/" tabindex="-1"><img alt="" height="720" loading="lazy" src="/office54-preview/assets/job-mechaniker.webp" width="720"/><span class="chips"><span class="chip">Leipzig</span><span class="chip">Oldenburg</span></span></a><div class="body"><h3><a href="https://www.office54.de/job/wordpress/">Mechanic / fitter for agricultural machinery assembly in Leipzig/Oldenburg (m/f/d)</a></h3><p class="ex">Your tasks:🛠️ Assembly of...</p><a class="more" href="https://www.office54.de/job/wordpress/">More information<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a></div></article>
+<article class="job rv"><a aria-hidden="true" class="thumb" href="https://www.office54.de/job/warehouse-worker-2/" tabindex="-1"><img alt="" height="720" loading="lazy" src="/office54-preview/assets/job-kommissionierer.webp" width="720"/><span class="chips"><span class="chip">Oldenburg</span></span></a><div class="body"><h3><a href="https://www.office54.de/job/warehouse-worker-2/">Order picker / warehouse assistant (m/f/d) Oldenburg</a></h3><p class="ex">‼️ Warehouse work in Oldenburg...</p><a class="more" href="https://www.office54.de/job/warehouse-worker-2/">More information<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a></div></article>
+<article class="job rv"><a aria-hidden="true" class="thumb" href="https://www.office54.de/job/fisch-wilhelmshaven/" tabindex="-1"><img alt="" height="400" loading="lazy" src="/office54-preview/assets/job-fisch.webp" width="600"/><span class="chips"><span class="chip">Oldenburg</span><span class="chip">Wilhelmshaven</span></span></a><div class="body"><h3><a href="https://www.office54.de/job/fisch-wilhelmshaven/">Fish production worker in the Wilhelmshaven region (m/f/d)</a></h3><p class="ex">‼️ Worker in the...</p><a class="more" href="https://www.office54.de/job/fisch-wilhelmshaven/">More information<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a></div></article>
+<article class="job rv"><a aria-hidden="true" class="thumb" href="https://www.office54.de/job/schweisser/" tabindex="-1"><img alt="" height="400" loading="lazy" src="/office54-preview/assets/job-schweisser.webp" width="600"/><span class="chips"><span class="chip">Oldenburg</span></span></a><div class="body"><h3><a href="https://www.office54.de/job/schweisser/">MAG welder (m/f/d)</a></h3><p class="ex">‼️ MAG welder (m/f/d)...</p><a class="more" href="https://www.office54.de/job/schweisser/">More information<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a></div></article>
+<article class="job rv"><a aria-hidden="true" class="thumb" href="https://www.office54.de/job/php-developer-2/" tabindex="-1"><img alt="" height="400" loading="lazy" src="/office54-preview/assets/job-stapler.webp" width="600"/><span class="chips"><span class="chip">Oldenburg</span></span></a><div class="body"><h3><a href="https://www.office54.de/job/php-developer-2/">Forklift driver (m/f/d), counterbalance &amp; reach truck</a></h3><p class="ex">‼️ Forklift driver (m/f/d)...</p><a class="more" href="https://www.office54.de/job/php-developer-2/">More information<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a></div></article>
+</div>
+<div class="center-cta"><a class="btn btn-indigo" href="/office54-preview/v1/en/job-list/">Show all jobs<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a></div>
+</div>
+</section>
+<section aria-labelledby="why-h" class="sec">
+<div class="wrap">
+<div class="head center rv">
+<h2 id="why-h">Why Office54 GmbH?</h2>
+<p>At Office54 GmbH, we offer both companies and applicants far more than classic staffing services. Here are four reasons why we are the ideal partner for your career and staffing needs:</p>
+</div>
+<div class="why">
+<div class="why-media rv"><img alt="Forklift in front of a globe as a symbol of international recruitment" height="707" loading="lazy" src="/office54-preview/assets/warum.webp" width="760"/></div>
+<div class="acc rv">
+<details open=""><summary>Tailored all-in-one solutions<span aria-hidden="true" class="pm"></span></summary><div class="ans"><p>We offer specialized recruiting solutions for companies and attractive job offers for applicants, with a special focus on skilled workers and helpers from Eastern Europe. We help you find the right position or the right staff.</p></div></details>
+<details><summary>Multilingual all-round support<span aria-hidden="true" class="pm"></span></summary><div class="ans"><p>Our multilingual team supports companies and applicants in six languages: German, English, Russian, Ukrainian, Polish and Romanian. We accompany applicants from placement through to administrative matters such as residence permits, health insurance and bank accounts.</p></div></details>
+<details><summary>Accommodation and transport<span aria-hidden="true" class="pm"></span></summary><div class="ans"><p>On request, we offer applicants comfortable accommodation and daily transport to the workplace. This makes it easier to start the new job and ensures a stress-free journey to work.</p></div></details>
+<details><summary>In-house forklift school<span aria-hidden="true" class="pm"></span></summary><div class="ans"><p>Through our in-house forklift driver training, we give applicants the opportunity to expand their qualifications and improve their chances on the job market. Companies benefit from well-trained employees who are ready to work.</p></div></details>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="tst-h" class="sec tst">
+<span aria-hidden="true" class="ring r1"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 48 48"><path d="M30 8v28"></path><path d="M30 36h12"></path><path d="M30 30h8"></path><path d="M8 34V20h8l4-8h6v24"></path><path d="M8 34h22"></path><circle cx="13" cy="37" r="4"></circle><circle cx="25" cy="37" r="4"></circle><path d="M16 20v-6"></path></svg></span><span aria-hidden="true" class="ring r2"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 48 48"><path d="M8 22 24 9l16 13"></path><path d="M12 19v20h24V19"></path><path d="M20 39V28h8v11"></path></svg></span><span aria-hidden="true" class="ring r3"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 48 48"><rect height="28" rx="6" width="30" x="9" y="8"></rect><path d="M9 22h30"></path><path d="M15 8v14M33 8v14"></path><path d="M14 36v4M34 36v4"></path><circle cx="16" cy="29" r="1.6"></circle><circle cx="32" cy="29" r="1.6"></circle></svg></span><span aria-hidden="true" class="ring r4"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 48 48"><path d="M6 12a4 4 0 0 1 4-4h18a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H16l-6 5v-5a4 4 0 0 1-4-4z"></path><path d="M36 18h2a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4v5l-6-5H22a4 4 0 0 1-4-4v-2"></path><path d="M13 15h12M13 20h8"></path></svg></span><span aria-hidden="true" class="ring r5"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 48 48"><path d="M6 34h36"></path><path d="M10 34v-3a14 14 0 0 1 28 0v3"></path><path d="M20 18v9M28 18v9"></path><path d="M20 18a14 14 0 0 1 8 0"></path></svg></span>
+<div class="wrap">
+<div class="head center rv"><h2 id="tst-h">Testimonials</h2></div>
+<div class="slider rv">
+<div aria-live="polite" class="slides">
+<figure class="slide on">
+<blockquote>Based on our positive experience, we recommend Office54 GmbH as a reliable partner for temporary staffing and direct placement.</blockquote>
+<figcaption><img alt="Getränke Essmann logo" height="300" loading="lazy" src="/office54-preview/assets/t-jens.webp" width="300"/><div><div class="who">Jens Weber</div><div class="what">Getränke Essmann · Head of warehouse logistics</div></div></figcaption>
+</figure>
+<figure class="slide">
+<blockquote>Office54 GmbH has made a significant contribution to helping us reach our production targets while maintaining high quality.</blockquote>
+<figcaption><img alt="OTTE Beton logo" height="300" loading="lazy" src="/office54-preview/assets/t-udo.webp" width="300"/><div><div class="who">Udo Eveslage</div><div class="what">Managing Director</div></div></figcaption>
+</figure>
+</div>
+<div class="sl-nav">
+<button aria-label="Previous quote" class="sl-btn" data-dir="-1" type="button"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 18 18"><path d="M15 9H3M8 4 3 9l5 5"></path></svg></button>
+<div class="dots"><button aria-label="Quote 1" class="dot on" type="button"></button><button aria-label="Quote 2" class="dot" type="button"></button></div>
+<button aria-label="Next quote" class="sl-btn" data-dir="1" type="button"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></button>
+</div>
+</div>
+<div class="tst-ctas rv"><a class="btn btn-cyan" href="/office54-preview/v1/en/job-list/">Applicant area</a> <a class="btn btn-line" href="/office54-preview/v1/en/losungen-fur-unternehmen/">Company area</a></div>
+</div>
+</section>
+<section aria-labelledby="contact-h" class="contact-sec">
+<div class="wrap">
+<div class="contact rv">
+<div>
+<h2 id="contact-h">Write to us</h2>
+<p>We would love to hear from you! Whether you have a question, need help or simply want to share your feedback, just fill out the form below.</p>
+<ul class="cinfo">
+<li><span aria-hidden="true" class="ci" style="background:#e6f6f9;color:#0b7f93"><svg fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"></path></svg></span><div><div class="t">Call us</div><a href="tel:+4917661513250">+49 176 61513250</a></div></li>
+<li><span aria-hidden="true" class="ci" style="background:#fff0e9;color:#d9592a"><svg fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><rect height="14" rx="2.5" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path></svg></span><div><div class="t">Send us an email</div><a href="mailto:info@office54.de">info@office54.de</a></div></li>
+<li><span aria-hidden="true" class="ci" style="background:#e8f8f1;color:#1d9a6f"><svg fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg></span><div><div class="t">Our offices</div><address style="font-style:normal">Irisweg 30, 26133 Oldenburg<br/>Haselünner Str. 13, 49844 Bawinkel</address></div></li>
+</ul>
+</div>
+<form action="#" class="grid" method="post" onsubmit="return false">
+<div><label for="f-name">Full name</label><input autocomplete="name" id="f-name" name="name" placeholder="Full name" required=""/></div>
+<div><label for="f-mail">Email address</label><input autocomplete="email" id="f-mail" name="email" placeholder="example@mail.com" required="" type="email"/></div>
+<div><label for="f-tel">Phone number</label><input autocomplete="tel" id="f-tel" name="tel" placeholder="Phone number" type="tel"/></div>
+<div><label for="f-topic">Topic</label><input id="f-topic" name="topic" placeholder="Topic"/></div>
+<div class="full"><label for="f-msg">Tell us how we can help</label><textarea id="f-msg" name="msg" placeholder="Tell us how we can help"></textarea></div>
+<div class="full"><button class="btn btn-cyan" type="submit">Submit<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></button></div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="fgrid">
+<div>
+<a aria-label="Office54 GmbH home" class="flogo" href="/office54-preview/v1/en/"><img alt="Office54 GmbH logo" height="242" loading="lazy" src="/office54-preview/assets/logo.webp" width="300"/></a>
+<p>Our goal is to connect job seekers with high-quality, curated job offers and to help employers find top talent.</p>
+</div>
+<div><h3>Navigation</h3><ul><li><a href="/office54-preview/v1/en/job-list/">Applicant area</a></li><li><a href="/office54-preview/v1/en/about-us/">About us</a></li><li><a href="/office54-preview/v1/en/contact-us/">Contact us</a></li></ul></div>
+<div><h3>Company</h3><ul><li><a href="/office54-preview/v1/datenschutz/">Privacy policy</a></li><li><a href="/office54-preview/v1/impressum/">Legal notice</a></li></ul></div>
+<div><h3>Contact</h3><ul><li><a href="tel:+4917661513250">+49 176 61513250</a></li><li><a href="mailto:info@office54.de">info@office54.de</a></li><li>Haselünner Str. 13,<br/>49844 Bawinkel</li></ul></div>
+</div>
+<div class="fbottom">
+<span>Copyright © 2024 office54. All Rights Reserved.</span>
+<div class="social">
+<a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61563513421556" rel="noopener"><svg viewbox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.2V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"></path></svg></a>
+<a aria-label="Instagram" href="https://www.instagram.com/office54_germany" rel="noopener"><svg viewbox="0 0 24 24"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21.9 7c-.1-1.6-.4-3-1.6-4.2S17.6 1.2 16 1.1C14.4 1 9.6 1 8 1.1 6.4 1.2 5 1.5 3.8 2.7S2.2 5.4 2.1 7C2 8.6 2 13.4 2.1 15c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.4.1-8zm-2.1 9.8a3 3 0 0 1-1.7 1.7c-1.2.5-4 .4-5.3.4s-4.1.1-5.3-.4a3 3 0 0 1-1.7-1.7c-.5-1.2-.4-4-.4-5.3s-.1-4.1.4-5.3a3 3 0 0 1 1.7-1.7c1.2-.5 4-.4 5.3-.4s4.1-.1 5.3.4a3 3 0 0 1 1.7 1.7c.5 1.2.4 4 .4 5.3s.1 4.1-.4 5.3z"></path></svg></a>
+<a aria-label="LinkedIn" href="https://www.facebook.com/profile.php?id=61563513421556" rel="noopener"><svg viewbox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zm7 0h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V21h-4z"></path></svg></a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+(() => {
+  const header = document.querySelector('.site-header');
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const open = header.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  const onScroll = () => header.classList.toggle('scrolled', scrollY > 4);
+  addEventListener('scroll', onScroll, {passive: true}); onScroll();
+
+  const tabs = [...document.querySelectorAll('.tab')];
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => { const on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; });
+  }));
+
+  const slides = [...document.querySelectorAll('.slide')], dots = [...document.querySelectorAll('.dot')];
+  let i = 0, timer;
+  const show = n => { i = (n + slides.length) % slides.length; slides.forEach((s, k) => s.classList.toggle('on', k === i)); dots.forEach((d, k) => d.classList.toggle('on', k === i)); };
+  const auto = () => { clearInterval(timer); timer = setInterval(() => show(i + 1), 7000); };
+  document.querySelectorAll('.sl-btn').forEach(b => b.addEventListener('click', () => { show(i + +b.dataset.dir); auto(); }));
+  dots.forEach((d, k) => d.addEventListener('click', () => { show(k); auto(); }));
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) auto();
+
+  const els = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const sibs = [...e.target.parentElement.children].filter(n => n.classList.contains('rv'));
+      e.target.style.transitionDelay = Math.min(sibs.indexOf(e.target), 4) * 80 + 'ms';
+      e.target.classList.add('in'); io.unobserve(e.target);
+    }), {rootMargin: '0px 0px -8% 0px', threshold: .05});
+    els.forEach(el => io.observe(el));
+  } else els.forEach(el => el.classList.add('in'));
+})();
+</script>
+<style>.pv-badge{position:fixed;left:14px;bottom:14px;z-index:9999;font:600 13px/1 system-ui,sans-serif;background:#140c33;color:#fff;padding:10px 14px;border-radius:999px;box-shadow:0 8px 24px -10px rgba(0,0,0,.5)}.pv-badge a{color:#7fdcec;text-decoration:none;margin-left:8px}</style><div class="pv-badge">Variant 1 · Preview<a href="/office54-preview/">all variants</a></div><script>document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();alert('Vorschau: Das Formular ist in der Vorschau deaktiviert.')},true));</script></body>
+</html>
