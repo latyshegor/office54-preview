@@ -77,7 +77,8 @@ h1,h2,h3{overflow-wrap:break-word;font-family:Geologica,Onest,sans-serif;font-we
 .rings{position:absolute;left:clamp(28px,4.5vw,64px);top:clamp(28px,4.5vw,64px);width:min(170px,12vw);aspect-ratio:1;z-index:1;pointer-events:none}
 .rings circle{fill:none;stroke-linecap:round}
 .langs{display:flex;flex-wrap:wrap;gap:6px;margin:-8px 0 30px}
-.langs span{font:600 12.5px/1 Onest,sans-serif;padding:7px 10px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);color:#fff}
+.langs span,.langs a{font:600 12.5px/1 Onest,sans-serif;padding:7px 10px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);color:#fff;text-decoration:none}
+.langs a{transition:background .25s,color .25s}.langs a:hover{background:#fff;color:var(--night)}
 
 /* facts line */
 .facts{border-bottom:1px solid var(--line)}

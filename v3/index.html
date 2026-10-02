@@ -81,7 +81,8 @@ h1,h2,h3{overflow-wrap:break-word;font-family:Geologica,Onest,sans-serif;font-we
 .rings{position:absolute;left:clamp(28px,4.5vw,64px);top:clamp(28px,4.5vw,64px);width:min(170px,12vw);aspect-ratio:1;z-index:1;pointer-events:none}
 .rings circle{fill:none;stroke-linecap:round}
 .langs{display:flex;flex-wrap:wrap;gap:6px;margin:-8px 0 30px}
-.langs span{font:600 12.5px/1 Onest,sans-serif;padding:7px 10px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);color:#fff}
+.langs span,.langs a{font:600 12.5px/1 Onest,sans-serif;padding:7px 10px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);color:#fff;text-decoration:none}
+.langs a{transition:background .25s,color .25s}.langs a:hover{background:#fff;color:var(--night)}
 
 /* facts line */
 .facts{border-bottom:1px solid var(--line)}
@@ -254,7 +255,7 @@ textarea{min-height:120px;resize:vertical}
       <span class="eyebrow">Für Bewerber</span>
       <h1>Arbeit in Deutschland. In Ihrer Sprache.</h1>
       <p>Jobs in Lager, Produktion und Handwerk in Oldenburg, Wilhelmshaven und Leipzig. Unterkunft und Transport auf Wunsch.</p>
-      <div class="langs" aria-label="Beratung in sechs Sprachen"><span lang="de">Deutsch</span><span lang="uk">Українська</span><span lang="ru">Русский</span><span lang="pl">Polski</span><span lang="ro">Română</span><span lang="en">English</span></div>
+      <div class="langs" aria-label="Beratung in sechs Sprachen"><span lang="de">Deutsch</span><a href="/office54-preview/v3/uk/" hreflang="uk" lang="uk">Українська</a><a href="/office54-preview/v3/ru/" hreflang="ru" lang="ru">Русский</a><a href="/office54-preview/v3/pl/" hreflang="pl" lang="pl">Polski</a><a href="/office54-preview/v3/ro/" hreflang="ro" lang="ro">Română</a><span lang="en">English</span></div>
       <div class="acts"><a class="btn btn-cyan" href="#jobs">Offene Jobs ansehen <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-ghost" href="#kontakt">Bewerben</a></div>
       <div class="quick"><span>Direkt bewerben per</span><a href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a><a href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a></div>
     </div>
