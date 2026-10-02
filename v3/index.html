@@ -11,7 +11,7 @@ the logo's concentric arcs as the only ornament. Copy is new German, written onl
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Office54 GmbH – Arbeit und Personal in Deutschland</title>
 <meta name="description" content="Office54 GmbH: Jobs in Lager, Produktion und Handwerk mit Beratung in sechs Sprachen. Zeitarbeit und Direktvermittlung für Unternehmen.">
-<link rel="icon" href="../assets/logo.webp">
+<link rel="icon" href="/office54-preview/assets/logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 Onest,s
 img,video{display:block;max-width:100%}
 a{color:inherit}
 p{margin:0 0 1em;text-wrap:pretty}
-h1,h2,h3{overflow-wrap:break-word;hyphens:auto;font-family:Geologica,Onest,sans-serif;font-weight:700;letter-spacing:-.035em;line-height:1.02;margin:0;text-wrap:balance}
+h1,h2,h3{overflow-wrap:break-word;font-family:Geologica,Onest,sans-serif;font-weight:700;letter-spacing:-.035em;line-height:1.02;margin:0;text-wrap:balance}
 .wrap{max-width:var(--wrap);margin:0 auto;padding-inline:clamp(18px,4vw,48px)}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 13px/1 Onest,sans-serif;letter-spacing:.14em;text-transform:uppercase}
 .eyebrow svg{width:18px;height:18px}
@@ -211,6 +211,7 @@ textarea{min-height:120px;resize:vertical}
 @media (max-width:1100px){.facts ul{justify-content:flex-start}.facts li{white-space:normal}}
 @media (max-width:600px){
   body{font-size:16px}
+  h1,h2,h3{hyphens:auto}
   .door{min-height:0;padding:44px 20px 40px}
   .door:first-child{min-height:72svh}
   .track{grid-template-columns:1fr}.track li::after{display:none}
@@ -227,7 +228,7 @@ textarea{min-height:120px;resize:vertical}
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
 <header class="hdr"><div class="wrap">
-  <a class="brand" href="https://www.office54.de/" aria-label="Office54 GmbH Startseite"><img src="../assets/logo.webp" width="300" height="242" alt="Office54 GmbH Logo"></a>
+  <a class="brand" href="https://www.office54.de/" aria-label="Office54 GmbH Startseite"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Office54 GmbH Logo"></a>
   <nav aria-label="Hauptmenü"><ul class="menu" id="menu">
     <li><a href="#jobs">Jobs</a></li>
     <li><a href="#unternehmen">Für Unternehmen</a></li>
@@ -241,7 +242,7 @@ textarea{min-height:120px;resize:vertical}
 
 <main id="main">
   <section class="doors" aria-label="Office54 GmbH">
-    <video class="scene" autoplay muted loop playsinline preload="auto" poster="../assets/hero-poster.jpg" aria-hidden="true"><source src="../assets/hero.mp4" type="video/mp4"></video>
+    <video class="scene" autoplay muted loop playsinline preload="auto" poster="/office54-preview/assets/hero-poster.jpg" aria-hidden="true"><source src="/office54-preview/assets/hero.mp4" type="video/mp4"></video>
     <div class="door work">
       <span class="eyebrow">Für Bewerber</span>
       <h1>Arbeit in Deutschland. In Ihrer Sprache.</h1>
@@ -272,11 +273,11 @@ textarea{min-height:120px;resize:vertical}
   <section class="sec" id="jobs" aria-labelledby="jobs-h"><div class="wrap">
     <div class="head rv"><h2 id="jobs-h">Gerade offen</h2><p>Stundenlöhne brutto, plus Zuschläge für Nacht, Sonntag und Feiertage. Vermittlung für Bewerber kostenlos.</p></div>
     <ul class="board">
-      <li class="row rv"><img src="../assets/job-fisch.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/fisch-wilhelmshaven/">Mitarbeiter in der Fischproduktion (m/w/d)</a></h3><div class="where">Region Wilhelmshaven</div></div><div class="tags"><span class="tag yes">Ohne Deutschkenntnisse</span><span class="tag">Keine Erfahrung nötig</span><span class="tag">Unterkunft möglich</span></div><div class="pay">14,53 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
-      <li class="row rv"><img src="../assets/job-kommissionierer.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/warehouse-worker-2/">Kommissionierer/Lagerhelfer (m/w/d)</a></h3><div class="where">Oldenburg</div></div><div class="tags"><span class="tag yes">Leistungsprämie bis 6,50 €/h</span><span class="tag">Unterkunft möglich</span></div><div class="pay">ab 14,50 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
-      <li class="row rv"><img src="../assets/job-schweisser.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/schweisser/">MAG-Schweißer (m/w/d)</a></h3><div class="where">Hude bei Oldenburg</div></div><div class="tags"><span class="tag yes">Übernahmechance</span><span class="tag">Unterkunft möglich</span></div><div class="pay">ab 18,43 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
-      <li class="row rv"><img src="../assets/job-stapler.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/php-developer-2/">Staplerfahrer (m/w/d)</a></h3><div class="where">Oldenburg und Hude</div></div><div class="tags"><span class="tag">Staplerschein nötig</span><span class="tag">Unterkunft möglich</span></div><div class="pay">ab 17,52 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
-      <li class="row rv"><img src="../assets/job-mechaniker.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/wordpress/">Mechaniker / Monteur für Landmaschinen (m/w/d)</a></h3><div class="where">Leipzig</div></div><div class="tags"><span class="tag">Deutsch B1 von Vorteil</span><span class="tag">Unterkunft möglich</span></div><div class="pay">16–17 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+      <li class="row rv"><img src="/office54-preview/assets/job-fisch.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/fisch-wilhelmshaven/">Mitarbeiter in der Fischproduktion (m/w/d)</a></h3><div class="where">Region Wilhelmshaven</div></div><div class="tags"><span class="tag yes">Ohne Deutschkenntnisse</span><span class="tag">Keine Erfahrung nötig</span><span class="tag">Unterkunft möglich</span></div><div class="pay">14,53 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+      <li class="row rv"><img src="/office54-preview/assets/job-kommissionierer.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/warehouse-worker-2/">Kommissionierer/Lagerhelfer (m/w/d)</a></h3><div class="where">Oldenburg</div></div><div class="tags"><span class="tag yes">Leistungsprämie bis 6,50 €/h</span><span class="tag">Unterkunft möglich</span></div><div class="pay">ab 14,50 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+      <li class="row rv"><img src="/office54-preview/assets/job-schweisser.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/schweisser/">MAG-Schweißer (m/w/d)</a></h3><div class="where">Hude bei Oldenburg</div></div><div class="tags"><span class="tag yes">Übernahmechance</span><span class="tag">Unterkunft möglich</span></div><div class="pay">ab 18,43 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+      <li class="row rv"><img src="/office54-preview/assets/job-stapler.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/php-developer-2/">Staplerfahrer (m/w/d)</a></h3><div class="where">Oldenburg und Hude</div></div><div class="tags"><span class="tag">Staplerschein nötig</span><span class="tag">Unterkunft möglich</span></div><div class="pay">ab 17,52 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+      <li class="row rv"><img src="/office54-preview/assets/job-mechaniker.webp" alt="" loading="lazy"><div><h3><a href="https://www.office54.de/job/wordpress/">Mechaniker / Monteur für Landmaschinen (m/w/d)</a></h3><div class="where">Leipzig</div></div><div class="tags"><span class="tag">Deutsch B1 von Vorteil</span><span class="tag">Unterkunft möglich</span></div><div class="pay">16–17 €<small>pro Stunde</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
     </ul>
     <div class="board-foot rv"><span>Nichts Passendes dabei? Rufen Sie an, nicht alle Stellen stehen online.</span><a class="btn btn-night" href="https://www.office54.de/job-list/">Alle Jobs <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></div>
   </div></section>
@@ -319,17 +320,17 @@ textarea{min-height:120px;resize:vertical}
   <section class="sec team" aria-labelledby="team-h"><div class="wrap">
     <div class="head rv"><h2 id="team-h">Ihre Ansprechpartner</h2><p>Ein Team, das die Sprache Ihrer Mitarbeiter spricht.</p></div>
     <div class="people">
-      <article class="person rv"><div class="ph"><img src="../assets/team-stefan.webp" alt="Stefan Grabowski" loading="lazy"></div><h3>Stefan Grabowski</h3><p>Geschäftsführer</p></article>
-      <article class="person rv"><div class="ph"><img src="../assets/team-alexandru.webp" alt="Alexandru Cseminschi" loading="lazy"></div><h3>Alexandru Cseminschi</h3><p>Finanzexperte und HR-Disponent</p></article>
-      <article class="person rv"><div class="ph"><img src="../assets/team-mariia.webp" alt="Mariia Chykida" loading="lazy"></div><h3>Mariia Chykida</h3><p>HR-Disponentin und Recruiting</p></article>
-      <article class="person rv"><div class="ph"><img src="../assets/team-sofja.webp" alt="Sofja Vilne" loading="lazy"></div><h3>Sofja Vilne</h3><p>Social Media und Zeitmanagement</p></article>
-      <article class="person rv"><div class="ph"><img src="../assets/team-maryna.webp" alt="Maryna Krevsun" loading="lazy"></div><h3>Maryna Krevsun</h3><p>Lohn- und Gehaltsabrechnung</p></article>
+      <article class="person rv"><div class="ph"><img src="/office54-preview/assets/team-stefan.webp" alt="Stefan Grabowski" loading="lazy"></div><h3>Stefan Grabowski</h3><p>Geschäftsführer</p></article>
+      <article class="person rv"><div class="ph"><img src="/office54-preview/assets/team-alexandru.webp" alt="Alexandru Cseminschi" loading="lazy"></div><h3>Alexandru Cseminschi</h3><p>Finanzexperte und HR-Disponent</p></article>
+      <article class="person rv"><div class="ph"><img src="/office54-preview/assets/team-mariia.webp" alt="Mariia Chykida" loading="lazy"></div><h3>Mariia Chykida</h3><p>HR-Disponentin und Recruiting</p></article>
+      <article class="person rv"><div class="ph"><img src="/office54-preview/assets/team-sofja.webp" alt="Sofja Vilne" loading="lazy"></div><h3>Sofja Vilne</h3><p>Social Media und Zeitmanagement</p></article>
+      <article class="person rv"><div class="ph"><img src="/office54-preview/assets/team-maryna.webp" alt="Maryna Krevsun" loading="lazy"></div><h3>Maryna Krevsun</h3><p>Lohn- und Gehaltsabrechnung</p></article>
     </div>
   </div></section>
 
   <section class="sec" style="padding-top:0" aria-label="Erfahrungsberichte"><div class="wrap quotes">
-    <figure class="quote rv"><blockquote>Basierend auf unserer positiven Erfahrung empfehlen wir die Office54 GmbH als zuverlässigen Partner im Bereich Arbeitnehmerüberlassung und Direktvermittlung.</blockquote><figcaption><img src="../assets/t-jens.webp" alt="Getränke Essmann Logo" loading="lazy"><div><div class="who">Jens Weber</div><div class="what">Getränke Essmann, Leiter Lagerlogistik</div></div></figcaption></figure>
-    <figure class="quote rv"><blockquote>Die Office54 GmbH hat einen wesentlichen Beitrag dazu geleistet, dass wir unsere Produktionsziele erreichen und dabei eine hohe Qualität aufrechterhalten konnten.</blockquote><figcaption><img src="../assets/t-udo.webp" alt="OTTE Beton Logo" loading="lazy"><div><div class="who">Udo Eveslage</div><div class="what">OTTE Beton, Geschäftsführer</div></div></figcaption></figure>
+    <figure class="quote rv"><blockquote>Basierend auf unserer positiven Erfahrung empfehlen wir die Office54 GmbH als zuverlässigen Partner im Bereich Arbeitnehmerüberlassung und Direktvermittlung.</blockquote><figcaption><img src="/office54-preview/assets/t-jens.webp" alt="Getränke Essmann Logo" loading="lazy"><div><div class="who">Jens Weber</div><div class="what">Getränke Essmann, Leiter Lagerlogistik</div></div></figcaption></figure>
+    <figure class="quote rv"><blockquote>Die Office54 GmbH hat einen wesentlichen Beitrag dazu geleistet, dass wir unsere Produktionsziele erreichen und dabei eine hohe Qualität aufrechterhalten konnten.</blockquote><figcaption><img src="/office54-preview/assets/t-udo.webp" alt="OTTE Beton Logo" loading="lazy"><div><div class="who">Udo Eveslage</div><div class="what">OTTE Beton, Geschäftsführer</div></div></figcaption></figure>
   </div></section>
 
   <section class="sec contact" id="kontakt" aria-labelledby="contact-h"><div class="wrap grid">
@@ -355,7 +356,7 @@ textarea{min-height:120px;resize:vertical}
 </main>
 
 <footer class="foot"><div class="wrap">
-  <a class="brand" href="https://www.office54.de/" aria-label="Office54 GmbH Startseite"><img src="../assets/logo.webp" width="300" height="242" alt="Office54 GmbH Logo" loading="lazy"></a>
+  <a class="brand" href="https://www.office54.de/" aria-label="Office54 GmbH Startseite"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Office54 GmbH Logo" loading="lazy"></a>
   <nav aria-label="Rechtliches"><a href="https://www.office54.de/impressum/">Impressum</a><a href="https://www.office54.de/datenschutz/">Datenschutz</a><a href="https://www.facebook.com/profile.php?id=61563513421556">Facebook</a><a href="https://www.instagram.com/office54_germany">Instagram</a></nav>
   <span>© 2024 Office54 GmbH</span>
 </div></footer>
