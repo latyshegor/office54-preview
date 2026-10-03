@@ -1,19 +1,13 @@
 <!doctype html>
-<!--
-Variant 4 (homepage only, 03.10, Egor: "from scratch, no video, 10/10").
-THESIS: the agency is a timetable to a job in Germany. The page is a station: a departures board of real vacancies, a transit line of four stops, people at the counter. Refuses the category default (stock hero photo + three service cards).
-OWN-WORLD: aluminium-grey signage ground, night-indigo board panels with split-flap lettering, signal cyan from the logo for lines and live data; Sofia Sans in three widths (extra-condensed for signage, semi-condensed on the board, regular for reading). No video, no stock.
-STORY: applicant sees jobs with city and hourly wage at once and can write in their language; employer flips the board to the five staffing models and asks for staff.
-FIRST VIEWPORT: left the headline and the role switch (Arbeit / Personal), right the live board (Berlin clock, 5 rows), primary action under the headline.
-FORM: departures board + U-Bahn line diagram, own direction (no seed dealt).
--->
-<html lang="de">
+<html lang="en">
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Office54 GmbH – Arbeit und Personal in Deutschland</title>
-<meta name="description" content="Office54 GmbH: Jobs in Lager, Produktion und Handwerk mit Beratung in sechs Sprachen. Zeitarbeit und Direktvermittlung für Unternehmen.">
+<title>Contact – Office54 GmbH Oldenburg</title>
+<meta name="description" content="Office54 GmbH, Irisweg 30, 26133 Oldenburg. Phone +49 176 61513250, info@office54.de. Advice in German, Russian, Ukrainian, Polish and Romanian.">
+<link rel="canonical" href="/office54-preview/v4/en/contact-us/">
+<link rel="alternate" hreflang="de" href="/office54-preview/v4/contact-us/"><link rel="alternate" hreflang="en" href="/office54-preview/v4/en/contact-us/">
 <link rel="icon" href="/office54-preview/assets/logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -295,163 +289,150 @@ textarea{min-height:120px;resize:vertical}
 }
 @media (pointer:coarse){.lsw a,.langs a{min-height:44px;display:inline-flex;align-items:center}.route-link,.foot nav a{display:inline-block;padding:12px 0}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}.track::after{transform:none}}
+
+/* inner pages */
+.menu a[aria-current=page]{background:var(--night);color:#fff}
+.phero{padding-block:clamp(36px,5vw,72px) clamp(52px,6vw,92px);border-bottom:1px solid var(--line)}
+.phero .grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(32px,5vw,80px);align-items:end}
+.phero .kicker{color:var(--cyan-ink);margin-bottom:22px}
+.phero h1{font-size:clamp(50px,6.6vw,96px);margin-bottom:24px}
+.phero .lead{font-size:clamp(17.5px,1.35vw,19.5px);color:var(--muted);max-width:36em;margin:0}
+.phero .acts{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:30px}
+.phero .quick{margin-top:18px}
+.dir{background:var(--night);color:#fff;border-radius:14px;padding:6px 0 8px;box-shadow:0 30px 60px -34px rgba(12,7,34,.6)}
+.dir .dt{display:block;padding:14px 20px 10px;font:700 12.5px/1 var(--board);letter-spacing:.09em;text-transform:uppercase;color:var(--cyan-soft)}
+.dir ul{list-style:none;margin:0;padding:0}
+.dir li{border-top:1px solid rgba(255,255,255,.1)}
+.dir a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:54px;padding:8px 20px;font:700 18px/1.15 var(--board);text-decoration:none;color:#fff;transition:background .25s}
+.dir a:hover{background:rgba(127,220,236,.1)}
+.dir a span{flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:7px;background:var(--cyan);color:var(--night)}
+.dir a span svg{width:17px;height:17px}
+.head2{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:clamp(32px,4vw,52px)}
+.head2 h2{font-size:clamp(42px,5.2vw,78px);max-width:12em}
+.head2 p{max-width:26em;color:var(--muted);margin:0}
+.board.wide .cols,.board.wide .brow{grid-template-columns:12rem minmax(0,1.3fr) minmax(0,1fr) 8rem}
+.board.two .cols,.board.two .brow{grid-template-columns:minmax(0,1fr) auto}
+.board.two .brow .job{font-size:clamp(17px,1.4vw,20px)}
+.board.two .brow .note{text-align:right;color:var(--cyan-soft)}
+.brow .x{grid-column:2/4;margin-top:-4px;color:#b8b2d8;font:500 15px/1.5 var(--text);white-space:normal}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chips button{min-height:44px;padding:0 16px;border:0;border-radius:9px;background:#fff;box-shadow:inset 0 0 0 1.5px var(--line);font:700 15.5px/1 var(--board);color:var(--ink);cursor:pointer;transition:background .25s,color .25s}
+.chips button:hover{background:var(--alu-2)}
+.chips button[aria-pressed=true]{background:var(--night);color:#fff;box-shadow:none}
+.found{margin:0 0 14px;font:600 15px/1 var(--board);color:var(--muted)}
+.brows li[hidden]{display:none}
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,6vw,96px);align-items:start}
+.split > *{min-width:0}
+.split > .lead{position:sticky;top:110px}
+.split h2{font-size:clamp(42px,5vw,76px);margin-bottom:18px}
+.split .lead p{color:var(--muted);max-width:28em}
+.faq{border-top:3px solid var(--night)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:66px;padding:14px 0;font:700 clamp(19px,1.6vw,22px)/1.25 var(--board);cursor:pointer;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:36px;height:36px;border-radius:8px;display:grid;place-items:center;background:var(--night);color:#fff;font:500 22px/1 var(--text);transition:transform .4s var(--out),background .3s,color .3s}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--cyan);color:var(--night)}
+.faq details p{margin:0 0 22px;max-width:46em;color:var(--muted)}
+.vals{list-style:none;margin:0;padding:0;border-top:3px solid var(--night)}
+.vals li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:8px 32px;padding:24px 0;border-bottom:1px solid var(--line)}
+.vals h3{font-size:clamp(26px,2.3vw,34px);line-height:.98}
+.vals p{margin:0;color:var(--muted)}
+.inhouse{display:grid;grid-template-columns:1fr 1fr;gap:16px;list-style:none;margin:0;padding:0}
+.inhouse li{display:flex;flex-direction:column;background:var(--white);border-radius:14px;overflow:hidden}
+.inhouse .tag{background:var(--night);color:var(--cyan-soft);font:700 13px/1 var(--board);letter-spacing:.08em;text-transform:uppercase;padding:14px 22px}
+.inhouse h3{font-size:clamp(28px,2.4vw,36px);padding:20px 22px 10px}
+.inhouse p{margin:0;padding:0 22px 24px;color:var(--muted)}
+.chron{position:relative;list-style:none;margin:0;padding:0}
+.chron::before{content:"";position:absolute;left:13px;top:20px;bottom:44px;width:10px;border-radius:5px;background:var(--cyan)}
+.chron li{position:relative;padding:0 0 40px 66px}
+.chron li::before{content:"";position:absolute;left:0;top:2px;width:36px;height:36px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 6px var(--night)}
+.chron li:last-child::before{background:var(--cyan)}
+.chron b{display:block;font:900 clamp(30px,3vw,44px)/1 var(--sign);color:var(--cyan-ink);margin-bottom:8px}
+.chron h3{font-size:clamp(26px,2.2vw,32px);margin-bottom:8px}
+.chron p{margin:0;color:var(--muted)}
+.statement{background:var(--night);color:#d9d5ee}
+.statement .kicker{color:var(--cyan-soft);margin-bottom:26px}
+.statement blockquote{margin:0;max-width:22em;color:#fff;font:800 clamp(34px,4.4vw,64px)/1.02 var(--sign);text-wrap:balance}
+.statement p{margin:28px 0 0;max-width:40em}
+.places{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.place{background:var(--white);border-radius:14px;overflow:hidden}
+.place .tag{display:block;background:var(--night);color:var(--cyan-soft);font:700 13px/1 var(--board);letter-spacing:.08em;text-transform:uppercase;padding:14px 22px}
+.place h3{font-size:clamp(30px,2.6vw,40px);padding:20px 22px 8px}
+.place p{margin:0;padding:0 22px;color:var(--muted)}
+.place a{display:inline-flex;align-items:center;gap:10px;min-height:48px;margin:10px 22px 16px;font:700 16px/1 var(--board);color:var(--cyan-ink);text-underline-offset:5px}
+.person{display:flex;align-items:center;gap:16px;margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
+.person img{width:72px;height:72px;border-radius:12px;object-fit:cover;object-position:50% 12%;background:var(--cyan)}
+.person b{display:block;font:700 18px/1.2 var(--board)}
+.person span{font:500 15px/1.35 var(--board);color:var(--muted)}
+select{width:100%;appearance:none;font:500 16.5px/1.4 var(--text);color:var(--ink);padding:15px 44px 15px 16px;border-radius:10px;border:1.5px solid var(--line);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23140c33' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center/16px;cursor:pointer}
+select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,180,207,.2)}
+.formcard .note{margin:-8px 0 20px;color:var(--muted);font-size:15.5px}
+.legal{max-width:820px;overflow-wrap:break-word;hyphens:auto}
+.legal h3,.legal h4{font:700 22px/1.3 var(--board);margin:40px 0 12px}
+.legal ul,.legal ol{padding-left:1.2em}
+.legal a{color:var(--cyan-ink)}
+.contact h1{font-size:clamp(48px,5.8vw,88px);margin-bottom:20px}
+@media (max-width:1150px){.phero .grid{grid-template-columns:1fr;align-items:start}.dir{max-width:520px}}
+@media (max-width:900px){
+  .split,.inhouse,.places{grid-template-columns:1fr}.split > .lead{position:static}
+  .head2{display:block}.head2 p{margin-top:16px}
+  .vals li{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .phero{padding-top:26px}
+  .phero h1{font-size:clamp(42px,12.4vw,56px)}
+  .phero .acts .btn{flex:1 1 auto}
+  .board.wide .cols,.board.wide .brow{grid-template-columns:minmax(0,1fr) 5.6rem}
+  .brow .x{grid-column:1;grid-row:4;margin-top:4px;font-size:14px}
+  .board.two .cols,.board.two .brow{grid-template-columns:minmax(0,1fr) auto}
+  .board.two .brow .job{grid-row:1;white-space:normal}.board.two .brow .note{grid-column:2;grid-row:1;font-size:14px}
+  .chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:calc(-1 * var(--gut));padding-inline:var(--gut);scrollbar-width:none}.chips button{flex:none}
+}
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<a class="skip" href="#main">Zum Inhalt springen</a>
+<a class="skip" href="#main">Skip to content</a>
 <header class="hdr"><div class="wrap">
-  <a class="brand" href="/office54-preview/v4/" aria-label="Office54 GmbH Startseite"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Office54 GmbH Logo"></a>
-  <nav class="mainnav" aria-label="Hauptmenü"><ul class="menu" id="menu">
-    <li><a href="/office54-preview/v4/job-list/">Jobs</a></li>
-    <li><a href="/office54-preview/v4/losungen-fur-unternehmen/">Für Unternehmen</a></li>
-    <li><a href="/office54-preview/v4/about-us/">Über uns</a></li>
-    <li><a href="/office54-preview/v4/contact-us/">Kontakt</a></li>
-  </ul></nav>
-  <nav class="lsw" aria-label="Sprache" data-langsw><a href="/office54-preview/v4/" hreflang="de" lang="de" aria-current="page">DE</a><a href="/office54-preview/v4/ru/" hreflang="ru" lang="ru">RU</a><a href="/office54-preview/v4/uk/" hreflang="uk" lang="uk">UA</a><a href="/office54-preview/v4/pl/" hreflang="pl" lang="pl">PL</a><a href="/office54-preview/v4/ro/" hreflang="ro" lang="ro">RO</a><a href="/office54-preview/v4/en/" hreflang="en" lang="en">EN</a></nav>
+  <a class="brand" href="/office54-preview/v4/en/" aria-label="Office54 GmbH home"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Office54 GmbH logo"></a>
+  <nav class="mainnav" aria-label="Main menu"><ul class="menu" id="menu"><li><a href="/office54-preview/v4/en/job-list/">Jobs</a></li><li><a href="/office54-preview/v4/en/losungen-fur-unternehmen/">For companies</a></li><li><a href="/office54-preview/v4/en/about-us/">About us</a></li><li><a href="/office54-preview/v4/en/contact-us/" aria-current="page">Contact</a></li></ul></nav>
+  <nav class="lsw" aria-label="Language" data-langsw><a href="/office54-preview/v4/contact-us/" hreflang="de" lang="de">DE</a><a href="/office54-preview/v4/ru/" hreflang="ru" lang="ru">RU</a><a href="/office54-preview/v4/uk/" hreflang="uk" lang="uk">UA</a><a href="/office54-preview/v4/pl/" hreflang="pl" lang="pl">PL</a><a href="/office54-preview/v4/ro/" hreflang="ro" lang="ro">RO</a><a href="/office54-preview/v4/en/contact-us/" hreflang="en" lang="en" aria-current="page">EN</a></nav>
   <a class="btn btn-night" href="tel:+4917661513250">+49 176 61513250</a>
-  <button class="burger" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
 </div></header>
 
 <main id="main" data-role="work">
-  <section class="hero" aria-labelledby="h1"><div class="wrap grid">
-    <div class="say">
-      <div class="switch" role="group" aria-label="Ich suche"><button type="button" data-set="work" aria-pressed="true">Ich suche Arbeit</button><button type="button" data-set="firm" aria-pressed="false">Ich suche Personal</button></div>
-      <div class="txt" data-for="work">
-        <span class="kicker">Office54 GmbH · Personaldienstleister seit 2021</span>
-        <h1 id="h1">Arbeit in Deutschland.<br> In Ihrer Sprache.</h1>
-        <p class="lead">Jobs in Lager, Produktion und Handwerk in Oldenburg, Wilhelmshaven und Leipzig. Unterkunft und Transport auf Wunsch, die Vermittlung ist für Bewerber kostenlos.</p>
-      </div>
-      <div class="txt" data-for="firm">
-        <span class="kicker">Für Unternehmen</span>
-        <p class="h1" role="heading" aria-level="2" style="font:800 clamp(54px,7vw,96px)/.92 var(--sign);letter-spacing:-.01em;text-wrap:balance">Personal für Lager, Logistik und Produktion.</p>
-        <p class="lead">Arbeitnehmerüberlassung, Direktvermittlung und Zeitarbeit mit Übernahmeoption. Rekrutierung aus der EU und aus Nicht-EU-Ländern, Betreuung der Mitarbeiter in ihrer Sprache.</p>
-      </div>
-      <div class="acts" data-for="work"><a class="btn btn-night" href="/office54-preview/v4/job-list/">Alle offenen Jobs <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-line" href="#kontakt">Jetzt bewerben</a></div>
-      <div class="acts" data-for="firm"><a class="btn btn-night" href="/office54-preview/v4/losungen-fur-unternehmen/#anfrage">Personal anfragen <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-line" href="tel:+4917661513250">Anrufen</a></div>
-      <div class="quick" data-for="work"><span>Direkt bewerben per</span> <a href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a> <a href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a></div>
-      <ul class="notes"><li>Über 20 Jahre Erfahrung des Gründers</li><li>Team in sechs Sprachen</li><li>Eigene Staplerschule</li></ul>
-    </div>
-
-    <div class="boardwrap rv">
-      <div class="board" aria-live="off">
-        <div class="board-top">
-          <div><span class="t" data-flap data-for="work">Abfahrt</span><span class="t" data-flap data-for="firm">Ankunft</span><span class="s" data-for="work">Offene Stellen · Stundenlohn brutto</span><span class="s" data-for="firm">Ihr Personal · fünf Modelle</span></div>
-          <div class="clock" aria-label="Uhrzeit in Deutschland"><b data-h1>–</b><b data-h2>–</b><i>:</i><b data-m1>–</b><b data-m2>–</b></div>
-        </div>
-        <div data-for="work">
-          <div class="cols" aria-hidden="true"><span>Ziel</span><span>Tätigkeit</span><span>Hinweis</span><span>€ / Std.</span></div>
-          <ul class="brows">
-            <li><a class="brow" href="https://www.office54.de/job/fisch-wilhelmshaven/"><span class="city" data-flap>Wilhelmshaven</span><span class="job" data-flap>Fischproduktion</span><span class="note ok" data-flap>Ohne Deutsch</span><span class="pay" data-flap>14,53</span></a></li>
-            <li><a class="brow" href="https://www.office54.de/job/warehouse-worker-2/"><span class="city" data-flap>Oldenburg</span><span class="job" data-flap>Kommissionierer</span><span class="note" data-flap>Prämie bis 6,50 €</span><span class="pay"><small>ab</small><span data-flap>14,50</span></span></a></li>
-            <li><a class="brow" href="https://www.office54.de/job/schweisser/"><span class="city" data-flap>Hude</span><span class="job" data-flap>MAG-Schweißer</span><span class="note" data-flap>Chance auf Übernahme</span><span class="pay"><small>ab</small><span data-flap>18,43</span></span></a></li>
-            <li><a class="brow" href="https://www.office54.de/job/php-developer-2/"><span class="city" data-flap>Oldenburg</span><span class="job" data-flap>Staplerfahrer</span><span class="note" data-flap>Staplerschein nötig</span><span class="pay"><small>ab</small><span data-flap>17,52</span></span></a></li>
-            <li><a class="brow" href="https://www.office54.de/job/wordpress/"><span class="city" data-flap>Leipzig</span><span class="job" data-flap>Monteur Landmaschinen</span><span class="note" data-flap>Deutsch B1 von Vorteil</span><span class="pay" data-flap>16–17</span></a></li>
-          </ul>
-          <div class="board-foot"><span>Plus Zuschläge für Nacht, Sonntag und Feiertage. Nicht alle Stellen stehen online.</span><a href="/office54-preview/v4/job-list/">Alle Jobs <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></div>
-        </div>
-        <div data-for="firm">
-          <div class="cols" aria-hidden="true"><span>Modell</span><span>Passt bei</span><span>Angestellt bei</span><span></span></div>
-          <ul class="brows">
-            <li class="brow"><span class="city" data-flap>Überlassung</span><span class="job" data-l="Passt bei" data-flap>Personalengpässen</span><span class="note" data-l="Angestellt bei" data-flap>Office54</span><span></span></li>
-            <li class="brow"><span class="city" data-flap>Vermittlung</span><span class="job" data-l="Passt bei" data-flap>fester Anstellung</span><span class="note ok" data-l="Angestellt bei" data-flap>Ihrem Unternehmen</span><span></span></li>
-            <li class="brow"><span class="city" data-flap>Übernahme</span><span class="job" data-l="Passt bei" data-flap>erst kennenlernen</span><span class="note" data-l="Angestellt bei" data-flap>erst Office54</span><span></span></li>
-            <li class="brow"><span class="city" data-flap>Pauschale</span><span class="job" data-l="Passt bei" data-flap>Abrechnung pro Stunde</span><span class="note ok" data-l="Angestellt bei" data-flap>Ihrem Unternehmen</span><span></span></li>
-            <li class="brow"><span class="city" data-flap>Schulung</span><span class="job" data-l="Passt bei" data-flap>Staplerschein</span><span class="note" data-l="Angestellt bei" data-flap>eigene Schule</span><span></span></li>
-          </ul>
-          <div class="board-foot"><span>Logistik, Produktion und Lagerhaltung. Mehrsprachige Betreuung inklusive.</span><a href="/office54-preview/v4/losungen-fur-unternehmen/">Alle Leistungen <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></div>
-        </div>
-      </div>
-      <div class="langs"><span>Beratung auf</span><a href="/office54-preview/v4/" lang="de">Deutsch</a><a href="/office54-preview/v4/uk/" hreflang="uk" lang="uk">Українська</a><a href="/office54-preview/v4/ru/" hreflang="ru" lang="ru">Русский</a><a href="/office54-preview/v4/pl/" hreflang="pl" lang="pl">Polski</a><a href="/office54-preview/v4/ro/" hreflang="ro" lang="ro">Română</a></div>
-    </div>
-  </div></section>
-
-  <section class="sec line54" aria-labelledby="l54-h"><div class="wrap">
-    <div class="head rv"><h2 id="l54-h"><span class="badge54" aria-hidden="true">54</span>Linie 54. Vier Halte bis zum ersten Arbeitstag.</h2><p>So kommen Sie mit Office54 zu Ihrem Job in Deutschland. Wir begleiten Sie an jedem Halt, auf Ihrer Sprache.</p></div>
-    <div class="route">
-      <div class="track" aria-hidden="true"></div>
-      <ol class="stops">
-      <li class="stop"><span class="when">Halt 1</span><h3>Melden Sie sich</h3><p>Anrufen, schreiben oder das Formular ausfüllen. Gern auf Ukrainisch, Russisch, Polnisch oder Rumänisch.</p></li>
-      <li class="stop"><span class="when">Halt 2</span><h3>Passende Stelle</h3><p>Wir schlagen Jobs vor, die zu Ihrer Erfahrung, dem Ort und Ihrem Wunsch nach Unterkunft passen.</p></li>
-      <li class="stop"><span class="when">Halt 3</span><h3>Unterlagen und Anreise</h3><p>Hilfe bei Aufenthaltsgenehmigung, Krankenversicherung und Bankkonto. Unterkunft und Transport auf Wunsch.</p></li>
-      <li class="stop"><span class="when">Endstation</span><h3>Arbeitsstart</h3><p>Offizielle Anstellung und Begleitung, auch nach dem ersten Arbeitstag.</p></li>
-      </ol>
-    </div>
-  </div></section>
-
-  <section class="sec people" aria-labelledby="team-h"><div class="wrap">
-    <div class="head rv"><h2 id="team-h">Am Telefon sitzt kein Callcenter, sondern dieses Team.</h2><p>Ein Team in Oldenburg, das die Sprache Ihrer Mitarbeiter spricht: Deutsch, Englisch, Russisch, Ukrainisch, Polnisch und Rumänisch.</p></div>
-    <ul class="crew">
-      <li class="rv"><div class="ph"><img src="/office54-preview/assets/team-stefan.webp" alt="Stefan Grabowski" loading="lazy"></div><div class="plate"><b>Stefan Grabowski</b><span>Geschäftsführer</span></div></li>
-      <li class="rv"><div class="ph"><img src="/office54-preview/assets/team-alexandru.webp" alt="Alexandru Cseminschi" loading="lazy"></div><div class="plate"><b>Alexandru Cseminschi</b><span>Finanzexperte und HR-Disponent</span></div></li>
-      <li class="rv"><div class="ph"><img src="/office54-preview/assets/team-mariia.webp" alt="Mariia Chykida" loading="lazy"></div><div class="plate"><b>Mariia Chykida</b><span>HR-Disponentin und Recruiting</span></div></li>
-      <li class="rv"><div class="ph"><img src="/office54-preview/assets/team-maryna.webp" alt="Maryna Krevsun" loading="lazy"></div><div class="plate"><b>Maryna Krevsun</b><span>Lohn- und Gehaltsabrechnung</span></div></li>
-    </ul>
-  </div></section>
-
-  <section class="sec firms on-night" id="unternehmen" aria-labelledby="firm-h"><div class="wrap">
-    <div class="grid">
-      <div class="lead rv">
-        <span class="kicker">Für Unternehmen</span>
-        <h2 id="firm-h">Ihre Lücke im Schichtplan ist unser Job.</h2>
-        <p>Wir sind spezialisiert auf Logistik, Produktion und Lagerhaltung. Die mehrsprachige Betreuung der Mitarbeiter übernehmen wir, Sie konzentrieren sich auf Ihr Kerngeschäft.</p>
-        <div class="acts"><a class="btn btn-cyan" href="/office54-preview/v4/losungen-fur-unternehmen/#anfrage">Personal anfragen <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-line" href="tel:+4917661513250">Anrufen</a></div>
-      </div>
-      <ul class="models">
-        <li class="rv"><div><h3>Arbeitnehmerüberlassung</h3><span class="for">Bei Engpässen</span></div><p>Kurzfristige Lösungen für Personalengpässe. Unsere Zeitarbeitskräfte sind schnell einsetzbar und auf Ihre Anforderungen vorbereitet.</p></li>
-        <li class="rv"><div><h3>Direktvermittlung</h3><span class="for">Feste Anstellung</span></div><p>Der Mitarbeiter wird direkt bei Ihnen angestellt. Verwaltung, Koordination und Betreuung bleiben bei uns.</p></li>
-        <li class="rv"><div><h3>Zeitarbeit mit Übernahmeoption</h3><span class="for">Erst kennenlernen</span></div><p>Lernen Sie Mitarbeiter zuerst im Einsatz kennen und entscheiden Sie danach über eine feste Anstellung.</p></li>
-        <li class="rv"><div><h3>Verwaltungspauschale</h3><span class="for">Pro Arbeitsstunde</span></div><p>Eine Pauschale pro gearbeiteter Stunde, der Rundumservice bleibt bestehen.</p></li>
-        <li class="rv"><div><h3>Schulungen und Zertifikate</h3><span class="for">Eigene Staplerschule</span></div><p>Zum Beispiel Staplerscheine, damit Mitarbeiter direkt einsatzbereit in Ihrem Betrieb starten.</p></li>
-      </ul>
-    </div>
-    <div class="net rv">
-      <h3>Drei Firmen, eine Linie.</h3>
-      <p>Unter dem Dach der Grabowski Holding: Personal, Unterkünfte und Logistik aus einer Hand.</p>
-      <ol class="map">
-        <li><span class="role">Personal</span><b>Office54 GmbH</b><p>Personalvermittlung und Zeitarbeit mit weltweiter Rekrutierung, Schulungen und mehrsprachiger Betreuung.</p></li>
-        <li><span class="role">Unterkünfte</span><b>Domowoi GmbH</b><p>Immobilienverwaltung und Vermietung mit persönlicher Betreuung der Mieter.</p></li>
-        <li><span class="role">Logistik</span><b>Caplex GmbH</b><p>Logistiklösungen und Werkverträge in Lagerlogistik und Produktionsunterstützung.</p></li>
-      </ol>
-    </div>
-  </div></section>
-
-  <section class="sec" aria-label="Erfahrungsberichte"><div class="wrap quotes">
-    <figure class="quote rv"><blockquote>„Basierend auf unserer positiven Erfahrung empfehlen wir die Office54 GmbH als zuverlässigen Partner im Bereich Arbeitnehmerüberlassung und Direktvermittlung.“</blockquote><figcaption><img src="/office54-preview/assets/t-jens.webp" alt="Getränke Essmann Logo" loading="lazy"><div><b>Jens Weber</b><span>Getränke Essmann, Leiter Lagerlogistik</span></div></figcaption></figure>
-    <figure class="quote rv"><blockquote>„Die Office54 GmbH hat einen wesentlichen Beitrag dazu geleistet, dass wir unsere Produktionsziele erreichen und dabei eine hohe Qualität aufrechterhalten konnten.“</blockquote><figcaption><img src="/office54-preview/assets/t-udo.webp" alt="OTTE Beton Logo" loading="lazy"><div><b>Udo Eveslage</b><span>OTTE Beton, Geschäftsführer</span></div></figcaption></figure>
-  </div></section>
-
-  <section class="sec contact" id="kontakt" aria-labelledby="contact-h"><div class="wrap grid">
+<section class="sec contact" id="kontakt" aria-labelledby="contact-h"><div class="wrap grid">
     <div class="rv">
-      <h2 id="contact-h">Am schnellsten geht es per Telefon.</h2>
-      <p>Wir sprechen Deutsch, Englisch, Russisch, Ukrainisch, Polnisch und Rumänisch.</p>
+      <span class="kicker" style="color:var(--cyan-ink);margin-bottom:18px">Contact</span><h1 id="contact-h">The fastest way is by phone.</h1>
+      <p>We speak German, English, Russian, Ukrainian, Polish and Romanian.</p>
       <a class="phone" href="tel:+4917661513250">+49 176 61513250</a>
-      <p class="hours">Montag bis Freitag, 9 bis 17 Uhr</p>
+      <p class="hours">Monday to Friday, 9 am to 5 pm</p>
       <div class="reach">
         <a class="btn btn-line" href="mailto:info@office54.de">info@office54.de</a>
         <a class="btn btn-line" href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a>
         <a class="btn btn-line" href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a>
       </div>
-      <div class="addr"><div><b>Büro Oldenburg</b>Irisweg 30<br>26133 Oldenburg<br><a class="route-link" href="https://www.google.com/maps/search/?api=1&amp;query=Office54+GmbH+Irisweg+30+26133+Oldenburg" target="_blank" rel="noopener">Route planen</a></div><div><b>Firmensitz</b>Haselünner Str. 13<br>49844 Bawinkel</div></div>
+      <div class="addr"><div><b>Oldenburg office</b>Irisweg 30<br>26133 Oldenburg<br><a class="route-link" href="https://www.google.com/maps/search/?api=1&amp;query=Office54+GmbH+Irisweg+30+26133+Oldenburg" target="_blank" rel="noopener">Get directions</a></div><div><b>Registered office</b>Haselünner Str. 13<br>49844 Bawinkel</div></div>
     </div>
     <div class="formcard rv">
-      <h3>Oder schreiben Sie uns</h3>
-      <div class="switch" role="group" aria-label="Ich suche"><button type="button" data-set="work" aria-pressed="true">Ich suche Arbeit</button><button type="button" data-set="firm" aria-pressed="false">Ich suche Personal</button></div>
+      <h3>Or write to us</h3>
+      <div class="switch" role="group" aria-label="I am looking for"><button type="button" data-set="work" aria-pressed="true">I need a job</button><button type="button" data-set="firm" aria-pressed="false">I need staff</button></div>
       <form action="#" onsubmit="return false">
         <div><label for="c-name">Name</label><input id="c-name" autocomplete="name"></div>
-        <div><label for="c-tel">Telefon</label><input id="c-tel" type="tel" autocomplete="tel" required></div>
-        <div class="full"><label for="c-mail">E-Mail</label><input id="c-mail" type="email" autocomplete="email" required></div>
-        <div class="full"><label for="c-msg">Nachricht</label><textarea id="c-msg"></textarea></div>
-        <div class="full"><button class="btn btn-night" type="submit">Absenden <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></button></div>
+        <div><label for="c-tel">Phone</label><input id="c-tel" type="tel" autocomplete="tel" required></div>
+        <div class="full"><label for="c-mail">Email</label><input id="c-mail" type="email" autocomplete="email" required></div>
+        <div class="full"><label for="c-msg">Message</label><textarea id="c-msg"></textarea></div>
+        <div class="full"><button class="btn btn-night" type="submit">Send <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></button></div>
       </form>
     </div>
-  </div></section>
-  <nav class="mbar" aria-label="Schnellkontakt"><a class="call" href="tel:+4917661513250"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M5 2.2 7.3 2l1.2 3.4-1.7 1.3a9.4 9.4 0 0 0 4.5 4.5l1.3-1.7 3.4 1.2-.2 2.3c-.1.9-.9 1.6-1.8 1.5C8.6 14 4 9.4 3.5 3.9 3.4 3 4.1 2.3 5 2.2z"/></svg>Anrufen</a><a data-for="work" href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a><a data-for="work" href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a><a data-for="firm" href="/office54-preview/v4/losungen-fur-unternehmen/#anfrage">Personal anfragen</a></nav>
+  </div></section><section class="sec" style="padding-top:0" aria-label="Contact"><div class="wrap places"><article class="place rv"><span class="tag">Office</span><h3>Oldenburg</h3><p>Irisweg 30<br>26133 Oldenburg</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Office54+GmbH+Irisweg+30+26133+Oldenburg" target="_blank" rel="noopener">Directions in Google Maps <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></article><article class="place rv"><span class="tag">Registered office</span><h3>Bawinkel</h3><p>Haselünner Str. 13<br>49844 Bawinkel</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Hasel%C3%BCnner+Str.+13+49844+Bawinkel" target="_blank" rel="noopener">Directions in Google Maps <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></article></div></section>
+  <nav class="mbar" aria-label="Quick contact"><a class="call" href="tel:+4917661513250"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M5 2.2 7.3 2l1.2 3.4-1.7 1.3a9.4 9.4 0 0 0 4.5 4.5l1.3-1.7 3.4 1.2-.2 2.3c-.1.9-.9 1.6-1.8 1.5C8.6 14 4 9.4 3.5 3.9 3.4 3 4.1 2.3 5 2.2z"/></svg>Call us</a><a data-for="work" href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a><a data-for="work" href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a><a data-for="firm" href="/office54-preview/v4/en/losungen-fur-unternehmen/#anfrage">Request staff</a></nav>
 </main>
 
 <footer class="foot"><div class="wrap">
-  <a class="brand" href="/office54-preview/v4/" aria-label="Office54 GmbH Startseite"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Office54 GmbH Logo" loading="lazy"></a>
-  <nav aria-label="Rechtliches"><a href="/office54-preview/v4/impressum/">Impressum</a><a href="/office54-preview/v4/datenschutz/">Datenschutz</a><a href="https://www.facebook.com/profile.php?id=61563513421556">Facebook</a><a href="https://www.instagram.com/office54gmbh/">Instagram</a><a href="https://www.tiktok.com/@office54_germany">TikTok</a><a href="https://www.linkedin.com/company/office54-gmbh/">LinkedIn</a></nav>
+  <a class="brand" href="/office54-preview/v4/en/" aria-label="Office54 GmbH home"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Office54 GmbH logo" loading="lazy"></a>
+  <nav aria-label="Legal"><a href="/office54-preview/v4/impressum/">Legal notice</a><a href="/office54-preview/v4/datenschutz/">Privacy</a><a href="https://www.facebook.com/profile.php?id=61563513421556">Facebook</a><a href="https://www.instagram.com/office54gmbh/">Instagram</a><a href="https://www.tiktok.com/@office54_germany">TikTok</a><a href="https://www.linkedin.com/company/office54-gmbh/">LinkedIn</a></nav>
   <span>© 2024 Office54 GmbH</span>
 </div></footer>
 
@@ -525,5 +506,5 @@ textarea{min-height:120px;resize:vertical}
   }
 })();
 </script>
-<style>.pv-badge{position:fixed;left:14px;bottom:14px;z-index:9999;font:600 13px/1 system-ui,sans-serif;background:#140c33;color:#fff;padding:10px 14px;border-radius:999px;box-shadow:0 8px 24px -10px rgba(0,0,0,.5)}.pv-badge a{color:#7fdcec;text-decoration:none;margin-left:8px}@media (max-width:640px){.pv-badge{position:static;display:block;border-radius:0;text-align:center;box-shadow:none;padding:14px}}</style><div class="pv-badge">Variante 4 · Vorschau<a href="/office54-preview/">alle Varianten</a></div><script>document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();alert('Vorschau: Das Formular ist in der Vorschau deaktiviert.')},true));</script></body>
+<style>.pv-badge{position:fixed;left:14px;bottom:14px;z-index:9999;font:600 13px/1 system-ui,sans-serif;background:#140c33;color:#fff;padding:10px 14px;border-radius:999px;box-shadow:0 8px 24px -10px rgba(0,0,0,.5)}.pv-badge a{color:#7fdcec;text-decoration:none;margin-left:8px}@media (max-width:640px){.pv-badge{position:static;display:block;border-radius:0;text-align:center;box-shadow:none;padding:14px}}</style><div class="pv-badge">Variant 4 · Vorschau<a href="/office54-preview/">alle Varianten</a></div><script>document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();alert('Vorschau: Das Formular ist in der Vorschau deaktiviert.')},true));</script></body>
 </html>
