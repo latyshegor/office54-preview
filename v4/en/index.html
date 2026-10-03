@@ -223,12 +223,23 @@ textarea{min-height:120px;resize:vertical}
 .foot nav{display:flex;flex-wrap:wrap;gap:20px}
 .foot a{text-decoration:none}.foot a:hover{color:#fff}
 
+/* phone quick-contact bar */
+.mbar{display:none}
+
 /* reveal */
 .js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--out),transform 1s var(--out)}
 .js .rv.in{opacity:1;transform:none}
 
 /* responsive */
 @media (max-width:1150px){
+  .hero .grid{display:flex;flex-direction:column;gap:0}
+  .say{display:contents}
+  .say .switch{order:1;align-self:flex-start}
+  .say .txt{order:2}
+  .say .acts{order:3}
+  .boardwrap{order:4;margin-top:30px}
+  .say .quick{order:5}
+  .say .notes{order:6}
   .menu,.hdr .btn{display:none}.lsw{margin-left:auto}.burger{display:block}
   .open .menu{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:74px;background:var(--alu);padding:10px var(--gut) 18px;border-bottom:1px solid var(--line)}
   .hero .grid{grid-template-columns:1fr}
@@ -248,8 +259,30 @@ textarea{min-height:120px;resize:vertical}
 }
 @media (max-width:640px){
   body{font-size:16.5px}
+  .hero{padding-top:18px}
+  .say .kicker{display:none}
+  .say .switch{align-self:stretch}
+  .brow [data-l]::before{content:attr(data-l) ": ";color:#9f99c4;font-weight:500}
+  .switch{margin-bottom:24px}
+  .say h1,.say .h1{font-size:clamp(42px,12.4vw,54px)!important;margin-bottom:18px}
+  .say p.lead{font-size:16.5px;margin-bottom:22px}
+  .say .acts{gap:8px}.say .acts .btn{flex:1 1 auto;min-height:52px;padding:0 12px;font-size:16px}
+  .boardwrap{margin-top:24px}
+  .board{border-radius:14px;padding:16px 14px 14px}
+  .langs a{padding:13px 12px}
+  .route-link{display:inline-block;padding:12px 0}
+  .foot nav a{display:inline-block;padding:12px 0}
+  .reach{display:grid;grid-template-columns:1fr 1fr}.reach .btn:first-child{grid-column:1/-1}
+  .crew{margin-inline:calc(-1 * var(--gut));padding-inline:var(--gut);scroll-padding-inline:var(--gut)}.crew li{flex-basis:72%}
+  .mbar{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:60;display:flex;gap:6px;padding:6px;border-radius:14px;background:var(--night);box-shadow:0 18px 40px -16px rgba(12,7,34,.65);transform:translateY(calc(100% + 24px));transition:transform .5s var(--out)}
+  .mbar.show{transform:none}
+  .mbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;min-height:50px;border-radius:10px;color:#fff;font:700 15px/1 var(--board);text-decoration:none;background:rgba(255,255,255,.08)}
+  .mbar a.call{background:var(--cyan);color:var(--night)}
+  .mbar svg{width:18px;height:18px}
+  [data-role=work] .mbar [data-for=work],[data-role=firm] .mbar [data-for=firm]{display:flex}
+  .foot .wrap{padding-bottom:96px}
   h1,h2,h3{hyphens:auto}
-  .hdr .wrap{gap:12px}.brand img{height:40px}.lsw a{padding:9px 5px}
+  .hdr .wrap{gap:12px}.brand img{height:40px}.lsw a{padding:14px 5px}
   .switch{display:flex}.switch button{flex:1;padding:12px 8px}
   .cols,.brow{grid-template-columns:minmax(0,1fr) 5.6rem;gap:4px 12px}
   .cols span:nth-child(2),.cols span:nth-child(3){display:none}
@@ -260,6 +293,7 @@ textarea{min-height:120px;resize:vertical}
   .brow .pay small{display:block;margin:0 0 2px}
   form,.addr{grid-template-columns:1fr}
 }
+@media (pointer:coarse){.lsw a,.langs a{min-height:44px;display:inline-flex;align-items:center}.route-link,.foot nav a{display:inline-block;padding:12px 0}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}.track::after{transform:none}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
@@ -283,12 +317,12 @@ textarea{min-height:120px;resize:vertical}
   <section class="hero" aria-labelledby="h1"><div class="wrap grid">
     <div class="say">
       <div class="switch" role="group" aria-label="I am looking for"><button type="button" data-set="work" aria-pressed="true">I need a job</button><button type="button" data-set="firm" aria-pressed="false">I need staff</button></div>
-      <div data-for="work">
+      <div class="txt" data-for="work">
         <span class="kicker">Office54 GmbH · Staffing agency since 2021</span>
         <h1 id="h1">Work in Germany.<br> In your language.</h1>
         <p class="lead">Jobs in warehousing, production and skilled trades in Oldenburg, Wilhelmshaven and Leipzig. Accommodation and transport on request, and placement is free for applicants.</p>
       </div>
-      <div data-for="firm">
+      <div class="txt" data-for="firm">
         <span class="kicker">For companies</span>
         <p class="h1" role="heading" aria-level="2" style="font:800 clamp(54px,7vw,96px)/.92 var(--sign);letter-spacing:-.01em;text-wrap:balance">Staff for warehousing, logistics and production.</p>
         <p class="lead">Temporary staffing, direct placement and temporary work with option to hire. Recruitment from the EU and from non-EU countries, with support for workers in their own language.</p>
@@ -299,7 +333,7 @@ textarea{min-height:120px;resize:vertical}
       <ul class="notes"><li>Founder with 20+ years in staffing</li><li>A team speaking six languages</li><li>Own forklift school</li></ul>
     </div>
 
-    <div class="rv">
+    <div class="boardwrap rv">
       <div class="board" aria-live="off">
         <div class="board-top">
           <div><span class="t" data-flap data-for="work">Departures</span><span class="t" data-flap data-for="firm">Arrivals</span><span class="s" data-for="work">Open jobs · gross hourly wage</span><span class="s" data-for="firm">Your staff · five models</span></div>
@@ -319,11 +353,11 @@ textarea{min-height:120px;resize:vertical}
         <div data-for="firm">
           <div class="cols" aria-hidden="true"><span>Model</span><span>Best for</span><span>Employed by</span><span></span></div>
           <ul class="brows">
-            <li class="brow"><span class="city" data-flap>Staffing</span><span class="job" data-flap>staff shortages</span><span class="note" data-flap>Office54</span><span></span></li>
-            <li class="brow"><span class="city" data-flap>Placement</span><span class="job" data-flap>permanent hires</span><span class="note ok" data-flap>your company</span><span></span></li>
-            <li class="brow"><span class="city" data-flap>Temp to hire</span><span class="job" data-flap>trying people first</span><span class="note" data-flap>Office54 at first</span><span></span></li>
-            <li class="brow"><span class="city" data-flap>Flat fee</span><span class="job" data-flap>hourly billing</span><span class="note ok" data-flap>your company</span><span></span></li>
-            <li class="brow"><span class="city" data-flap>Training</span><span class="job" data-flap>forklift licences</span><span class="note" data-flap>our own school</span><span></span></li>
+            <li class="brow"><span class="city" data-flap>Staffing</span><span class="job" data-l="Best for" data-flap>staff shortages</span><span class="note" data-l="Employed by" data-flap>Office54</span><span></span></li>
+            <li class="brow"><span class="city" data-flap>Placement</span><span class="job" data-l="Best for" data-flap>permanent hires</span><span class="note ok" data-l="Employed by" data-flap>your company</span><span></span></li>
+            <li class="brow"><span class="city" data-flap>Temp to hire</span><span class="job" data-l="Best for" data-flap>trying people first</span><span class="note" data-l="Employed by" data-flap>Office54 at first</span><span></span></li>
+            <li class="brow"><span class="city" data-flap>Flat fee</span><span class="job" data-l="Best for" data-flap>hourly billing</span><span class="note ok" data-l="Employed by" data-flap>your company</span><span></span></li>
+            <li class="brow"><span class="city" data-flap>Training</span><span class="job" data-l="Best for" data-flap>forklift licences</span><span class="note" data-l="Employed by" data-flap>our own school</span><span></span></li>
           </ul>
           <div class="board-foot"><span>Logistics, production and warehousing. Multilingual support included.</span><a href="/office54-preview/v3/en/losungen-fur-unternehmen/">All services <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></div>
         </div>
@@ -399,7 +433,7 @@ textarea{min-height:120px;resize:vertical}
         <a class="btn btn-line" href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a>
         <a class="btn btn-line" href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a>
       </div>
-      <div class="addr"><div><b>Oldenburg office</b>Irisweg 30<br>26133 Oldenburg<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Office54+GmbH+Irisweg+30+26133+Oldenburg" target="_blank" rel="noopener">Get directions</a></div><div><b>Registered office</b>Haselünner Str. 13<br>49844 Bawinkel</div></div>
+      <div class="addr"><div><b>Oldenburg office</b>Irisweg 30<br>26133 Oldenburg<br><a class="route-link" href="https://www.google.com/maps/search/?api=1&amp;query=Office54+GmbH+Irisweg+30+26133+Oldenburg" target="_blank" rel="noopener">Get directions</a></div><div><b>Registered office</b>Haselünner Str. 13<br>49844 Bawinkel</div></div>
     </div>
     <div class="formcard rv">
       <h3>Or write to us</h3>
@@ -413,6 +447,7 @@ textarea{min-height:120px;resize:vertical}
       </form>
     </div>
   </div></section>
+  <nav class="mbar" aria-label="Quick contact"><a class="call" href="tel:+4917661513250"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M5 2.2 7.3 2l1.2 3.4-1.7 1.3a9.4 9.4 0 0 0 4.5 4.5l1.3-1.7 3.4 1.2-.2 2.3c-.1.9-.9 1.6-1.8 1.5C8.6 14 4 9.4 3.5 3.9 3.4 3 4.1 2.3 5 2.2z"/></svg>Call us</a><a data-for="work" href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a><a data-for="work" href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a><a data-for="firm" href="/office54-preview/v3/en/losungen-fur-unternehmen/#anfrage">Request staff</a></nav>
 </main>
 
 <footer class="foot"><div class="wrap">
@@ -468,7 +503,12 @@ textarea{min-height:120px;resize:vertical}
     if (e.target.querySelector('.board')) flapAll(e.target);
   }), {rootMargin: '0px 0px -8% 0px', threshold: .08});
   document.querySelectorAll('.rv, .route').forEach(el => io.observe(el));
+
+  // phone quick-contact bar: shown once the hero buttons scroll away, hidden while the contact block is on screen
+  const bar = document.querySelector('.mbar'), seen = new Set(), watch = [...document.querySelectorAll('.say .acts'), document.getElementById('kontakt')];
+  const bio = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? seen.add(e.target) : seen.delete(e.target)); bar.classList.toggle('show', seen.size === 0 && scrollY > 200); });
+  watch.forEach(el => bio.observe(el));
 })();
 </script>
-<style>.pv-badge{position:fixed;left:14px;bottom:14px;z-index:9999;font:600 13px/1 system-ui,sans-serif;background:#140c33;color:#fff;padding:10px 14px;border-radius:999px;box-shadow:0 8px 24px -10px rgba(0,0,0,.5)}.pv-badge a{color:#7fdcec;text-decoration:none;margin-left:8px}</style><div class="pv-badge">Variant 4 · Vorschau<a href="/office54-preview/">alle Varianten</a></div><script>document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();alert('Vorschau: Das Formular ist in der Vorschau deaktiviert.')},true));</script></body>
+<style>.pv-badge{position:fixed;left:14px;bottom:14px;z-index:9999;font:600 13px/1 system-ui,sans-serif;background:#140c33;color:#fff;padding:10px 14px;border-radius:999px;box-shadow:0 8px 24px -10px rgba(0,0,0,.5)}.pv-badge a{color:#7fdcec;text-decoration:none;margin-left:8px}@media (max-width:640px){.pv-badge{position:static;display:block;border-radius:0;text-align:center;box-shadow:none;padding:14px}}</style><div class="pv-badge">Variant 4 · Vorschau<a href="/office54-preview/">alle Varianten</a></div><script>document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();alert('Vorschau: Das Formular ist in der Vorschau deaktiviert.')},true));</script></body>
 </html>
