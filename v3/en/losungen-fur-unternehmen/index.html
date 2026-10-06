@@ -83,9 +83,9 @@ h1,h2,h3{overflow-wrap:break-word;font-family:Geologica,Onest,sans-serif;font-we
 
 /* facts line */
 .facts{border-bottom:1px solid var(--line)}
-.facts ul{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;list-style:none;margin:0;padding:24px 0}
-.facts li{display:flex;align-items:center;gap:10px;font:500 15px/1.3 Onest,sans-serif;white-space:nowrap}
-.facts li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--cyan)}
+.facts ul{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:12px 28px;list-style:none;margin:0;padding:24px 0}
+.facts li{display:flex;align-items:center;gap:10px;font:500 15px/1.3 Onest,sans-serif;text-wrap:balance}
+.facts li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--cyan)}
 
 /* jobs */
 .sec{padding-block:var(--sec)}
@@ -212,7 +212,7 @@ textarea{min-height:120px;resize:vertical}
   .emp,.contact .grid{grid-template-columns:1fr}.emp .lead{position:static}
   .nodes,.quotes{grid-template-columns:1fr}
 }
-@media (max-width:1100px){.facts ul{justify-content:flex-start}.facts li{white-space:normal}}
+@media (max-width:1100px){.facts ul{justify-content:flex-start;flex-wrap:wrap}}
 @media (max-width:600px){
   .quick span{flex-basis:100%}
   body{font-size:16px}
@@ -288,6 +288,25 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
 .duo .go{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1.5px currentColor;transition:transform .5s var(--out)}
 .duo .go svg{width:20px;height:20px}
 .duo a:hover .go{transform:translateX(6px)}
+/* job list without photos + job pages */
+.board.noimg .row{grid-template-columns:minmax(0,1.2fr) minmax(0,1.4fr) 120px 40px}
+.board.noimg .row .tags{grid-column:auto;grid-row:auto}
+.phead.job h1{font-size:clamp(36px,4.6vw,72px);max-width:1100px;text-wrap:balance}
+.phead.job .lead{max-width:760px}
+.back{display:inline-flex;align-items:center;gap:8px;margin-top:8px;font-weight:600;color:#0a6d7e;text-underline-offset:5px}
+.back::before{content:"←"}
+.jobd dl{margin:0;border-top:1.5px solid var(--ink)}
+.jobd dl>div{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding:24px 0;border-bottom:1px solid var(--line)}
+.jobd dt{font:600 17px/1.4 Geologica,sans-serif;letter-spacing:-.01em}
+.jobd dd{margin:0;color:var(--muted);font-size:17px}
+.zus,.house{margin-top:48px}
+.zus h3,.house h3{font-size:clamp(22px,2vw,28px);margin-bottom:12px}
+.zus p,.house p{color:var(--muted);margin:0 0 10px}
+.house b{color:var(--ink);font-weight:600}
+.zus ul{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.zus li{padding:18px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);font-size:14.5px;color:var(--muted)}
+.zus li b{display:block;font:700 26px/1.1 Geologica,sans-serif;letter-spacing:-.02em;color:#0a6d7e;margin-bottom:6px}
+.closing{margin:40px 0 0;padding-top:24px;border-top:1px solid var(--line);font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
 .chips button{font:600 14.5px/1 Onest,sans-serif;min-height:44px;padding:0 17px;border-radius:999px;border:0;background:#fff;box-shadow:inset 0 0 0 1px var(--line);cursor:pointer;color:var(--ink);transition:background .25s,color .25s}
 .chips button:hover{background:#ebe8e0}
@@ -321,10 +340,14 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
   .split2,.inhouse,.places,.duo{grid-template-columns:1fr}.split2 .lead{position:static}
   .model{grid-template-columns:48px minmax(0,1fr);gap:8px 16px}.model p{grid-column:2}
   .phead .rings{display:none}.duo a{min-height:240px}
+  .board.noimg .row{grid-template-columns:minmax(0,1fr) 110px 40px}.board.noimg .row .tags{grid-column:1/3;grid-row:2}
+  .zus ul{grid-template-columns:1fr 1fr}
 }
 @media (max-width:600px){
   .timeline li{grid-template-columns:1fr;gap:10px}
   .roles li{flex-direction:column;gap:4px}.roles li span{text-align:left}
+  .board.noimg .row{grid-template-columns:minmax(0,1fr)}.board.noimg .row .tags,.board.noimg .row .pay{grid-column:1;grid-row:auto}
+  .jobd dl>div{grid-template-columns:1fr;gap:6px}
 }
 </style>
 <script>document.documentElement.classList.add('js')</script>
@@ -344,7 +367,7 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
 <button aria-controls="menu" aria-expanded="false" aria-label="Open menu" class="burger" type="button"><span></span><span></span><span></span></button>
 </div></header>
 <main id="main">
-<section aria-labelledby="h1" class="phead cyan"><svg aria-hidden="true" class="rings" viewbox="0 0 200 200"><circle cx="100" cy="100" opacity=".9" r="92" stroke="#140c33" stroke-dasharray="430 148" stroke-width="2.5" transform="rotate(-140 100 100)"></circle><circle cx="100" cy="100" opacity=".75" r="70" stroke="#ffffff" stroke-dasharray="300 140" stroke-width="2.5" transform="rotate(-100 100 100)"></circle><circle cx="100" cy="100" r="48" stroke="#140c33" stroke-dasharray="210 92" stroke-width="2.5" transform="rotate(-60 100 100)"></circle></svg><div class="wrap"><span class="eyebrow">For companies</span><h1 id="h1">Staff for warehousing, logistics and production.</h1><p class="lead">We find workers for your open shifts and support them in their own language. You focus on your core business.</p><div class="acts"><a class="btn btn-night" href="#anfrage">Request staff<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a><a class="btn btn-ghost dark" href="tel:+4917661513250">+49 176 61513250</a></div></div></section><div class="facts"><div class="wrap"><ul><li>Logistics, production, warehousing</li><li>Recruitment in the EU and in non-EU countries</li><li>Support in six languages</li><li>Training such as forklift licences</li></ul></div></div><section aria-labelledby="models-h" class="sec"><div class="wrap"><div class="head rv"><h2 id="models-h">Five ways to work together</h2><p>From short-term assignments to permanent employment. We work out which model fits in the first conversation.</p></div><ol class="models"><li class="model rv"><div><h3>Temporary staffing</h3><span class="tag">For shortages</span></div><p>Short-term solutions for staff shortages. Our temporary workers are ready to start quickly and prepared for your requirements.</p></li><li class="model rv"><div><h3>Direct placement</h3><span class="tag">Permanent hire</span></div><p>The employee is hired directly by you. Our all-round service stays in place: administration, coordination and support of the staff.</p></li><li class="model rv"><div><h3>Temporary work with option to hire</h3><span class="tag">Get to know them first</span></div><p>Get to know employees on the job first, then decide on permanent employment.</p></li><li class="model rv"><div><h3>Administrative flat fee</h3><span class="tag">Per working hour</span></div><p>The employee is hired directly by your company. A flat fee is charged per hour worked, and the all-round service stays in place.</p></li><li class="model rv"><div><h3>Training and certificates</h3><span class="tag">For example forklift licence</span></div><p>Specialised training such as forklift licences, so employees start in your company ready to work.</p></li></ol></div></section><section aria-labelledby="roles-h" class="sec" style="padding-top:0"><div class="wrap split2"><div class="lead rv"><h2 id="roles-h">Who we place</h2><p>We specialise in logistics, production and warehousing. Our network keeps growing, with workers from the EU and from non-EU countries, within the current legal framework.</p></div><ul class="roles"><li class="rv">Order pickers and warehouse assistants<span>Logistics</span></li><li class="rv">Forklift drivers<span>Warehouse</span></li><li class="rv">Fish processing workers<span>Production</span></li><li class="rv">MAG welders<span>Metal</span></li><li class="rv">Agricultural machinery mechanics and fitters<span>Skilled trades</span></li><li class="more rv">Other roles? Ask us.</li></ul></div></section><section aria-labelledby="steps-f-h" class="sec steps"><div class="wrap">
+<section aria-labelledby="h1" class="phead cyan"><svg aria-hidden="true" class="rings" viewbox="0 0 200 200"><circle cx="100" cy="100" opacity=".9" r="92" stroke="#140c33" stroke-dasharray="430 148" stroke-width="2.5" transform="rotate(-140 100 100)"></circle><circle cx="100" cy="100" opacity=".75" r="70" stroke="#ffffff" stroke-dasharray="300 140" stroke-width="2.5" transform="rotate(-100 100 100)"></circle><circle cx="100" cy="100" r="48" stroke="#140c33" stroke-dasharray="210 92" stroke-width="2.5" transform="rotate(-60 100 100)"></circle></svg><div class="wrap"><span class="eyebrow">For companies</span><h1 id="h1">Staff for warehousing, logistics and production.</h1><p class="lead">We find workers for your open shifts and support them in their own language. You focus on your core business.</p><div class="acts"><a class="btn btn-night" href="#anfrage">Request staff<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"></path></svg></a><a class="btn btn-ghost dark" href="tel:+4917661513250">+49 176 61513250</a></div></div></section><div class="facts"><div class="wrap"><ul><li>Logistics, production, warehousing</li><li>Recruitment in the EU and in non-EU countries</li><li>Support in six languages</li><li>Training such as forklift licences</li></ul></div></div><section aria-labelledby="models-h" class="sec"><div class="wrap"><div class="head rv"><h2 id="models-h">Five ways to work together</h2><p>From short-term assignments to permanent employment. We work out which model fits in the first conversation.</p></div><ol class="models"><li class="model rv"><div><h3>Temporary staffing</h3><span class="tag">For shortages</span></div><p>Short-term solutions for staff shortages. Our temporary workers are ready to start quickly and prepared for your requirements.</p></li><li class="model rv"><div><h3>Direct placement</h3><span class="tag">Permanent hire</span></div><p>The employee is hired directly by you. Our all-round service stays in place: administration, coordination and support of the staff.</p></li><li class="model rv"><div><h3>Temporary work with option to hire</h3><span class="tag">Get to know them first</span></div><p>Get to know employees on the job first, then decide on permanent employment.</p></li><li class="model rv"><div><h3>Administrative flat fee</h3><span class="tag">Per working hour</span></div><p>The employee is employed directly by you. We continue to organise accommodation, transport and support – for an agreed service fee per hour worked.</p></li><li class="model rv"><div><h3>Training and certificates</h3><span class="tag">For example forklift licence</span></div><p>Specialised training such as forklift licences, so employees start in your company ready to work.</p></li></ol></div></section><section aria-labelledby="roles-h" class="sec" style="padding-top:0"><div class="wrap split2"><div class="lead rv"><h2 id="roles-h">Who we place</h2><p>We specialise in warehousing, logistics, food production and metalworking. Our network includes helpers and skilled workers from EU and non-EU countries who are permitted to work in Germany.</p></div><ul class="roles"><li class="rv">Order pickers and warehouse assistants<span>Logistics</span></li><li class="rv">Forklift drivers<span>Warehouse</span></li><li class="rv">Production and packing staff – including food production<span>Production</span></li><li class="rv">MIG/MAG welders<span>Metal</span></li><li class="rv">Metalworkers, mechanics and fitters<span>Trades</span></li><li class="rv">Painters, powder coaters and surface finishing helpers<span>Surface</span></li><li class="more rv">Your field is not listed? Talk to us.</li></ul></div></section><section aria-labelledby="steps-f-h" class="sec steps"><div class="wrap">
 <h2 class="rv" id="steps-f-h">How we work together</h2>
 <ol class="track"><li class="rv"><h3>Request</h3><p>You tell us the role, number of people, location and start date. By form or by phone.</p></li><li class="rv"><h3>Selection</h3><p>We find suitable workers in our network, in the EU and in non-EU countries.</p></li><li class="rv"><h3>Start on site</h3><p>Training on request, for example a forklift licence. Accommodation for the workers through our network.</p></li><li class="rv"><h3>Support</h3><p>Multilingual support and administration of the workers, also after they start.</p></li></ol>
 </div></section><section aria-label="Testimonials" class="sec"><div class="wrap quotes">
