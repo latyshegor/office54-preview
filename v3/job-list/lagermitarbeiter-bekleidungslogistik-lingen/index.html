@@ -362,6 +362,55 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
   .board.noimg .row{grid-template-columns:minmax(0,1fr)}.board.noimg .row .tags,.board.noimg .row .pay{grid-column:1;grid-row:auto}
   .jobd dl>div{grid-template-columns:1fr;gap:6px}
 }
+/* mobile pass 07.10 */
+@media (max-width:1100px){
+  .hdr .wrap{height:64px;gap:14px}
+  .hdr .brand img{height:40px}
+  .open .menu{top:64px}
+  .burger{width:44px;height:44px}
+  .burger span{left:13px;right:13px}
+  .burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+  .open .burger span:nth-child(1),.open .burger span:nth-child(3){top:21px}
+  section[id]{scroll-margin-top:64px}
+}
+@media (max-width:600px){
+  :root{--sec:56px}
+  /* no auto-hyphenation in headings on phones (it split Deutsch-land, Schicht-plan); job titles keep it for words like Oberflächenbeschichtung */
+  h1,h2,h3{-webkit-hyphens:manual;hyphens:manual}
+  .phead.job h1{-webkit-hyphens:auto;hyphens:auto}
+  .door h1,.door h2{font-size:34px;margin-bottom:16px}
+  .phead h1{font-size:34px;margin-bottom:18px}
+  .phead.job h1{font-size:30px}
+  .phead.paper h1{font-size:32px}
+  .contact h1{font-size:32px}
+  .phead .wrap{padding-block:48px 44px}
+  .phead .lead,.door p{font-size:16.5px}
+  .head h2,.steps h2,.emp h2,.net h2,.team h2,.contact h2,.split2 h2{font-size:30px}
+  .head{margin-bottom:28px;gap:14px}
+  .steps h2{margin-bottom:32px}
+  .track{gap:26px}
+  .track li::before{width:44px;height:44px;font-size:18px}
+  .track h3,.svc h3{font-size:19px}
+  .svc{gap:16px;padding:22px 0}
+  .svc .ic{width:44px;height:44px;border-radius:14px}
+  .node{padding:24px;border-radius:22px}
+  .node h3{font-size:21px}
+  .model{padding:24px 0}
+  .model h3{font-size:21px}
+  .faq summary{font-size:17px;padding:20px 0}
+  .quote blockquote{font-size:19px}
+  .statement blockquote{font-size:24px}
+  .timeline b{font-size:26px}
+  .duo h2{font-size:27px}
+  .duo a{min-height:180px}
+  .phone{font-size:30px;margin-bottom:24px}
+  .row{align-items:start}
+  .row .tags .tag:nth-child(n+3){display:none}
+  .acts{flex-direction:column;align-items:stretch}
+  .acts .btn{justify-content:center}
+  .btn{min-height:52px}
+}
+/* end mobile pass */
 </style>
 <script>document.documentElement.classList.add('js')</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "JobPosting", "title": "Lagermitarbeiter Bekleidungslogistik", "description": "<p>Kommissionierung von Bekleidung und weiteren Waren, Zusammenstellung von Bestellungen, Vorbereitung für Verpackung und Versand sowie allgemeine Lagertätigkeiten.</p><p><strong>Anforderungen:</strong> Quereinsteiger willkommen, keine Vorerfahrung notwendig. Keine Deutschkenntnisse erforderlich. Führerschein wünschenswert.</p><p><strong>Mobilität:</strong> Organisierter Fahrservice aus Haselünne und Lingen.</p><p><strong>Tarifliche Zuschläge:</strong> Je nach tatsächlich geleisteter Arbeitszeit werden zusätzlich die tariflichen Zuschläge nach GVP gezahlt: Nachtarbeit +25 %, Sonntagsarbeit +50 %, Feiertagsarbeit +100 %, Mehrarbeit +25 %.</p><p><strong>Unterkunft und Transport:</strong> Unterkunft: Bei Bedarf 390 € pro Person/Monat. Fahrt zur Arbeit: Soweit für den jeweiligen Einsatz angeboten, organisiert für 5 € pro Arbeitstag für Hin- und Rückfahrt.</p><p>Die Beschäftigung erfolgt offiziell in Deutschland über einen deutschen Arbeitsvertrag.</p>", "datePosted": "2026-10-06", "employmentType": ["FULL_TIME"], "directApply": true, "hiringOrganization": {"@type": "Organization", "name": "Office54 GmbH", "sameAs": "https://www.office54.de/", "logo": "https://www.office54.de/wp-content/uploads/2024/10/Logo_O54_base-1-300x242.png"}, "jobLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Lingen", "addressRegion": "Niedersachsen", "addressCountry": "DE"}}, "baseSalary": {"@type": "MonetaryAmount", "currency": "EUR", "value": {"value": 15.33, "@type": "QuantitativeValue", "unitText": "HOUR"}}, "identifier": {"@type": "PropertyValue", "name": "Office54 GmbH", "value": "lagermitarbeiter-bekleidungslogistik-lingen"}, "validThrough": "2026-12-31T23:59:59+01:00"}</script>
 </head>

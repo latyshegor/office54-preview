@@ -367,6 +367,55 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
 /* language landings */
 .row .x{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--muted)}
 .facts b{font-weight:700;margin-right:4px}
+/* mobile pass 07.10 */
+@media (max-width:1100px){
+  .hdr .wrap{height:64px;gap:14px}
+  .hdr .brand img{height:40px}
+  .open .menu{top:64px}
+  .burger{width:44px;height:44px}
+  .burger span{left:13px;right:13px}
+  .burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+  .open .burger span:nth-child(1),.open .burger span:nth-child(3){top:21px}
+  section[id]{scroll-margin-top:64px}
+}
+@media (max-width:600px){
+  :root{--sec:56px}
+  /* no auto-hyphenation in headings on phones (it split Deutsch-land, Schicht-plan); job titles keep it for words like Oberflächenbeschichtung */
+  h1,h2,h3{-webkit-hyphens:manual;hyphens:manual}
+  .phead.job h1{-webkit-hyphens:auto;hyphens:auto}
+  .door h1,.door h2{font-size:34px;margin-bottom:16px}
+  .phead h1{font-size:34px;margin-bottom:18px}
+  .phead.job h1{font-size:30px}
+  .phead.paper h1{font-size:32px}
+  .contact h1{font-size:32px}
+  .phead .wrap{padding-block:48px 44px}
+  .phead .lead,.door p{font-size:16.5px}
+  .head h2,.steps h2,.emp h2,.net h2,.team h2,.contact h2,.split2 h2{font-size:30px}
+  .head{margin-bottom:28px;gap:14px}
+  .steps h2{margin-bottom:32px}
+  .track{gap:26px}
+  .track li::before{width:44px;height:44px;font-size:18px}
+  .track h3,.svc h3{font-size:19px}
+  .svc{gap:16px;padding:22px 0}
+  .svc .ic{width:44px;height:44px;border-radius:14px}
+  .node{padding:24px;border-radius:22px}
+  .node h3{font-size:21px}
+  .model{padding:24px 0}
+  .model h3{font-size:21px}
+  .faq summary{font-size:17px;padding:20px 0}
+  .quote blockquote{font-size:19px}
+  .statement blockquote{font-size:24px}
+  .timeline b{font-size:26px}
+  .duo h2{font-size:27px}
+  .duo a{min-height:180px}
+  .phone{font-size:30px;margin-bottom:24px}
+  .row{align-items:start}
+  .row .tags .tag:nth-child(n+3){display:none}
+  .acts{flex-direction:column;align-items:stretch}
+  .acts .btn{justify-content:center}
+  .btn{min-height:52px}
+}
+/* end mobile pass */
 </style>
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "pl", "mainEntity": [{"@type": "Question", "name": "Czy można pracować w Niemczech bez znajomości niemieckiego?", "acceptedAnswer": {"@type": "Answer", "text": "Tak. W większości naszych ofert niemiecki nie jest potrzebny: produkcja wypieków, spawanie, malowanie, magazyn odzieży. Przy kompletacji w Oldenburgu system głosowy działa po polsku, trzeba tylko znać liczby od 1 do 100 po niemiecku. Mechanicy potrzebują niemieckiego na poziomie B1."}}, {"@type": "Question", "name": "Ile można zarobić?", "acceptedAnswer": {"@type": "Answer", "text": "Stawki od 15,33 do 19,00 € za godzinę brutto. Do tego dodatki według taryfy GVP: noc +25 %, niedziela +50 %, święta +100 %, nadgodziny +25 %. Przy kompletacji w Oldenburgu jest premia za wydajność, od kilkuset do 1000 € miesięcznie i więcej."}}, {"@type": "Question", "name": "Czy trzeba płacić agencji?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. Dla pracowników pośrednictwo przez Office54 jest bezpłatne."}}, {"@type": "Question", "name": "Czy pomagacie z zakwaterowaniem?", "acceptedAnswer": {"@type": "Answer", "text": "Tak, w razie potrzeby. Zakwaterowanie kosztuje 390 € miesięcznie za osobę. Dojazd do pracy przy wielu ofertach organizujemy za 5 € za dzień pracy, w obie strony."}}, {"@type": "Question", "name": "W jakich miastach jest praca?", "acceptedAnswer": {"@type": "Answer", "text": "Oldenburg, Hamburg i miasta Dolnej Saksonii: Haselünne, Nordhorn, Werlte, Lingen, Hude, Westerstede."}}, {"@type": "Question", "name": "W jakim języku można z wami rozmawiać?", "acceptedAnswer": {"@type": "Answer", "text": "Po polsku, ukraińsku, rosyjsku, rumuńsku, angielsku lub niemiecku."}}, {"@type": "Question", "name": "Nie jestem z UE. Czy mogę się zgłosić?", "acceptedAnswer": {"@type": "Answer", "text": "Tak, napisz do nas. Podpowiemy, jakie dokumenty są potrzebne, i pomożemy z zezwoleniem na pobyt."}}]}</script>

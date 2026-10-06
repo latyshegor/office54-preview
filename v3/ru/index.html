@@ -367,6 +367,55 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
 /* language landings */
 .row .x{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--muted)}
 .facts b{font-weight:700;margin-right:4px}
+/* mobile pass 07.10 */
+@media (max-width:1100px){
+  .hdr .wrap{height:64px;gap:14px}
+  .hdr .brand img{height:40px}
+  .open .menu{top:64px}
+  .burger{width:44px;height:44px}
+  .burger span{left:13px;right:13px}
+  .burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+  .open .burger span:nth-child(1),.open .burger span:nth-child(3){top:21px}
+  section[id]{scroll-margin-top:64px}
+}
+@media (max-width:600px){
+  :root{--sec:56px}
+  /* no auto-hyphenation in headings on phones (it split Deutsch-land, Schicht-plan); job titles keep it for words like Oberflächenbeschichtung */
+  h1,h2,h3{-webkit-hyphens:manual;hyphens:manual}
+  .phead.job h1{-webkit-hyphens:auto;hyphens:auto}
+  .door h1,.door h2{font-size:34px;margin-bottom:16px}
+  .phead h1{font-size:34px;margin-bottom:18px}
+  .phead.job h1{font-size:30px}
+  .phead.paper h1{font-size:32px}
+  .contact h1{font-size:32px}
+  .phead .wrap{padding-block:48px 44px}
+  .phead .lead,.door p{font-size:16.5px}
+  .head h2,.steps h2,.emp h2,.net h2,.team h2,.contact h2,.split2 h2{font-size:30px}
+  .head{margin-bottom:28px;gap:14px}
+  .steps h2{margin-bottom:32px}
+  .track{gap:26px}
+  .track li::before{width:44px;height:44px;font-size:18px}
+  .track h3,.svc h3{font-size:19px}
+  .svc{gap:16px;padding:22px 0}
+  .svc .ic{width:44px;height:44px;border-radius:14px}
+  .node{padding:24px;border-radius:22px}
+  .node h3{font-size:21px}
+  .model{padding:24px 0}
+  .model h3{font-size:21px}
+  .faq summary{font-size:17px;padding:20px 0}
+  .quote blockquote{font-size:19px}
+  .statement blockquote{font-size:24px}
+  .timeline b{font-size:26px}
+  .duo h2{font-size:27px}
+  .duo a{min-height:180px}
+  .phone{font-size:30px;margin-bottom:24px}
+  .row{align-items:start}
+  .row .tags .tag:nth-child(n+3){display:none}
+  .acts{flex-direction:column;align-items:stretch}
+  .acts .btn{justify-content:center}
+  .btn{min-height:52px}
+}
+/* end mobile pass */
 </style>
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ru", "mainEntity": [{"@type": "Question", "name": "Можно ли работать в Германии без знания немецкого?", "acceptedAnswer": {"@type": "Answer", "text": "Да. На большинстве наших вакансий немецкий не нужен: производство выпечки, сварка, покраска, склад одежды. На комплектовке в Ольденбурге голосовая система работает и на русском, нужно только знать числа от 1 до 100 по-немецки. Механикам нужен немецкий B1."}}, {"@type": "Question", "name": "Сколько можно заработать?", "acceptedAnswer": {"@type": "Answer", "text": "Ставки от 15,33 до 19,00 € в час брутто. Сверху доплаты по тарифу GVP: ночь +25 %, воскресенье +50 %, праздники +100 %, сверхурочные +25 %. На комплектовке в Ольденбурге есть премия за выработку, от нескольких сотен до 1 000 € в месяц и больше."}}, {"@type": "Question", "name": "Нужно ли платить агентству?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Для работников трудоустройство через Office54 бесплатное."}}, {"@type": "Question", "name": "Вы помогаете с жильем?", "acceptedAnswer": {"@type": "Answer", "text": "Да, если нужно. Жилье стоит 390 € в месяц с человека. Дорогу до работы на многих вакансиях организуем за 5 € в рабочий день, туда и обратно."}}, {"@type": "Question", "name": "В каких городах есть работа?", "acceptedAnswer": {"@type": "Answer", "text": "Ольденбург, Гамбург и города Нижней Саксонии: Хазелюнне, Нордхорн, Верльте, Линген, Худе, Вестерштеде."}}, {"@type": "Question", "name": "На каком языке с вами можно говорить?", "acceptedAnswer": {"@type": "Answer", "text": "На русском, украинском, польском, румынском, английском или немецком."}}, {"@type": "Question", "name": "Я не из ЕС. Можно ли к вам обратиться?", "acceptedAnswer": {"@type": "Answer", "text": "Да, напишите нам. Мы подскажем, какие документы нужны, и поможем с видом на жительство."}}]}</script>

@@ -362,6 +362,55 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
   .board.noimg .row{grid-template-columns:minmax(0,1fr)}.board.noimg .row .tags,.board.noimg .row .pay{grid-column:1;grid-row:auto}
   .jobd dl>div{grid-template-columns:1fr;gap:6px}
 }
+/* mobile pass 07.10 */
+@media (max-width:1100px){
+  .hdr .wrap{height:64px;gap:14px}
+  .hdr .brand img{height:40px}
+  .open .menu{top:64px}
+  .burger{width:44px;height:44px}
+  .burger span{left:13px;right:13px}
+  .burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+  .open .burger span:nth-child(1),.open .burger span:nth-child(3){top:21px}
+  section[id]{scroll-margin-top:64px}
+}
+@media (max-width:600px){
+  :root{--sec:56px}
+  /* no auto-hyphenation in headings on phones (it split Deutsch-land, Schicht-plan); job titles keep it for words like Oberflächenbeschichtung */
+  h1,h2,h3{-webkit-hyphens:manual;hyphens:manual}
+  .phead.job h1{-webkit-hyphens:auto;hyphens:auto}
+  .door h1,.door h2{font-size:34px;margin-bottom:16px}
+  .phead h1{font-size:34px;margin-bottom:18px}
+  .phead.job h1{font-size:30px}
+  .phead.paper h1{font-size:32px}
+  .contact h1{font-size:32px}
+  .phead .wrap{padding-block:48px 44px}
+  .phead .lead,.door p{font-size:16.5px}
+  .head h2,.steps h2,.emp h2,.net h2,.team h2,.contact h2,.split2 h2{font-size:30px}
+  .head{margin-bottom:28px;gap:14px}
+  .steps h2{margin-bottom:32px}
+  .track{gap:26px}
+  .track li::before{width:44px;height:44px;font-size:18px}
+  .track h3,.svc h3{font-size:19px}
+  .svc{gap:16px;padding:22px 0}
+  .svc .ic{width:44px;height:44px;border-radius:14px}
+  .node{padding:24px;border-radius:22px}
+  .node h3{font-size:21px}
+  .model{padding:24px 0}
+  .model h3{font-size:21px}
+  .faq summary{font-size:17px;padding:20px 0}
+  .quote blockquote{font-size:19px}
+  .statement blockquote{font-size:24px}
+  .timeline b{font-size:26px}
+  .duo h2{font-size:27px}
+  .duo a{min-height:180px}
+  .phone{font-size:30px;margin-bottom:24px}
+  .row{align-items:start}
+  .row .tags .tag:nth-child(n+3){display:none}
+  .acts{flex-direction:column;align-items:stretch}
+  .acts .btn{justify-content:center}
+  .btn{min-height:52px}
+}
+/* end mobile pass */
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -380,7 +429,7 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
   <button class="burger" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
 </div></header>
 <main id="main">
-<section class="phead photo" aria-labelledby="h1"><img src="/office54-preview/assets/hero-poster.jpg" alt="" aria-hidden="true"><svg class="rings" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" stroke="#7fdcec" stroke-width="2.5" stroke-dasharray="430 148" transform="rotate(-140 100 100)" opacity=".9"/><circle cx="100" cy="100" r="70" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="300 140" transform="rotate(-100 100 100)" opacity=".75"/><circle cx="100" cy="100" r="48" stroke="#17b4cf" stroke-width="2.5" stroke-dasharray="210 92" transform="rotate(-60 100 100)"/></svg><div class="wrap"><span class="eyebrow">Über uns</span><h1 id="h1">Ein Familienunternehmen für Arbeit in Deutschland.</h1><p class="lead">Wir verbinden Fach- und Arbeitskräfte aus dem Ausland mit Unternehmen in Deutschland. Persönlich, mehrsprachig und auch nach dem ersten Arbeitstag.</p></div></section><section class="sec" aria-labelledby="hist-h"><div class="wrap split2"><div class="lead rv"><h2 id="hist-h">Unsere Geschichte</h2><p>Personaldienstleister seit 2021, mit über 20 Jahren Branchenerfahrung des Gründers.</p></div><ol class="timeline"><li class="rv"><b>2021</b><div><h3>Gründung</h3><p>Waldemar Grabowski gründet die Office54 GmbH. Er bringt über zwei Jahrzehnte Erfahrung in der Personalvermittlung mit und rekrutiert seit vielen Jahren Fachkräfte aus Osteuropa und russischsprachigen Ländern.</p></div></li><li class="rv"><b>2022</b><div><h3>Ausbildung</h3><p>Stefan Grabowski schließt seine Ausbildung zum Personaldienstleistungskaufmann ab.</p></div></li><li class="rv"><b>2024</b><div><h3>Neue Geschäftsführung</h3><p>Stefan Grabowski, der Sohn des Gründers, wird Geschäftsführer. Gemeinsam mit seinem Vater setzt er die Vision fort, Menschen aus dem Ausland eine Chance in Deutschland zu geben.</p></div></li><li class="rv"><b>Heute</b><div><h3>Drei Firmen, ein Team</h3><p>Ein Netzwerk aus Office54, Domowoi und Caplex unter dem Dach der Grabowski Holding. Büro in Oldenburg, Betreuung in sechs Sprachen.</p></div></li></ol></div></section><section class="sec statement" aria-label="Unsere Mission"><div class="wrap"><span class="eyebrow rv" style="color:#0a6d7e;margin-bottom:26px">Unsere Mission</span><blockquote class="rv">Wir möchten qualifizierten Menschen aus dem Ausland den Einstieg in den deutschen Arbeitsmarkt erleichtern und gleichzeitig Unternehmen unterstützen, die nach motivierten Arbeitskräften suchen.</blockquote><p class="src rv">Mit gezielten Integrationsmaßnahmen unterstützen wir unsere Mitarbeiter dabei, beruflich und persönlich in Deutschland anzukommen.</p></div></section><section class="sec" aria-labelledby="val-h"><div class="wrap emp"><div class="lead rv"><h2 id="val-h">Wofür wir stehen</h2><p>Drei Grundsätze, nach denen wir Stellen auswählen und mit Bewerbern und Arbeitgebern umgehen.</p></div><div><div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.4 3 8.3 7 9.5 4-1.2 7-5.1 7-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Integrität</h3><p>Wir prüfen jede Stelle, bevor wir sie anbieten. Bewerber bekommen nur seriöse Angebote.</p></div></div><div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/></svg></span><div><h3>Qualität vor Quantität</h3><p>Statt Tausender irrelevanter Anzeigen eine gezielte Auswahl, die zu Fähigkeiten, Erfahrung und Branche passt.</p></div></div><div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></svg></span><div><h3>Transparenz</h3><p>Klare Informationen zu Stelle, Lohn und Ort für Bewerber. Korrekte und professionelle Darstellung der Stellen für Arbeitgeber.</p></div></div></div></div></section><section class="sec net" id="netzwerk" aria-labelledby="net-h"><div class="wrap">
+<section class="phead photo" aria-labelledby="h1"><img src="/office54-preview/assets/hero-poster.jpg" alt="" aria-hidden="true"><svg class="rings" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" stroke="#7fdcec" stroke-width="2.5" stroke-dasharray="430 148" transform="rotate(-140 100 100)" opacity=".9"/><circle cx="100" cy="100" r="70" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="300 140" transform="rotate(-100 100 100)" opacity=".75"/><circle cx="100" cy="100" r="48" stroke="#17b4cf" stroke-width="2.5" stroke-dasharray="210 92" transform="rotate(-60 100 100)"/></svg><div class="wrap"><span class="eyebrow">Über uns</span><h1 id="h1">Ein Familien­unternehmen für Arbeit in Deutschland.</h1><p class="lead">Wir verbinden Fach- und Arbeitskräfte aus dem Ausland mit Unternehmen in Deutschland. Persönlich, mehrsprachig und auch nach dem ersten Arbeitstag.</p></div></section><section class="sec" aria-labelledby="hist-h"><div class="wrap split2"><div class="lead rv"><h2 id="hist-h">Unsere Geschichte</h2><p>Personaldienstleister seit 2021, mit über 20 Jahren Branchenerfahrung des Gründers.</p></div><ol class="timeline"><li class="rv"><b>2021</b><div><h3>Gründung</h3><p>Waldemar Grabowski gründet die Office54 GmbH. Er bringt über zwei Jahrzehnte Erfahrung in der Personalvermittlung mit und rekrutiert seit vielen Jahren Fachkräfte aus Osteuropa und russischsprachigen Ländern.</p></div></li><li class="rv"><b>2022</b><div><h3>Ausbildung</h3><p>Stefan Grabowski schließt seine Ausbildung zum Personaldienstleistungskaufmann ab.</p></div></li><li class="rv"><b>2024</b><div><h3>Neue Geschäftsführung</h3><p>Stefan Grabowski, der Sohn des Gründers, wird Geschäftsführer. Gemeinsam mit seinem Vater setzt er die Vision fort, Menschen aus dem Ausland eine Chance in Deutschland zu geben.</p></div></li><li class="rv"><b>Heute</b><div><h3>Drei Firmen, ein Team</h3><p>Ein Netzwerk aus Office54, Domowoi und Caplex unter dem Dach der Grabowski Holding. Büro in Oldenburg, Betreuung in sechs Sprachen.</p></div></li></ol></div></section><section class="sec statement" aria-label="Unsere Mission"><div class="wrap"><span class="eyebrow rv" style="color:#0a6d7e;margin-bottom:26px">Unsere Mission</span><blockquote class="rv">Wir möchten qualifizierten Menschen aus dem Ausland den Einstieg in den deutschen Arbeitsmarkt erleichtern und gleichzeitig Unternehmen unterstützen, die nach motivierten Arbeitskräften suchen.</blockquote><p class="src rv">Mit gezielten Integrationsmaßnahmen unterstützen wir unsere Mitarbeiter dabei, beruflich und persönlich in Deutschland anzukommen.</p></div></section><section class="sec" aria-labelledby="val-h"><div class="wrap emp"><div class="lead rv"><h2 id="val-h">Wofür wir stehen</h2><p>Drei Grundsätze, nach denen wir Stellen auswählen und mit Bewerbern und Arbeitgebern umgehen.</p></div><div><div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.4 3 8.3 7 9.5 4-1.2 7-5.1 7-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Integrität</h3><p>Wir prüfen jede Stelle, bevor wir sie anbieten. Bewerber bekommen nur seriöse Angebote.</p></div></div><div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/></svg></span><div><h3>Qualität vor Quantität</h3><p>Statt Tausender irrelevanter Anzeigen eine gezielte Auswahl, die zu Fähigkeiten, Erfahrung und Branche passt.</p></div></div><div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></svg></span><div><h3>Transparenz</h3><p>Klare Informationen zu Stelle, Lohn und Ort für Bewerber. Korrekte und professionelle Darstellung der Stellen für Arbeitgeber.</p></div></div></div></div></section><section class="sec net" id="netzwerk" aria-labelledby="net-h"><div class="wrap">
     <div class="top rv"><h2 id="net-h">Ein Netzwerk aus drei Firmen.</h2><p>Unter dem Dach der Grabowski Holding: Personal, Unterkünfte und Logistik aus einer Hand.</p></div>
     <div class="nodes">
       <article class="node rv"><svg class="mark" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27" fill="none" stroke="#17b4cf" stroke-width="3" stroke-dasharray="125 45" transform="rotate(-140 30 30)"/><circle cx="30" cy="30" r="17" fill="none" stroke="#140c33" stroke-width="3" stroke-dasharray="75 32" transform="rotate(-80 30 30)"/></svg><span class="role">Personal</span><h3>Office54 GmbH</h3><p>Personalvermittlung und Zeitarbeit mit weltweiter Rekrutierung, Schulungen und mehrsprachiger Betreuung.</p></article>

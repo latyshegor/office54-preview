@@ -362,6 +362,55 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
   .board.noimg .row{grid-template-columns:minmax(0,1fr)}.board.noimg .row .tags,.board.noimg .row .pay{grid-column:1;grid-row:auto}
   .jobd dl>div{grid-template-columns:1fr;gap:6px}
 }
+/* mobile pass 07.10 */
+@media (max-width:1100px){
+  .hdr .wrap{height:64px;gap:14px}
+  .hdr .brand img{height:40px}
+  .open .menu{top:64px}
+  .burger{width:44px;height:44px}
+  .burger span{left:13px;right:13px}
+  .burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+  .open .burger span:nth-child(1),.open .burger span:nth-child(3){top:21px}
+  section[id]{scroll-margin-top:64px}
+}
+@media (max-width:600px){
+  :root{--sec:56px}
+  /* no auto-hyphenation in headings on phones (it split Deutsch-land, Schicht-plan); job titles keep it for words like Oberflächenbeschichtung */
+  h1,h2,h3{-webkit-hyphens:manual;hyphens:manual}
+  .phead.job h1{-webkit-hyphens:auto;hyphens:auto}
+  .door h1,.door h2{font-size:34px;margin-bottom:16px}
+  .phead h1{font-size:34px;margin-bottom:18px}
+  .phead.job h1{font-size:30px}
+  .phead.paper h1{font-size:32px}
+  .contact h1{font-size:32px}
+  .phead .wrap{padding-block:48px 44px}
+  .phead .lead,.door p{font-size:16.5px}
+  .head h2,.steps h2,.emp h2,.net h2,.team h2,.contact h2,.split2 h2{font-size:30px}
+  .head{margin-bottom:28px;gap:14px}
+  .steps h2{margin-bottom:32px}
+  .track{gap:26px}
+  .track li::before{width:44px;height:44px;font-size:18px}
+  .track h3,.svc h3{font-size:19px}
+  .svc{gap:16px;padding:22px 0}
+  .svc .ic{width:44px;height:44px;border-radius:14px}
+  .node{padding:24px;border-radius:22px}
+  .node h3{font-size:21px}
+  .model{padding:24px 0}
+  .model h3{font-size:21px}
+  .faq summary{font-size:17px;padding:20px 0}
+  .quote blockquote{font-size:19px}
+  .statement blockquote{font-size:24px}
+  .timeline b{font-size:26px}
+  .duo h2{font-size:27px}
+  .duo a{min-height:180px}
+  .phone{font-size:30px;margin-bottom:24px}
+  .row{align-items:start}
+  .row .tags .tag:nth-child(n+3){display:none}
+  .acts{flex-direction:column;align-items:stretch}
+  .acts .btn{justify-content:center}
+  .btn{min-height:52px}
+}
+/* end mobile pass */
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -380,7 +429,7 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
   <button class="burger" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
 </div></header>
 <main id="main">
-<section class="phead cyan" aria-labelledby="h1"><svg class="rings" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" stroke="#140c33" stroke-width="2.5" stroke-dasharray="430 148" transform="rotate(-140 100 100)" opacity=".9"/><circle cx="100" cy="100" r="70" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="300 140" transform="rotate(-100 100 100)" opacity=".75"/><circle cx="100" cy="100" r="48" stroke="#140c33" stroke-width="2.5" stroke-dasharray="210 92" transform="rotate(-60 100 100)"/></svg><div class="wrap"><span class="eyebrow">Für Unternehmen</span><h1 id="h1">Personal für Lager, Logistik und Produktion.</h1><p class="lead">Wir finden Mitarbeiter für Ihre offenen Schichten und betreuen sie in ihrer Sprache. Sie konzentrieren sich auf Ihr Kerngeschäft.</p><div class="acts"><a class="btn btn-night" href="#anfrage">Personal anfragen <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-ghost dark" href="tel:+4917661513250">+49 176 61513250</a></div></div></section><div class="facts"><div class="wrap"><ul><li>Logistik, Produktion, Lagerhaltung</li><li>Rekrutierung in der EU und in Nicht-EU-Ländern</li><li>Betreuung in sechs Sprachen</li><li>Schulungen wie Staplerschein</li></ul></div></div><section class="sec" aria-labelledby="models-h"><div class="wrap"><div class="head rv"><h2 id="models-h">Fünf Modelle der Zusammenarbeit</h2><p>Vom kurzfristigen Einsatz bis zur festen Anstellung. Welches Modell passt, klären wir im ersten Gespräch.</p></div><ol class="models"><li class="model rv"><div><h3>Arbeitnehmerüberlassung</h3><span class="tag">Bei Engpässen</span></div><p>Kurzfristige Lösungen für Personalengpässe. Unsere Zeitarbeitskräfte sind schnell einsetzbar und auf Ihre Anforderungen vorbereitet.</p></li><li class="model rv"><div><h3>Direktvermittlung</h3><span class="tag">Feste Anstellung</span></div><p>Der Mitarbeiter wird direkt bei Ihnen angestellt. Unser Rundumservice bleibt bestehen: Verwaltung, Koordination und Betreuung der Mitarbeiter.</p></li><li class="model rv"><div><h3>Zeitarbeit mit Übernahmeoption</h3><span class="tag">Erst kennenlernen</span></div><p>Lernen Sie Mitarbeiter zuerst im Einsatz kennen und entscheiden Sie danach über eine dauerhafte Anstellung.</p></li><li class="model rv"><div><h3>Verwaltungspauschale</h3><span class="tag">Pro Arbeitsstunde</span></div><p>Der Mitarbeiter ist direkt bei Ihnen angestellt. Unterkunft, Transport und Betreuung organisieren weiterhin wir – gegen einen vereinbarten Servicebetrag pro geleisteter Arbeitsstunde.</p></li><li class="model rv"><div><h3>Schulungen und Zertifikate</h3><span class="tag">Zum Beispiel Staplerschein</span></div><p>Spezialisierte Schulungen wie Staplerscheine, damit die Mitarbeiter direkt einsatzbereit in Ihrem Betrieb starten.</p></li></ol></div></section><section class="sec" style="padding-top:0" aria-labelledby="roles-h"><div class="wrap split2"><div class="lead rv"><h2 id="roles-h">Wen wir vermitteln</h2><p>Wir sind spezialisiert auf Lager, Logistik, Lebensmittelproduktion und Metallverarbeitung. Unser Netzwerk umfasst Helfer und Fachkräfte aus EU- und Nicht-EU-Ländern, die in Deutschland arbeiten dürfen.</p></div><ul class="roles"><li class="rv">Kommissionierer und Lagerhelfer<span>Logistik</span></li><li class="rv">Staplerfahrer<span>Lager</span></li><li class="rv">Produktions- und Verpackungsmitarbeiter – auch in der Lebensmittelproduktion<span>Produktion</span></li><li class="rv">MIG/MAG-Schweißer<span>Metall</span></li><li class="rv">Schlosser, Mechaniker und Monteure<span>Handwerk</span></li><li class="rv">Lackierer, Pulverbeschichter und Helfer in der Oberflächenbearbeitung<span>Oberfläche</span></li><li class="more rv">Ihr Bereich ist nicht dabei? Sprechen Sie uns an.</li></ul></div></section><section class="sec steps" aria-labelledby="steps-f-h"><div class="wrap">
+<section class="phead cyan" aria-labelledby="h1"><svg class="rings" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" stroke="#140c33" stroke-width="2.5" stroke-dasharray="430 148" transform="rotate(-140 100 100)" opacity=".9"/><circle cx="100" cy="100" r="70" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="300 140" transform="rotate(-100 100 100)" opacity=".75"/><circle cx="100" cy="100" r="48" stroke="#140c33" stroke-width="2.5" stroke-dasharray="210 92" transform="rotate(-60 100 100)"/></svg><div class="wrap"><span class="eyebrow">Für Unternehmen</span><h1 id="h1">Personal für Lager, Logistik und Produktion.</h1><p class="lead">Wir finden Mitarbeiter für Ihre offenen Schichten und betreuen sie in ihrer Sprache. Sie konzentrieren sich auf Ihr Kerngeschäft.</p><div class="acts"><a class="btn btn-night" href="#anfrage">Personal anfragen <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-ghost dark" href="tel:+4917661513250">+49 176 61513250</a></div></div></section><div class="facts"><div class="wrap"><ul><li>Logistik, Produktion, Lagerhaltung</li><li>Rekrutierung in der EU und in Nicht-EU-Ländern</li><li>Betreuung in sechs Sprachen</li><li>Schulungen wie Staplerschein</li></ul></div></div><section class="sec" aria-labelledby="models-h"><div class="wrap"><div class="head rv"><h2 id="models-h">Fünf Modelle der Zusammenarbeit</h2><p>Vom kurzfristigen Einsatz bis zur festen Anstellung. Welches Modell passt, klären wir im ersten Gespräch.</p></div><ol class="models"><li class="model rv"><div><h3>Arbeitnehmer­überlassung</h3><span class="tag">Bei Engpässen</span></div><p>Kurzfristige Lösungen für Personalengpässe. Unsere Zeitarbeitskräfte sind schnell einsetzbar und auf Ihre Anforderungen vorbereitet.</p></li><li class="model rv"><div><h3>Direktvermittlung</h3><span class="tag">Feste Anstellung</span></div><p>Der Mitarbeiter wird direkt bei Ihnen angestellt. Unser Rundumservice bleibt bestehen: Verwaltung, Koordination und Betreuung der Mitarbeiter.</p></li><li class="model rv"><div><h3>Zeitarbeit mit Übernahmeoption</h3><span class="tag">Erst kennenlernen</span></div><p>Lernen Sie Mitarbeiter zuerst im Einsatz kennen und entscheiden Sie danach über eine dauerhafte Anstellung.</p></li><li class="model rv"><div><h3>Verwaltungspauschale</h3><span class="tag">Pro Arbeitsstunde</span></div><p>Der Mitarbeiter ist direkt bei Ihnen angestellt. Unterkunft, Transport und Betreuung organisieren weiterhin wir – gegen einen vereinbarten Servicebetrag pro geleisteter Arbeitsstunde.</p></li><li class="model rv"><div><h3>Schulungen und Zertifikate</h3><span class="tag">Zum Beispiel Staplerschein</span></div><p>Spezialisierte Schulungen wie Staplerscheine, damit die Mitarbeiter direkt einsatzbereit in Ihrem Betrieb starten.</p></li></ol></div></section><section class="sec" style="padding-top:0" aria-labelledby="roles-h"><div class="wrap split2"><div class="lead rv"><h2 id="roles-h">Wen wir vermitteln</h2><p>Wir sind spezialisiert auf Lager, Logistik, Lebensmittelproduktion und Metallverarbeitung. Unser Netzwerk umfasst Helfer und Fachkräfte aus EU- und Nicht-EU-Ländern, die in Deutschland arbeiten dürfen.</p></div><ul class="roles"><li class="rv">Kommissionierer und Lagerhelfer<span>Logistik</span></li><li class="rv">Staplerfahrer<span>Lager</span></li><li class="rv">Produktions- und Verpackungsmitarbeiter – auch in der Lebensmittelproduktion<span>Produktion</span></li><li class="rv">MIG/MAG-Schweißer<span>Metall</span></li><li class="rv">Schlosser, Mechaniker und Monteure<span>Handwerk</span></li><li class="rv">Lackierer, Pulverbeschichter und Helfer in der Oberflächenbearbeitung<span>Oberfläche</span></li><li class="more rv">Ihr Bereich ist nicht dabei? Sprechen Sie uns an.</li></ul></div></section><section class="sec steps" aria-labelledby="steps-f-h"><div class="wrap">
     <h2 class="rv" id="steps-f-h">So läuft die Zusammenarbeit</h2>
     <ol class="track"><li class="rv"><h3>Anfrage</h3><p>Sie nennen Tätigkeit, Anzahl, Einsatzort und Starttermin. Per Formular oder Telefon.</p></li><li class="rv"><h3>Auswahl</h3><p>Wir suchen passende Mitarbeiter in unserem Netzwerk, in der EU und in Nicht-EU-Ländern.</p></li><li class="rv"><h3>Start im Betrieb</h3><p>Auf Wunsch mit Schulung, zum Beispiel Staplerschein. Unterkunft für die Mitarbeiter über unser Netzwerk.</p></li><li class="rv"><h3>Betreuung</h3><p>Mehrsprachige Betreuung und Verwaltung der Mitarbeiter, auch nach dem Start.</p></li></ol>
   </div></section><section class="sec" aria-label="Erfahrungsberichte"><div class="wrap quotes">
