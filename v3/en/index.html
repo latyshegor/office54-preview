@@ -45,7 +45,7 @@ h1,h2,h3{overflow-wrap:break-word;font-family:Geologica,Onest,sans-serif;font-we
 .skip{position:absolute;left:-999px;top:8px;background:var(--night);color:#fff;padding:10px 14px;z-index:100}.skip:focus{left:12px}
 
 /* header */
-.hdr{position:sticky;top:0;z-index:50;background:rgba(246,245,241,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.hdr{position:sticky;top:0;z-index:50;background:rgba(246,245,241,.94);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
 .hdr .wrap{display:flex;align-items:center;gap:28px;height:76px}
 .hdr .brand img{height:46px;width:auto}
 .hdr nav{margin-left:auto}
@@ -220,7 +220,7 @@ textarea{min-height:120px;resize:vertical}
 @media (max-width:600px){
   .quick span{flex-basis:100%}
   body{font-size:16px}
-  h1,h2,h3{hyphens:auto}
+  h1,h2,h3{-webkit-hyphens:auto;hyphens:auto}
   .door{min-height:0;padding:44px 20px 40px}
   .door:first-child{min-height:72svh}
   .track{grid-template-columns:1fr}.track li::after{display:none}
