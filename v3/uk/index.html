@@ -1,13 +1,16 @@
 <!doctype html>
+<!--
+Variant C, built from zero. Thesis: the site serves two different people, so the first screen is two doors.
+World: night indigo and signal cyan from the logo, warm paper for reading; Geologica display + Onest text (both carry Cyrillic for the language pages);
+the logo's concentric arcs as the only ornament. Copy is new German, written only from facts on the current site and job posts.
+-->
 <html lang="uk">
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Робота в Німеччині без знання німецької | Office54</title>
-<meta name="description" content="Вакансії на складах і виробництвах у Німеччині: від 15,33 € за годину, житло 390 € на місяць, безкоштовне працевлаштування. Говоримо українською. Office54.">
-<link rel="canonical" href="/office54-preview/v3/uk/">
-<link rel="alternate" hreflang="de" href="/office54-preview/v3/"><link rel="alternate" hreflang="ru" href="/office54-preview/v3/ru/"><link rel="alternate" hreflang="uk" href="/office54-preview/v3/uk/"><link rel="alternate" hreflang="pl" href="/office54-preview/v3/pl/"><link rel="alternate" hreflang="ro" href="/office54-preview/v3/ro/"><link rel="alternate" hreflang="en" href="/office54-preview/v3/en/"><link rel="alternate" hreflang="x-default" href="/office54-preview/v3/">
+<title>Office54 GmbH – робота і персонал у Німеччині</title>
+<meta name="description" content="Office54 GmbH: робота на складах, у виробництві та ремеслах, консультації шістьма мовами. Лізинг персоналу та пряме працевлаштування для компаній.">
 <link rel="icon" href="/office54-preview/assets/logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -240,155 +243,6 @@ textarea{min-height:120px;resize:vertical}
   .board-foot{flex-direction:column;align-items:flex-start}
   .who-switch{width:100%}.who-switch button{flex:1}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}.scene{display:none}}
-
-/* inner pages */
-section[id]{scroll-margin-top:76px}
-.menu a[aria-current=page]{background:var(--night);color:#fff}
-.phead{position:relative;isolation:isolate;overflow:hidden;background:var(--night);color:rgba(255,255,255,.82)}
-.phead .wrap{position:relative;padding-block:clamp(72px,9vw,136px) clamp(60px,7vw,108px)}
-.phead .eyebrow{color:var(--cyan-soft);margin-bottom:24px}
-.phead h1{color:#fff;font-size:clamp(44px,6.2vw,100px);max-width:1000px;margin-bottom:28px}
-.phead .lead{max-width:640px;font-size:clamp(17px,1.4vw,20px);margin:0}
-.phead .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
-.phead .rings{left:auto;right:clamp(18px,4vw,48px);top:clamp(28px,4.5vw,64px);width:min(210px,16vw)}
-@media (max-width:1200px){.phead .rings{display:none}}
-.phead .quick{margin-top:22px}
-.phead.cyan{background:var(--cyan);color:var(--night)}
-.phead.cyan .eyebrow,.phead.cyan h1{color:var(--night)}
-.phead.paper{background:var(--paper);color:var(--ink);border-bottom:1px solid var(--line)}
-.phead.paper .wrap{padding-block:clamp(56px,7vw,100px) clamp(40px,5vw,64px)}
-.phead.paper .eyebrow{color:#0a6d7e}.phead.paper h1{color:var(--ink);font-size:clamp(40px,5vw,76px);margin:0}.phead.paper .lead{margin-top:22px}
-.phead.photo>img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:50% 35%;filter:grayscale(.35) contrast(1.05);transform:scaleX(-1)}
-.phead.photo::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(20,12,51,.97) 0%,rgba(20,12,51,.88) 50%,rgba(20,12,51,.62) 100%)}
-.split2{display:grid;grid-template-columns:5fr 7fr;gap:clamp(36px,6vw,100px);align-items:start}
-.split2>*{min-width:0}
-.split2 .lead{position:sticky;top:110px}
-.split2 h2{font-size:clamp(36px,4.4vw,64px);margin-bottom:22px}
-.split2 .lead p{color:var(--muted);font-size:18px}
-.models{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink);counter-reset:m}
-.model{display:grid;grid-template-columns:90px minmax(0,1fr) minmax(0,1.4fr);gap:28px;align-items:start;padding:34px 0;border-bottom:1px solid var(--line)}
-.model::before{counter-increment:m;content:"0" counter(m);font:700 15px/2 Geologica,sans-serif;color:#0a6d7e;letter-spacing:.04em}
-.model h3{font-size:clamp(24px,2.2vw,32px);margin-bottom:14px}
-.model p{margin:0;color:var(--muted);font-size:17px}
-.roles{list-style:none;margin:0;padding:0}
-.roles li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);font:600 clamp(19px,1.7vw,24px)/1.25 Geologica,sans-serif;letter-spacing:-.02em}
-.roles li:first-child{border-top:1.5px solid var(--ink)}
-.roles li span{font:500 14px/1.3 Onest,sans-serif;color:var(--muted);letter-spacing:0;text-align:right}
-.roles li.more{font:500 16px/1.4 Onest,sans-serif;color:var(--muted);letter-spacing:0}
-.person-card{display:flex;align-items:center;gap:18px;margin-top:34px;padding-top:28px;border-top:1px solid rgba(255,255,255,.16)}
-.person-card img{width:76px;height:76px;border-radius:20px;object-fit:cover;object-position:50% 12%;background:var(--cyan)}
-.person-card b{display:block;color:#fff;font-weight:600}
-.person-card span{font-size:15px}
-select{appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23140c33' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center/16px;padding-right:44px;cursor:pointer}
-select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,180,207,.18)}
-.formcard .note{margin:0 0 22px;color:var(--muted);font-size:15.5px}
-.timeline{list-style:none;margin:0;padding:0}
-.timeline li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:28px;padding:30px 0;border-bottom:1px solid var(--line)}
-.timeline li:first-child{border-top:1.5px solid var(--ink)}
-.timeline b{font:700 clamp(28px,2.6vw,40px)/1 Geologica,sans-serif;letter-spacing:-.03em;color:#0a6d7e}
-.timeline h3{font-size:22px;margin-bottom:8px}
-.timeline p{margin:0;color:var(--muted)}
-.statement{background:var(--cyan-wash)}
-.statement blockquote{margin:0;max-width:1120px;font:600 clamp(28px,3.4vw,52px)/1.16 Geologica,sans-serif;letter-spacing:-.03em;text-wrap:balance}
-.statement .src{margin:28px 0 0;color:var(--muted);font-size:16px}
-.duo{display:grid;grid-template-columns:1fr 1fr}
-.duo .w{padding-left:max(clamp(28px,4.5vw,64px),calc((100vw - var(--wrap))/2 + 48px))}
-.duo a{display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:320px;padding:clamp(28px,4.5vw,64px);text-decoration:none;transition:background .4s}
-.duo .f{padding-right:max(clamp(28px,4.5vw,64px),calc((100vw - var(--wrap))/2 + 48px))}
-.duo .w{background:var(--night);color:#fff}.duo .w:hover{background:var(--indigo)}
-.duo .w .eyebrow{color:var(--cyan-soft)}
-.duo .f{background:var(--cyan);color:var(--night)}.duo .f:hover{background:#3cc3da}
-.duo h2{font-size:clamp(32px,3.6vw,56px);max-width:520px;margin-top:-10px}
-.duo .go{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1.5px currentColor;transition:transform .5s var(--out)}
-.duo .go svg{width:20px;height:20px}
-.duo a:hover .go{transform:translateX(6px)}
-/* job list without photos + job pages */
-.board.noimg .row{grid-template-columns:minmax(0,1.2fr) minmax(0,1.4fr) 120px 40px}
-.board.noimg .row .tags{grid-column:auto;grid-row:auto}
-.phead.job h1{font-size:clamp(36px,4.6vw,72px);max-width:1100px;text-wrap:balance}
-.phead.job .lead{max-width:760px}
-.back{display:inline-flex;align-items:center;gap:8px;margin-top:8px;font-weight:600;color:#0a6d7e;text-underline-offset:5px}
-.back::before{content:"←"}
-.jobd dl{margin:0;border-top:1.5px solid var(--ink)}
-.jobd dl>div{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding:24px 0;border-bottom:1px solid var(--line)}
-.jobd dt{font:600 17px/1.4 Geologica,sans-serif;letter-spacing:-.01em}
-.jobd dd{margin:0;color:var(--muted);font-size:17px}
-.zus,.house{margin-top:48px}
-.zus h3,.house h3{font-size:clamp(22px,2vw,28px);margin-bottom:12px}
-.zus p,.house p{color:var(--muted);margin:0 0 10px}
-.house b{color:var(--ink);font-weight:600}
-.zus ul{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
-.zus li{padding:18px;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);font-size:14.5px;color:var(--muted)}
-.zus li b{display:block;font:700 26px/1.1 Geologica,sans-serif;letter-spacing:-.02em;color:#0a6d7e;margin-bottom:6px}
-.closing{margin:40px 0 0;padding-top:24px;border-top:1px solid var(--line);font-weight:600}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
-.chips button{font:600 14.5px/1 Onest,sans-serif;min-height:44px;padding:0 17px;border-radius:999px;border:0;background:#fff;box-shadow:inset 0 0 0 1px var(--line);cursor:pointer;color:var(--ink);transition:background .25s,color .25s}
-.chips button:hover{background:#ebe8e0}
-.chips button[aria-pressed=true]{background:var(--night);color:#fff;box-shadow:none}
-.found{color:var(--muted);font-size:15px;margin:0 0 14px}
-.row[hidden]{display:none}
-.inhouse{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.inhouse article{background:#fff;border-radius:28px;padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;gap:12px}
-.inhouse h3{font-size:clamp(22px,2vw,28px)}
-.inhouse p{margin:0;color:var(--muted)}
-.inhouse .role{font:600 13px/1 Onest,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#0a6d7e}
-.faq{border-top:1.5px solid var(--ink)}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{display:flex;justify-content:space-between;gap:24px;align-items:center;padding:24px 0;font:600 clamp(18px,1.6vw,22px)/1.3 Geologica,sans-serif;letter-spacing:-.02em;cursor:pointer;list-style:none}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--night);color:#fff;font:500 22px/1 Onest,sans-serif;transition:transform .4s var(--out)}
-.faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{margin:0 0 26px;max-width:760px;color:var(--muted)}
-.places{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.place{background:#fff;border-radius:28px;padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;gap:10px}
-.place .role{font:600 13px/1 Onest,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#0a6d7e}
-.place h3{font-size:clamp(24px,2.2vw,30px)}
-.place p{margin:0;color:var(--muted)}
-.place a{margin-top:14px;font-weight:600;color:#0a6d7e;text-underline-offset:5px;min-height:44px;display:inline-flex;align-items:center}
-.contact h1{color:#fff;font-size:clamp(44px,5.6vw,88px);margin:18px 0 26px}.contact .eyebrow{color:var(--cyan-soft)}
-.legal{max-width:820px;overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}
-.legal h3,.legal h4{font:600 21px/1.35 Geologica,sans-serif;letter-spacing:-.015em;margin:40px 0 12px}
-.legal ul,.legal ol{padding-left:1.2em}
-.legal a{color:#0a6d7e}
-@media (max-width:900px){
-  .split2,.inhouse,.places,.duo{grid-template-columns:1fr}.split2 .lead{position:static}
-  .model{grid-template-columns:48px minmax(0,1fr);gap:8px 16px}.model p{grid-column:2}
-  .phead .rings{display:none}.duo a{min-height:240px}
-  .board.noimg .row{grid-template-columns:minmax(0,1fr) 110px 40px}.board.noimg .row .tags{grid-column:1/3;grid-row:2}
-  .zus ul{grid-template-columns:1fr 1fr}
-}
-@media (max-width:600px){
-  .timeline li{grid-template-columns:1fr;gap:10px}
-  .roles li{flex-direction:column;gap:4px}.roles li span{text-align:left}
-  .board.noimg .row{grid-template-columns:minmax(0,1fr)}.board.noimg .row .tags,.board.noimg .row .pay{grid-column:1;grid-row:auto}
-  .jobd dl>div{grid-template-columns:1fr;gap:6px}
-}
-
-/* language pages */
-.row .x{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--muted)}
-.facts b{font-weight:700;margin-right:4px}
-.jd{border-bottom:1px solid var(--line)}
-.jd>summary{list-style:none;cursor:pointer}
-.jd>summary::-webkit-details-marker{display:none}
-.jd>summary.row{border-bottom:0}
-.jd>summary:focus-visible{outline:2px solid var(--cyan);outline-offset:4px;border-radius:8px}
-.jd .go{transition:transform .4s var(--out),background .3s}
-.jd[open]>summary .go{transform:rotate(90deg)}
-.jd[open]>summary{background:#efede6}
-.jd-body{padding:6px 0 40px;max-width:920px}
-.jd,#l-form{scroll-margin-top:76px}
-.jd-more{display:none}
-.jd[open] .jd-more .m,.jd:not([open]) .jd-more .l{display:none}
-@media (max-width:600px){.jd-more{display:inline-flex;align-items:center;gap:8px;font:600 14px/1 Onest,sans-serif;color:#0a6d7e;margin-top:2px}.jd-more::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .3s var(--out)}.jd[open] .jd-more::after{transform:translateY(2px) rotate(-135deg)}}
-.jd-kurz{list-style:none;margin:0 0 6px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.jd-kurz li{font:600 13.5px/1.2 Onest,sans-serif;padding:9px 12px;border-radius:999px;background:var(--cyan-wash);color:#0a6d7e}
-.jd .jobd dl{margin-top:22px}
-.jd-apply{margin-top:32px;padding:clamp(20px,3vw,30px);border-radius:22px;background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
-.jd-apply h3{font-size:21px;margin-bottom:8px}
-.jd-apply p{margin:0;color:var(--muted)}
-.jd-apply .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.foot .emp-link{opacity:.8}
 /* mobile pass 07.10 */
 @media (max-width:1100px){
   .hdr .wrap{height:64px;gap:14px}
@@ -439,29 +293,148 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
   .btn{min-height:52px}
 }
 /* end mobile pass */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}.scene{display:none}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "uk", "mainEntity": [{"@type": "Question", "name": "Чи можна працювати в Німеччині без знання німецької?", "acceptedAnswer": {"@type": "Answer", "text": "Так. На більшості наших вакансій німецька не потрібна: виробництво випічки, зварювання, фарбування, склад одягу. На комплектуванні в Ольденбурзі голосова система працює російською або польською, треба лише знати числа від 1 до 100 німецькою. Механікам потрібна німецька B1."}}, {"@type": "Question", "name": "Скільки можна заробити?", "acceptedAnswer": {"@type": "Answer", "text": "Ставки від 15,33 до 19,00 € за годину брутто. Зверху доплати за тарифом GVP: ніч +25 %, неділя +50 %, свята +100 %, понаднормові +25 %. На комплектуванні в Ольденбурзі є премія за виробіток, від кількох сотень до 1 000 € на місяць і більше."}}, {"@type": "Question", "name": "Чи потрібно платити агентству?", "acceptedAnswer": {"@type": "Answer", "text": "Ні. Для працівників працевлаштування через Office54 безкоштовне."}}, {"@type": "Question", "name": "Ви допомагаєте з житлом?", "acceptedAnswer": {"@type": "Answer", "text": "Так, якщо потрібно. Житло коштує 390 € на місяць з людини. Дорогу до роботи на багатьох вакансіях організуємо за 5 € за робочий день, туди й назад."}}, {"@type": "Question", "name": "У яких містах є робота?", "acceptedAnswer": {"@type": "Answer", "text": "Ольденбург, Гамбург і міста Нижньої Саксонії: Газелюнне, Нордгорн, Верльте, Лінген, Гуде, Вестерштеде."}}, {"@type": "Question", "name": "Якою мовою з вами можна говорити?", "acceptedAnswer": {"@type": "Answer", "text": "Українською, російською, польською, румунською, англійською або німецькою."}}, {"@type": "Question", "name": "Я не з ЄС. Чи можна до вас звернутися?", "acceptedAnswer": {"@type": "Answer", "text": "Так, напишіть нам. Ми підкажемо, які документи потрібні, і допоможемо з дозволом на проживання."}}]}</script>
+
+
+
+<link rel="alternate" hreflang="de" href="/office54-preview/v3/"><link rel="alternate" hreflang="en" href="/office54-preview/v3/en/"><link rel="alternate" hreflang="ru" href="/office54-preview/v3/ru/"><link rel="alternate" hreflang="uk" href="/office54-preview/v3/uk/"><link rel="alternate" hreflang="pl" href="/office54-preview/v3/pl/"><link rel="alternate" hreflang="ro" href="/office54-preview/v3/ro/"><link rel="alternate" hreflang="x-default" href="/office54-preview/v3/">
 </head>
 <body>
-<a class="skip" href="#main">Перейти до змісту</a>
-<header class="hdr"><div class="wrap"><a class="brand" href="/office54-preview/v3/uk/" aria-label="Office54 GmbH"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Office54 GmbH Logo"></a><nav aria-label="Вакансії"><ul class="menu" id="menu"><li><a href="/office54-preview/v3/uk/vakansii/">Вакансії</a></li><li><a href="#steps">Як влаштуватися</a></li><li><a href="#faq">Питання</a></li><li><a href="#kontakt">Контакти</a></li></ul></nav><details class="lsw" data-langsw><summary aria-label="Мова: Українська">UA<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></summary><ul><li><a href="/office54-preview/v3/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/office54-preview/v3/en/" hreflang="en" lang="en">English</a></li><li><a href="/office54-preview/v3/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/office54-preview/v3/uk/" hreflang="uk" lang="uk" aria-current="page">Українська</a></li><li><a href="/office54-preview/v3/pl/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/office54-preview/v3/ro/" hreflang="ro" lang="ro">Română</a></li></ul></details><button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button></div></header>
+<a class="skip" href="#main">Перейти до вмісту</a>
+<header class="hdr"><div class="wrap">
+  <a class="brand" href="/office54-preview/v3/uk/" aria-label="Office54 GmbH, головна сторінка"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Логотип Office54 GmbH"></a>
+  <nav aria-label="Головне меню"><ul class="menu" id="menu">
+    <li><a href="/office54-preview/v3/uk/vakansii/">Вакансії</a></li>
+    <li><a href="/office54-preview/v3/uk/losungen-fur-unternehmen/">Для роботодавців</a></li>
+    <li><a href="/office54-preview/v3/uk/about-us/">Про нас</a></li>
+    <li><a href="/office54-preview/v3/uk/contact-us/">Контакти</a></li>
+  </ul></nav>
+  <details class="lsw" data-langsw><summary aria-label="Мова: Українська">UA<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></summary><ul><li><a href="/office54-preview/v3/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/office54-preview/v3/en/" hreflang="en" lang="en">English</a></li><li><a href="/office54-preview/v3/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/office54-preview/v3/uk/" hreflang="uk" lang="uk" aria-current="page">Українська</a></li><li><a href="/office54-preview/v3/pl/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/office54-preview/v3/ro/" hreflang="ro" lang="ro">Română</a></li></ul></details>
+  <a class="btn btn-night" href="tel:+4917661513250">+49 176 61513250</a>
+  <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+</div></header>
+
 <main id="main">
-<section class="phead photo" aria-labelledby="h1"><img src="/office54-preview/assets/hero-poster.jpg" alt="" aria-hidden="true"><svg class="rings" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" stroke="#7fdcec" stroke-width="2.5" stroke-dasharray="430 148" transform="rotate(-140 100 100)" opacity=".9"/><circle cx="100" cy="100" r="70" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="300 140" transform="rotate(-100 100 100)" opacity=".75"/><circle cx="100" cy="100" r="48" stroke="#17b4cf" stroke-width="2.5" stroke-dasharray="210 92" transform="rotate(-60 100 100)"/></svg><div class="wrap"><span class="eyebrow">Office54 GmbH · Ольденбург, Німеччина</span><h1 id="h1">Робота в Німеччині без знання німецької мови</h1><p class="lead">Office54 GmbH це кадрове агентство з Ольденбурга (Нижня Саксонія). З 2021 року ми працевлаштовуємо людей зі Східної Європи на склади, виробництва та в майстерні Німеччини. З вами говорять українською, російською, польською, румунською, англійською та німецькою.</p><div class="acts"><a class="btn btn-cyan" href="/office54-preview/v3/uk/vakansii/">Переглянути вакансії <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-ghost" href="tel:+4917661513250">Зателефонувати</a></div><div class="quick"><span>Відгукнутися через</span><a href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a><a href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a></div></div></section><div class="facts"><div class="wrap"><ul><li><b>від 15,33 €</b>за годину брутто</li><li><b>0 €</b>за працевлаштування</li><li><b>6 мов</b>у нашій команді</li></ul></div></div><section class="sec" id="jobs" aria-labelledby="jobs-h"><div class="wrap"><div class="head rv"><h2 id="jobs-h">Вакансії зараз</h2><p>Ставки вказані брутто, без доплат за нічні зміни, неділі та свята.</p></div><ul class="board"><li class="row rv"><img src="/office54-preview/assets/job-kommissionierer.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/#kommissionierer-feinkost-oldenburg">Комплектувальник у відділі делікатесів</a></h3><div class="where">Ольденбург</div><p class="x">Збирання замовлень для магазинів за системою Pick-by-Voice, близько +8 °C. Премія за виробіток до 1 000 € на місяць і більше. Треба знати числа від 1 до 100 німецькою.</p></div><div class="tags"><span class="tag yes">Голосова система російською або польською</span></div><div class="pay">15,33 € на годину + премія</div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li><li class="row rv"><img src="/office54-preview/assets/job-fisch.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/#produktionsmitarbeiter-konditorei-haseluenne">Працівник кондитерського виробництва</a></h3><div class="where">Район Газелюнне</div><p class="x">Лінії з виробництва кексів, круасанів і випічки: виготовлення, фасування, пакування. Досвід не потрібен, робота у 3 зміни.</p></div><div class="tags"><span class="tag yes">Німецька не потрібна</span></div><div class="pay">15,33 € на годину</div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li><li class="row rv"><img src="/office54-preview/assets/job-mechaniker.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/#mechaniker-monteur-lkw-anhaenger-werlte">Механік-монтажник причепів для вантажівок</a></h3><div class="where">Район Верльте</div><p class="x">Монтаж і ремонт коліс, гальм, підвіски та пневматики на причепах і напівпричепах. Потрібен досвід роботи механіком.</p></div><div class="tags"><span class="tag">Потрібна німецька B1</span></div><div class="pay">17–19 € на годину</div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li><li class="row rv"><img src="/office54-preview/assets/job-schweisser.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/#mig-mag-schweisser-haseluenne">Зварювальник MIG/MAG, можна з навчанням</a></h3><div class="where">Район Газелюнне</div><p class="x">Контроль швів після зварювального робота, ручне доварювання MIG/MAG, зачищення. Перед стартом можна пройти курс зварювальника в нашій майстерні. Через 6 місяців ставка 17,50 €.</p></div><div class="tags"><span class="tag yes">Німецька не потрібна</span></div><div class="pay">від 17,00 € на годину</div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li><li class="row rv"><img src="/office54-preview/assets/job-stapler.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/#lagermitarbeiter-bekleidungslogistik-lingen">Працівник складу одягу, сезон</a></h3><div class="where">Район Лінгена</div><p class="x">З середини листопада до кінця грудня, близько 50 годин на тиждень. Збирання замовлень, досвід не потрібен. Розвезення з Газелюнне та Лінгена.</p></div><div class="tags"><span class="tag yes">Німецька не потрібна</span></div><div class="pay">15,33 € на годину</div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li></ul><div class="board-foot rv"><span>Розкажіть, яку роботу шукаєте. Ми відповімо вашою мовою.</span><a class="btn btn-night" href="/office54-preview/v3/uk/vakansii/">Усі вакансії (18) <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></div></div></section><section class="sec" style="padding-top:0" aria-labelledby="get-h"><div class="wrap"><div class="head rv"><h2 id="get-h">Що ви отримуєте</h2></div><ol class="models"><li class="model rv"><div><h3>Безкоштовне працевлаштування</h3></div><p>Агентству нічого платити не потрібно.</p></li><li class="model rv"><div><h3>Офіційну роботу</h3></div><p>Трудовий договір за німецькими правилами та доплати за тарифом GVP: ніч +25 %, неділя +50 %, свята +100 %, понаднормові +25 %.</p></li><li class="model rv"><div><h3>Житло, якщо потрібно</h3></div><p>390 € на місяць з людини.</p></li><li class="model rv"><div><h3>Дорогу до роботи</h3></div><p>На багатьох вакансіях організуємо розвезення за 5 € за робочий день, туди й назад.</p></li><li class="model rv"><div><h3>Допомогу з документами</h3></div><p>Підкажемо й допоможемо з дозволом на проживання, медичним страхуванням і банківським рахунком.</p></li><li class="model rv"><div><h3>Навчання</h3></div><p>Власна школа навантажувачів. Зварювальники можуть освіжити навички MIG/MAG на практичному курсі в майстерні.</p></li></ol></div></section><section class="sec steps" id="steps" aria-labelledby="steps-h"><div class="wrap"><h2 class="rv" id="steps-h">Як влаштуватися</h2><ol class="track"><li class="rv"><h3>Зв’яжіться з нами</h3><p>Зателефонуйте, напишіть на пошту або залиште заявку нижче.</p></li><li class="rv"><h3>Підберемо вакансію</h3><p>Під ваш досвід, місто й побажання щодо житла.</p></li><li class="rv"><h3>Допоможемо з переїздом</h3><p>Документи, житло й дорога до роботи.</p></li><li class="rv"><h3>Виходьте на роботу</h3><p>Ми залишаємося на зв’язку вашою мовою.</p></li></ol></div></section><section class="sec team" aria-labelledby="team-h"><div class="wrap">
-    <div class="head rv"><h2 id="team-h">З вами говорять вашою мовою</h2><p>Відповімо українською на запитання про вакансії, житло та доїзд.</p></div>
+  <section class="doors" aria-label="Office54 GmbH">
+    <video class="scene" autoplay muted loop playsinline preload="auto" poster="/office54-preview/assets/hero-poster.jpg" aria-hidden="true"><source src="/office54-preview/assets/hero.mp4" type="video/mp4"></video>
+    <div class="door work">
+      <span class="eyebrow">Для кандидатів</span>
+      <h1>Ваша нова робота. Про старт подбаємо ми.</h1>
+      <p>Робота на складах, у виробництві та ремісничих професіях, навіть без знання німецької. Ми допомагаємо з житлом, організованим доїздом на роботу та особистим супроводом вашою мовою.</p>
+      <div class="langs" aria-label="Консультації шістьма мовами"><span lang="de">Deutsch</span><a href="/office54-preview/v3/uk/" hreflang="uk" lang="uk">Українська</a><a href="/office54-preview/v3/ru/" hreflang="ru" lang="ru">Русский</a><a href="/office54-preview/v3/pl/" hreflang="pl" lang="pl">Polski</a><a href="/office54-preview/v3/ro/" hreflang="ro" lang="ro">Română</a><span lang="en">English</span></div>
+      <div class="acts"><a class="btn btn-cyan" href="#jobs">Знайти відповідні вакансії <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-ghost" href="#kontakt">Відгукнутися</a></div>
+      <div class="quick"><span>Відгукнутися напряму через</span><a href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a><a href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a></div>
+    </div>
+    <div class="door firm">
+      <span class="eyebrow">Для роботодавців</span>
+      <h2>Персонал для складів, логістики та виробництва.</h2>
+      <p>Лізинг персоналу, пряме працевлаштування та тимчасова робота з переходом у штат. Рекрутинг із країн ЄС і з країн поза ЄС.</p>
+      <div class="acts"><a class="btn btn-night" href="/office54-preview/v3/uk/losungen-fur-unternehmen/#anfrage">Запит на персонал <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-ghost dark" href="#unternehmen">Послуги</a></div>
+    </div>
+  </section>
+
+  <div class="facts"><div class="wrap"><ul>
+    <li>Навчання зварюванню в майстерні партнера</li>
+    <li>Кадрове агентство з 2021 року</li>
+    <li>Понад 20 років досвіду засновника в галузі</li>
+    <li>Команда говорить шістьма мовами</li>
+    <li>Власна школа навантажувачів</li>
+  </ul></div></div>
+
+  <section class="sec" id="jobs" aria-labelledby="jobs-h"><div class="wrap">
+    <div class="head rv"><h2 id="jobs-h">Вакансії зараз</h2><p>Погодинні ставки брутто, плюс доплати за нічні години, неділі та свята. Для кандидатів працевлаштування безкоштовне.</p></div>
+    <ul class="board">
+      <li class="row rv" data-k="lager"><img src="/office54-preview/assets/job-kommissionierer.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/kommissionierer-feinkost-oldenburg/">Комплектувальник замовлень (делікатеси)</a></h3><div class="where">Ольденбург</div></div><div class="tags"><span class="tag yes">Премія до 1 000 € на місяць</span><span class="tag">Pick-by-Voice німецькою, англійською, російською або польською</span><span class="tag">Є житло</span></div><div class="pay">15,33 €<small>на годину</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+      <li class="row rv" data-k="produktion de0"><img src="/office54-preview/assets/job-fisch.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/produktionsmitarbeiter-konditorei-haseluenne/">Працівник кондитерського виробництва</a></h3><div class="where">Район Газелюнне</div></div><div class="tags"><span class="tag yes">Німецька не потрібна</span><span class="tag">Досвід не потрібен</span><span class="tag">Є житло</span></div><div class="pay">15,33 €<small>на годину</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+      <li class="row rv" data-k="metall"><img src="/office54-preview/assets/job-mechaniker.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/mechaniker-monteur-lkw-anhaenger-werlte/">Механік / монтажник вантажних причепів</a></h3><div class="where">Район Верльте</div></div><div class="tags"><span class="tag">Німецька від B1</span><span class="tag">Потрібен досвід роботи</span><span class="tag">Є житло</span></div><div class="pay">17–19 €<small>на годину</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+      <li class="row rv" data-k="metall de0"><img src="/office54-preview/assets/job-schweisser.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/mig-mag-schweisser-haseluenne/">Зварювальник MIG/MAG / зварювальник із можливістю навчання</a></h3><div class="where">Район Газелюнне</div></div><div class="tags"><span class="tag yes">Німецька не потрібна</span><span class="tag">Можливий інтенсивний курс зварювання</span><span class="tag">Є житло</span></div><div class="pay">17,00 €<small>на годину</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+      <li class="row rv" data-k="lager de0"><img src="/office54-preview/assets/job-stapler.webp" alt="" loading="lazy"><div><h3><a href="/office54-preview/v3/uk/vakansii/lagermitarbeiter-bekleidungslogistik-lingen/">Складський працівник (логістика одягу)</a></h3><div class="where">Район Лінген</div></div><div class="tags"><span class="tag yes">Німецька не потрібна</span><span class="tag">Сезонна робота до кінця грудня</span><span class="tag">Є трансфер</span></div><div class="pay">15,33 €<small>на годину</small></div><span class="go" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></span></li>
+    </ul>
+    <div class="board-foot rv"><span>Не знайшли відповідної вакансії? Зателефонуйте, не всі вакансії опубліковані на сайті.</span><a class="btn btn-night" href="/office54-preview/v3/uk/vakansii/">Усі вакансії <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a></div>
+  </div></section>
+
+  <section class="sec steps" aria-labelledby="steps-h"><div class="wrap">
+    <h2 class="rv" id="steps-h">Чотири кроки до роботи в Німеччині</h2>
+    <ol class="track">
+      <li class="rv"><h3>Зв’яжіться з нами</h3><p>Зателефонуйте, напишіть або заповніть форму. Можна українською, російською, польською чи румунською.</p></li>
+      <li class="rv"><h3>Відповідна вакансія</h3><p>Ми пропонуємо вакансії, які відповідають вашому досвіду, місцю та побажанням щодо житла.</p></li>
+      <li class="rv"><h3>Документи і переїзд</h3><p>Допомога з дозволом на проживання, медичним страхуванням і банківським рахунком. Житло і транспорт за бажанням.</p></li>
+      <li class="rv"><h3>Старт</h3><p>Офіційне працевлаштування і супровід, також після першого робочого дня.</p></li>
+    </ol>
+  </div></section>
+
+  <section class="sec" id="unternehmen" aria-labelledby="emp-h"><div class="wrap emp">
+    <div class="lead rv">
+      <span class="eyebrow" style="color:#0a6d7e">Для роботодавців</span>
+      <h2 id="emp-h" style="margin-top:18px">Закриємо прогалини у вашому графіку змін.</h2>
+      <p>Ми спеціалізуємося на логістиці, виробництві та складському господарстві. Багатомовний супровід працівників беремо на себе, а ви зосереджуєтеся на своєму основному бізнесі.</p>
+      <div class="acts"><a class="btn btn-night" href="/office54-preview/v3/uk/losungen-fur-unternehmen/#anfrage">Запит на персонал <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a><a class="btn btn-ghost dark" href="tel:+4917661513250">Зателефонувати</a></div>
+    </div>
+    <div>
+      <div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><path d="M16 5.5a3 3 0 0 1 0 5.6M18 14.4c1.4.7 2.3 2.2 2.6 4.6"/></svg></span><div><h3>Лізинг персоналу</h3><p>Оперативні рішення в разі нестачі персоналу. Наші тимчасові працівники швидко стають до роботи.</p></div></div>
+      <div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/><path d="M4 6v12"/></svg></span><div><h3>Пряме працевлаштування</h3><p>Працівника оформлюють безпосередньо у вашій компанії. Адміністрування, координація та супровід залишаються за нами.</p></div></div>
+      <div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 7.5V12l3 2"/></svg></span><div><h3>Тимчасова робота з переходом у штат</h3><p>Спочатку познайомтеся з працівниками, а потім вирішуйте щодо постійного працевлаштування.</p></div></div>
+      <div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span><div><h3>Плата за адміністрування</h3><p>Працівник оформлений безпосередньо у вашій компанії. Житло, транспорт і супровід і надалі організовуємо ми за погоджену сервісну плату за кожну відпрацьовану годину.</p></div></div>
+      <div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18V8h6l2-3h3v13"/><path d="M5 18h11"/><circle cx="8" cy="19" r="1.8"/><circle cx="14" cy="19" r="1.8"/><path d="M16 5v13h3"/></svg></span><div><h3>Навчання та сертифікати</h3><p>Наприклад, посвідчення водія навантажувача в нашій власній школі, щоб працівники були готові до роботи з першого дня.</p></div></div>
+      <div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5 10 14"/><path d="m9 11 4 4"/><path d="m11 9 4-4 4 4-4 4"/><path d="M19.5 14.5l1.5 1.5M16.5 18.5l.8 2M20.5 11.5l2 .5"/></svg></span><div><h3>Перевірка та оновлення навичок зварювання</h3><p>Разом із нашою партнерською компанією Caplex GmbH ми готуємо кандидатів до роботи в майстерні. Під час практичного пробного зварювання перевіряємо наявні навички зварювання MIG/MAG і за потреби цілеспрямовано їх освіжаємо. Так кандидати можуть показати свої вміння, повернути впевненість і ознайомитися з вимогами майбутнього робочого місця.</p></div></div>
+    </div>
+  </div></section>
+
+  <section class="sec net" id="netzwerk" aria-labelledby="net-h"><div class="wrap">
+    <div class="top rv"><h2 id="net-h">Мережа з трьох компаній.</h2><p>Під дахом Grabowski Holding: персонал, житло та логістика в одних руках.</p></div>
+    <div class="nodes">
+      <article class="node rv"><svg class="mark" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27" fill="none" stroke="#17b4cf" stroke-width="3" stroke-dasharray="125 45" transform="rotate(-140 30 30)"/><circle cx="30" cy="30" r="17" fill="none" stroke="#140c33" stroke-width="3" stroke-dasharray="75 32" transform="rotate(-80 30 30)"/></svg><span class="role">Персонал</span><h3>Office54 GmbH</h3><p>Підбір персоналу та тимчасове працевлаштування з рекрутингом по всьому світу, навчанням і багатомовним супроводом.</p></article>
+      <article class="node rv"><svg class="mark" viewBox="0 0 60 60" aria-hidden="true"><path d="M10 30 30 13l20 17" fill="none" stroke="#140c33" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 26v20h28V26" fill="none" stroke="#17b4cf" stroke-width="3" stroke-linejoin="round"/></svg><span class="role">Житло</span><h3>Domowoi GmbH</h3><p>Управління нерухомістю та здача житла в оренду з особистим супроводом орендарів.</p></article>
+      <article class="node rv"><svg class="mark" viewBox="0 0 60 60" aria-hidden="true"><rect x="9" y="20" width="26" height="22" rx="3" fill="none" stroke="#140c33" stroke-width="3"/><path d="M35 27h8l7 8v7H35" fill="none" stroke="#17b4cf" stroke-width="3" stroke-linejoin="round"/><circle cx="18" cy="45" r="4" fill="#f6f5f1" stroke="#140c33" stroke-width="3"/><circle cx="43" cy="45" r="4" fill="#f6f5f1" stroke="#17b4cf" stroke-width="3"/></svg><span class="role">Логістика</span><h3>Caplex GmbH</h3><p>Логістичні рішення та договори підряду у складській логістиці й підтримці виробництва.</p></article>
+    </div>
+  </div></section>
+
+  <section class="sec team" aria-labelledby="team-h"><div class="wrap">
+    <div class="head rv"><h2 id="team-h">Ваші контактні особи</h2><p>Команда, яка говорить мовою ваших працівників.</p></div>
     <div class="people">
       <article class="person rv"><div class="ph"><img src="/office54-preview/assets/team-stefan.webp" alt="Stefan Grabowski" loading="lazy"></div><h3>Stefan Grabowski</h3><p>Генеральний директор</p></article>
       <article class="person rv"><div class="ph"><img src="/office54-preview/assets/team-alexandru.webp" alt="Alexandru Cseminschi" loading="lazy"></div><h3>Alexandru Cseminschi</h3><p>Фінансовий експерт і HR-координатор</p></article>
       <article class="person rv"><div class="ph"><img src="/office54-preview/assets/team-mariia.webp" alt="Mariia Chykida" loading="lazy"></div><h3>Mariia Chykida</h3><p>HR-координаторка та рекрутинг</p></article>
       <article class="person rv"><div class="ph"><img src="/office54-preview/assets/team-maryna.webp" alt="Maryna Krevsun" loading="lazy"></div><h3>Maryna Krevsun</h3><p>Нарахування заробітної плати</p></article>
     </div>
-  </div></section><section class="sec" id="faq" aria-labelledby="faq-h"><div class="wrap split2"><div class="lead rv"><h2 id="faq-h">Часті запитання</h2><p>Не знайшли відповідь? Напишіть нам у WhatsApp або Telegram.</p></div><div class="faq rv"><details open><summary>Чи можна працювати в Німеччині без знання німецької?</summary><p>Так. На більшості наших вакансій німецька не потрібна: виробництво випічки, зварювання, фарбування, склад одягу. На комплектуванні в Ольденбурзі голосова система працює російською або польською, треба лише знати числа від 1 до 100 німецькою. Механікам потрібна німецька B1.</p></details><details><summary>Скільки можна заробити?</summary><p>Ставки від 15,33 до 19,00 € за годину брутто. Зверху доплати за тарифом GVP: ніч +25 %, неділя +50 %, свята +100 %, понаднормові +25 %. На комплектуванні в Ольденбурзі є премія за виробіток, від кількох сотень до 1 000 € на місяць і більше.</p></details><details><summary>Чи потрібно платити агентству?</summary><p>Ні. Для працівників працевлаштування через Office54 безкоштовне.</p></details><details><summary>Ви допомагаєте з житлом?</summary><p>Так, якщо потрібно. Житло коштує 390 € на місяць з людини. Дорогу до роботи на багатьох вакансіях організуємо за 5 € за робочий день, туди й назад.</p></details><details><summary>У яких містах є робота?</summary><p>Ольденбург, Гамбург і міста Нижньої Саксонії: Газелюнне, Нордгорн, Верльте, Лінген, Гуде, Вестерштеде.</p></details><details><summary>Якою мовою з вами можна говорити?</summary><p>Українською, російською, польською, румунською, англійською або німецькою.</p></details><details><summary>Я не з ЄС. Чи можна до вас звернутися?</summary><p>Так, напишіть нам. Ми підкажемо, які документи потрібні, і допоможемо з дозволом на проживання.</p></details></div></div></section><section class="sec contact" id="kontakt" aria-labelledby="contact-h"><div class="wrap grid"><div class="rv"><h2 id="contact-h">Напишіть нам</h2><p>Розкажіть, яку роботу шукаєте. Ми відповімо вашою мовою.</p><a class="phone" href="tel:+4917661513250">+49 176 61513250</a><a class="btn btn-ghost" href="mailto:info@office54.de">info@office54.de</a><div class="msgr"><span class="eyebrow">Відгук через WhatsApp або Telegram</span><a class="btn btn-ghost" href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a><a class="btn btn-ghost" href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a></div><div class="addr"><div><b>Офіс</b>Irisweg 30<br>26133 Oldenburg</div></div></div><div class="formcard rv" id="l-form"><form action="#" onsubmit="return false"><input type="hidden" name="form_fields[field_16802b2]" value="Робота в Німеччині (UA)"><div><label for="l-name">Ім’я та прізвище</label><input id="l-name" name="form_fields[name]" autocomplete="name"></div><div><label for="l-tel">Телефон</label><input id="l-tel" name="form_fields[field_187fd6b]" type="tel" autocomplete="tel" required></div><div class="full"><label for="l-mail">E-mail</label><input id="l-mail" name="form_fields[email]" type="email" autocomplete="email" required></div><div class="full"><label for="l-msg">Яка робота цікавить</label><textarea id="l-msg" name="form_fields[message]"></textarea></div><div class="full"><button class="btn btn-night" type="submit">Надіслати <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></button></div></form></div></div></section>
+  </div></section>
+
+  <section class="sec" style="padding-top:0" aria-label="Відгуки"><div class="wrap quotes">
+    <figure class="quote rv"><blockquote>З огляду на наш позитивний досвід ми рекомендуємо Office54 GmbH як надійного партнера у сфері лізингу персоналу та прямого працевлаштування.</blockquote><figcaption><img src="/office54-preview/assets/t-jens.webp" alt="Логотип Getränke Essmann" loading="lazy"><div><div class="who">Jens Weber</div><div class="what">Getränke Essmann, керівник складської логістики</div></div></figcaption></figure>
+    <figure class="quote rv"><blockquote>Office54 GmbH зробила вагомий внесок у те, що ми змогли досягти своїх виробничих цілей і зберегти при цьому високу якість.</blockquote><figcaption><img src="/office54-preview/assets/t-udo.webp" alt="Логотип OTTE Beton" loading="lazy"><div><div class="who">Udo Eveslage</div><div class="what">OTTE Beton, генеральний директор</div></div></figcaption></figure>
+  </div></section>
+
+  <section class="sec contact" id="kontakt" data-topic="Bewerbung (UK)" aria-labelledby="contact-h"><div class="wrap grid">
+    <div class="rv">
+      <h2 id="contact-h">Найшвидше зв’язатися телефоном.</h2>
+      <p>Ми говоримо німецькою, англійською, російською, українською, польською та румунською.</p>
+      <a class="phone" href="tel:+4917661513250">+49 176 61513250</a>
+      <a class="btn btn-ghost" href="mailto:info@office54.de">info@office54.de</a>
+      <div class="msgr"><span class="eyebrow">Відгук через месенджер</span><a class="btn btn-ghost" href="https://wa.me/4915560566554" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M9 1.8a7.2 7.2 0 0 0-6.3 10.7L1.8 16.2l3.8-1A7.2 7.2 0 1 0 9 1.8z"/><path d="M6.4 5.8c.3 2.6 2.2 4.9 5 5.6" stroke-linecap="round"/></svg>WhatsApp</a><a class="btn btn-ghost" href="https://t.me/Recruit54_bot" target="_blank" rel="noopener"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M16.4 2.2 1.6 8l4.7 1.8 8-5.4-6 6.6v4.6l2.7-3 3.6 2.6z"/></svg>Telegram</a></div>
+      <div class="addr"><div><b>Офіс в Ольденбурзі</b>Irisweg 30<br>26133 Oldenburg</div><div><b>Юридична адреса</b>Haselünner Str. 13<br>49844 Bawinkel</div></div>
+    </div>
+    <div class="formcard rv">
+      <h3>Або напишіть нам</h3>
+      <div class="who-switch" role="group" aria-label="Хто ви"><button type="button" aria-pressed="true">Шукаю роботу</button><button type="button" aria-pressed="false">Шукаю персонал</button></div>
+      <form action="#" onsubmit="return false">
+        <div><label for="c-name">Ім’я</label><input id="c-name" autocomplete="name"></div>
+        <div><label for="c-tel">Телефон</label><input id="c-tel" type="tel" autocomplete="tel" required></div>
+        <div class="full"><label for="c-mail">E-mail</label><input id="c-mail" type="email" autocomplete="email" required></div>
+        <div class="full"><label for="c-msg">Повідомлення</label><textarea id="c-msg"></textarea></div>
+        <div class="full"><button class="btn btn-night" type="submit">Надіслати <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></button></div>
+      </form>
+    </div>
+  </div></section>
 </main>
+
 <footer class="foot"><div class="wrap">
-  <a class="brand" href="/office54-preview/v3/" aria-label="Office54 GmbH Startseite"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Office54 GmbH Logo" loading="lazy"></a>
-  <nav aria-label="Rechtliches"><a class="emp-link" href="/office54-preview/v3/losungen-fur-unternehmen/" hreflang="de" lang="de">Для роботодавців (німецькою)</a><a href="/office54-preview/v3/impressum/">Impressum</a><a href="/office54-preview/v3/datenschutz/">Datenschutz</a><a href="https://www.facebook.com/profile.php?id=61563513421556">Facebook</a><a href="https://www.instagram.com/office54_germany/">Instagram</a><a href="https://www.tiktok.com/@office54_germany">TikTok</a><a href="https://www.linkedin.com/company/office54-gmbh/">LinkedIn</a></nav>
+  <a class="brand" href="/office54-preview/v3/uk/" aria-label="Office54 GmbH, головна сторінка"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Логотип Office54 GmbH" loading="lazy"></a>
+  <nav aria-label="Правова інформація"><a href="/office54-preview/v3/impressum/">Вихідні дані</a><a href="/office54-preview/v3/datenschutz/">Захист даних</a><a href="https://www.facebook.com/profile.php?id=61563513421556">Facebook</a><a href="https://www.instagram.com/office54gmbh/">Instagram</a><a href="https://www.tiktok.com/@office54_germany">TikTok</a><a href="https://www.linkedin.com/company/office54-gmbh/">LinkedIn</a></nav>
   <span>© 2024 Office54 GmbH</span>
 </div></footer>
+
 <script>
 (() => {
   const hdr = document.querySelector('.hdr'), burger = document.querySelector('.burger');
