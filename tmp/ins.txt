@@ -1,0 +1,48 @@
+// old URLs after the release (301)
+add_action( 'template_redirect', function () {
+	$path = trim( (string) wp_parse_url( isset( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : '', PHP_URL_PATH ), '/' );
+	$map  = array(
+		'company-history' => '/about-us/',
+		'our-value' => '/about-us/',
+		'our-mission' => '/about-us/',
+		'home' => '/',
+		'home-2' => '/',
+		'home-alt' => '/',
+		'about-us-alt' => '/about-us/',
+		'contact-us-alt' => '/contact-us/',
+		'job-list-alt' => '/job-list/',
+		'losungen-fur-unternehmen-alt' => '/losungen-fur-unternehmen/',
+		'impressum-alt' => '/impressum/',
+		'datenschutz-alt' => '/datenschutz/',
+		'startseite-neu' => '/',
+		'about-us-neu' => '/about-us/',
+		'contact-us-neu' => '/contact-us/',
+		'job-list-neu' => '/job-list/',
+		'losungen-fur-unternehmen-neu' => '/losungen-fur-unternehmen/',
+		'impressum-neu' => '/impressum/',
+		'datenschutz-neu' => '/datenschutz/',
+		'job/php-developer-2' => '/job-list/',
+		'job/fisch-wilhelmshaven' => '/job-list/',
+		'job/schweisser' => '/job-list/mig-mag-schweisser-haseluenne/',
+		'job/warehouse-worker-2' => '/job-list/kommissionierer-feinkost-oldenburg/',
+		'job/wordpress' => '/job-list/mechaniker-monteur-lkw-anhaenger-werlte/',
+	);
+	if ( isset( $map[ $path ] ) ) {
+		wp_safe_redirect( home_url( $map[ $path ] ), 301 );
+		exit;
+	}
+}, 1 );
+
+// sitemap: no author pages, no old jobbank jobs and their taxonomies
+add_filter( 'wp_sitemaps_add_provider', function ( $provider, $name ) {
+	return 'users' === $name ? false : $provider;
+}, 10, 2 );
+add_filter( 'wp_sitemaps_post_types', function ( $types ) {
+	unset( $types['job'] );
+	return $types;
+} );
+add_filter( 'wp_sitemaps_taxonomies', function ( $tax ) {
+	unset( $tax['job-category'], $tax['job-locations'] );
+	return $tax;
+} );
+
