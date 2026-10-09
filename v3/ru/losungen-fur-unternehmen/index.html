@@ -414,10 +414,11 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
   .acts .btn{justify-content:center}
   .btn{min-height:52px}
 }
+.fab{display:none}
+@media (max-width:1100px){.fab{display:flex;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:40;width:58px;height:58px;border-radius:50%;align-items:center;justify-content:center;color:#fff;box-shadow:0 12px 26px -10px rgba(20,12,51,.55)}.fab svg{width:28px;height:28px}.fab-wa{background:#25D366}.fab-tg{background:#229ED9}.fab-tel{background:var(--night)}.foot{padding-bottom:96px}}
 /* end mobile pass */
 </style>
 <script>document.documentElement.classList.add('js')</script>
-
 
 <link rel="alternate" hreflang="de" href="/office54-preview/v3/losungen-fur-unternehmen/"><link rel="alternate" hreflang="en" href="/office54-preview/v3/en/losungen-fur-unternehmen/"><link rel="alternate" hreflang="ru" href="/office54-preview/v3/ru/losungen-fur-unternehmen/"><link rel="alternate" hreflang="uk" href="/office54-preview/v3/uk/losungen-fur-unternehmen/"><link rel="alternate" hreflang="pl" href="/office54-preview/v3/pl/losungen-fur-unternehmen/"><link rel="alternate" hreflang="ro" href="/office54-preview/v3/ro/losungen-fur-unternehmen/"><link rel="alternate" hreflang="x-default" href="/office54-preview/v3/losungen-fur-unternehmen/">
 </head>
@@ -448,7 +449,7 @@ select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(23,
   <a class="brand" href="/office54-preview/v3/ru/" aria-label="Главная страница Office54 GmbH"><img src="/office54-preview/assets/logo.webp" width="300" height="242" alt="Логотип Office54 GmbH" loading="lazy"></a>
   <nav aria-label="Правовая информация"><a href="/office54-preview/v3/impressum/">Выходные данные</a><a href="/office54-preview/v3/datenschutz/">Защита данных</a><a href="https://www.facebook.com/profile.php?id=61563513421556">Facebook</a><a href="https://www.instagram.com/office54gmbh/">Instagram</a><a href="https://www.tiktok.com/@office54_germany">TikTok</a><a href="https://www.linkedin.com/company/office54-gmbh/">LinkedIn</a></nav>
   <span>© 2024 Office54 GmbH</span>
-</div></footer>
+</div><a class="fab fab-tel" href="tel:+4917661513250" aria-label="+49 176 61513250"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M5.2 2.2h2.6l1.3 3.4-1.8 1.1a8.6 8.6 0 0 0 3.9 3.9l1.1-1.8 3.4 1.3v2.6a1.8 1.8 0 0 1-1.8 1.8A12.6 12.6 0 0 1 3.4 4a1.8 1.8 0 0 1 1.8-1.8z"/></svg></a></footer>
 <script>
 (() => {
   const hdr = document.querySelector('.hdr'), burger = document.querySelector('.burger');
